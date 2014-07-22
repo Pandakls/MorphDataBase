@@ -1,0 +1,53 @@
+soin +5			5k	0.155
+soin +10		9k	0.07
+soin +20		17k	0.05
+soin +30		24k	0.03
+soin +50		38k	0.02
+soin +100		70k	0.01
+boost +20 vita (1j)	20k	0.02
+boost +30 vita (1j)	30k	0.02
+boost +50 vita (1j)	50k	0.01
+boost +100 vita (1j)	100k	0.01
+resistance magique +5	25k	0.0075
+resistance physique +5	25k	0.0075
+bouclier ent. ext +5	4k	0.007
+bouclier ent. ext +10	8k	0.007
+bouclier ent. ext +20	15k	0.007
+bouclier ent. ext +50	38k	0.006
+bouclier ent. int +5	8k	0.00650
+bouclier ent. int +10	15k	0.006
+bouclier ent. int +20	30k	0.00550
+bouclier ent. int +50	75k	0.005
+reconstitution		100k	0.02
+resurection		500k	0.005
+degats 1d4  2 round	5k	0.06
+degats 1d6  2 round	9k	0.03
+degats 1d8  2 round	17k	0.015
+degats 1d10 2 round	24k	0.01
+degats 2d6  2 round	38k	0.005
+paralysie Vig-30 2d4r	50k	0.04
+paralysie vig-50 2d4r	100k	0.03
+paralysie vig-70 2d4r	200k	0.01
+sommeil	Vig-30 2d4r	50k	0.04
+sommeil	vig-50 2d4r	100k	0.03
+sommeil	vig-70 2d4r	200k	0.01
+confusion Vig-30 2d4r	50k	0.02
+confusion vig-50 2d4r	100k	0.015
+confusion vig-70 2d4r	200k	0.005
+faiblesse physique -5	25k	0.01
+faiblesse magique -5	25k	0.01
+malus tir     -10	25k	0.004
+malus melee   -10	25k	0.004
+malus cast    -10	25k	0.004
+malus reflexe -10	25k	0.004
+malus force M -10	25k	0.004
+hemorragie 50%		50k	0.03
+hemorragie 100%		100k	0.01
+lévitation 10min	35k	0.01
+invisibilité 10min	45k	0.01
+transparence 10min	55k	0.01
+langue étrangère	5k	0.048
+polymorphisme		1000k	0.001
+agrandissement 10 min	50k	0.035
+rétrécissement 10 min	50k	0.035
+filtre d'amour		500k	0.03

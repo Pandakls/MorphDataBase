@@ -1,0 +1,7 @@
+ReceptacleP("ReceptacleP"),// freq = 9
+DegatsSuppElem("DegatsSuppElem"),// freq = 4
+DegatsSuppPois("DegatsSuppPois"),// freq = 4
+DegatsSuppHemo("DegatsSuppHemo"),// freq = 3
+Maudit("Maudit"),// freq = 4
+Beni("Beni"),// freq = 4
+Vorpale("Vorpale"),// freq = 1
