@@ -1,0 +1,88 @@
+#stats
+FOR			100k	0.02
+SGF			100k	0.02
+ESP			100k	0.02
+DEX			100k	0.02
+SAG			100k	0.02
+VIT			100k	0.02
+
+#FightStats
+Melee			50k	0.05
+Shot			50k	0.05
+Cast			50k	0.05
+Reflexe			50k	0.05
+Mental			50k	0.05
+
+#Random Generated
+Gift			0k	0.02
+Spell			0k	0.001
+Domain			3000k	0.0003
+Ability			10k	0.21
+
+#others
+Immunite_Foudre		800k	0.002
+Immunite_Glace		800k	0.002
+Immunite_Terre		800k	0.002
+Immunite_Feu		800k	0.002
+Immunite_Air		800k	0.002
+Immunite_Maladie	800k	0.002
+Immunite_Illusion	800k	0.002
+Immunite_Telekinesie	800k	0.002
+Immunite_Temps		800k	0.002
+Immunite_Poison		800k	0.002
+
+Resistance_Foudre	90k	0.005
+Resistance_Glace	90k	0.005
+Resistance_Terre	90k	0.005
+Resistance_Feu		90k	0.005
+Resistance_Air		90k	0.005
+Resistance_Maladie	90k	0.005
+Resistance_Illusion	90k	0.005
+Resistance_Telekinesie	90k	0.005
+Resistance_Temps	90k	0.005
+Resistance_Poison	90k	0.005
+Resistance_Magie	1300k	0.005
+Resistance_Physique	1300k	0.005
+
+
+Lifelink_10%		400k	0.001
+Lifelink_20%		800k	0.001
+
+SpellVamp_10%		250k	0.005
+SpellVamp_20%		500k	0.005
+
+AttackVamp_10%		250k	0.005
+AttackVamp_20%		500k	0.005
+
+Minor_Wish		1000k	0.001
+Major_Wish		5000k	0.0004
+
+Entropy_Shield_5	350k	0.02
+Entropy_Shield_10	700k	0.015
+Entropy_Shield_20	1400k	0.01
+Entropy_Shield_50	3500k	0.005
+
+Feather_Weight		5k	0.09
+
+Spirit_Gem_5		210k	0.015
+Spirit_Gem_10		420k	0.01
+Spirit_Gem_20		840k	0.004
+Spirit_Gem_50		2100k	0.001
+
+CC+1			330k	0.02
+
+Blessed	1/j 		266k	0.01
+
+Heal+1			50k	0.03
+Heal+2			100k	0.015
+Heal+5			250k	0.005
+
+Levitation		777k	0.002
+Transparency		777k	0.001
+Invisibility		777k	0.001
+
+Without_Hunger_Living	1333k	0.001
+Without_Fatigue_Living	1777k	0.001
+
+Mastery			5000k	0.0003
+

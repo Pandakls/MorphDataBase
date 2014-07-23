@@ -1,7 +1,21 @@
-ReceptacleP("ReceptacleP"),// freq = 9
-DegatsSuppElem("DegatsSuppElem"),// freq = 4
-DegatsSuppPois("DegatsSuppPois"),// freq = 4
-DegatsSuppHemo("DegatsSuppHemo"),// freq = 3
-Maudit("Maudit"),// freq = 4
-Beni("Beni"),// freq = 4
-Vorpale("Vorpale"),// freq = 1
+#char Boost
+melee		40k	0.11
+
+CC+1		330k	0.1
+AttackVamp_10%	250k	0.025
+AttackVamp_20%	500k	0.015
+
+#Weapon Boost
+Blessed_Infi	666k	0.07
+Upgraded	888k	0.1
+Poison_Recep	444k	0.26
+
+
+#Effectife on hit
+Cursed		122k	0.07
+Elemental_Dmg	888k	0.1
+Poison_Damage	888k	0.1
+Hemmoragie 50	2000k	0.025
+Hemmoragie 100	4000k	0.015
+Shockwave	5000k	0.009
+Vorpale		10000k	0.001

@@ -1,0 +1,15 @@
+#Additionnal armor pieces
+Socks		1
+Panties		1
+Shirt		1
+Under_Gloves	1
+Scarf		1
+belt		1
+
+#non-Additionnal pieces
+Hat		2
+Tunique		3
+Jacket		2
+Trousers	2
+Shoes		2
+Gloves		2

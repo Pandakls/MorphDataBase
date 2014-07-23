@@ -1,0 +1,6 @@
+Helmet
+Breasplate
+Greaves
+Boots
+Gloves
+Epaulets

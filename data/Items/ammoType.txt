@@ -2,8 +2,8 @@
 20xarrow classic	0	-	-	1k	0.25
 10xbolt sharp		1	-	-	3k	0.1
 20xarrow sharp		1	-	-	3k	0.1
-10xbolt precision	0	cc+1	-	5k	0.01
-20xarrow precision	0	cc+1	-	5k	0.01
+10xbolt precision	0	cc+1	-	12k	0.01
+20xarrow precision	0	cc+1	-	12k	0.01
 10xbolt longrange	0	-	+5m	2k	0.04
 20xarrow longrange	0	-	+5m	2k	0.04
 shuriken		1d2	ccx3	6m	1k	0.01
