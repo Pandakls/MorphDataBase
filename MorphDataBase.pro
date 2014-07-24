@@ -17,7 +17,12 @@ SOURCES += main.cpp\
     character/character.cpp \
     items/item.cpp \
     masteries/mastery.cpp \
-    spells/spell.cpp
+    spells/spell.cpp \
+    items/jewel.cpp \
+    items/armor.cpp \
+    items/garment.cpp \
+    items/potion.cpp \
+    items/weapon.cpp
 
 HEADERS  += mainwindow.h \
     GadToolKit.h \
@@ -25,6 +30,11 @@ HEADERS  += mainwindow.h \
     character/character.h \
     items/item.h \
     masteries/mastery.h \
-    spells/spell.h
+    spells/spell.h \
+    items/jewel.h \
+    items/armor.h \
+    items/garment.h \
+    items/potion.h \
+    items/weapon.h
 
 FORMS    += mainwindow.ui

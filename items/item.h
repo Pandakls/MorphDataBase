@@ -1,27 +1,37 @@
 #ifndef ITEM_H
 #define ITEM_H
 
+//Utils
+#include "GadToolKit.h"
+
 class Item
 {
-    enum ItemType (Armor, RangeWeapon, MeleeWeapon, Clothe, Jewel, Potion);
 
 public:
+    enum ItemType {armor, garment, jewel, potion, weapon};
     Item();
-    Item randomItem();
-    Item randomItemAtPrice(int price);
-    Item randomItemUnderPrice(int maxPrice);
+    Item(std::string n, int p, std::string t, std::string d);
+    static Item randomItem();
+    static Item randomItemAtPrice(int price);
+    static Item randomItemUnderPrice(int maxPrice);
+    static std::string randomTreasure(int price);
 
     inline int getPrice(){return price;}
     inline std::string getName(){return name;}
     inline std::string getDesc(){return description;}
 
     inline void setName(std::string n){name = n;}
-    inline void setPrice(std::string p){price = p;}
+    inline void setPrice(int p){price = p;}
     inline void setDescription(std::string d){description = d;}
 
-private:
+    inline std::string toString(){
+        return iTos(price) +"k : " + type + ", " + name + ", " + description + ".\n";
+    }
+
+protected:
     std::string name;
     int price;
+    std::string type;
     std::string description;
 };
 

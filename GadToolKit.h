@@ -6,6 +6,7 @@
 #include <sstream>  /* ostringstream */
 #include <string>   /* string, stringstream */
 #include <assert.h> /* assert */
+#include <iostream> /* std::cout << std::endl */
 
 ///////////////
 //Random stuffs

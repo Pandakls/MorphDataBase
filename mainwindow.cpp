@@ -7,22 +7,28 @@
 //Dice Gen
 #include "dice/dice.h"
 
+//Item Gen
+#include "items/item.h"
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    std::string randy = "";
-    for (int i=0; i<50; i++){
-        randy += iTos(random(1,50));
-        randy += "\n";
-    }
-    ui->label->setText(QString(randy.c_str()));
     connect(ui->actionDice_gen, SIGNAL(triggered()), this, SLOT(slotDiceGen()));
+    connect(ui->actionItem_Gen, SIGNAL(triggered()), this, SLOT(slotItemGen()));
 }
 
 void MainWindow::slotDiceGen(){
     std::string res = diceGen();
+    ui->label->setText(QString(res.c_str()));
+}
+
+void MainWindow::slotItemGen(){
+    std::string res = "Random item :\n" + Item::randomItem().toString();
+    res += "\nRandom item Value = 666:\n" + Item::randomItemAtPrice(666).toString();
+    res += "\nRandom item Value < 666:\n" + Item::randomItemUnderPrice(666).toString();
+    res += "\nRandom treasure Value = 1666:\n" + Item::randomTreasure(1666);
     ui->label->setText(QString(res.c_str()));
 }
 
