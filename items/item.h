@@ -15,6 +15,8 @@ public:
     static Item randomItemAtPrice(int price);
     static Item randomItemUnderPrice(int maxPrice);
     static std::string randomTreasure(int price);
+    static Item loadRandomBuff(std::string fileName);
+    void operator+=(Item b);
 
     inline int getPrice(){return price;}
     inline std::string getName(){return name;}

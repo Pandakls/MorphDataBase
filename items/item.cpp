@@ -1,3 +1,5 @@
+#include <fstream>
+
 #include "item.h"
 #include "jewel.h"
 #include "armor.h"
@@ -71,4 +73,43 @@ std::string Item::randomTreasure(int price){
         treasureValue -= i.getPrice();
     }
     return res;
+}
+
+Item Item::loadRandomBuff(std::string fileName){
+    Item b = Item("", 0, "Buff", "");
+
+    std::ifstream file(fileName.c_str());
+    std::string p,d,prob;
+
+    if (!file.fail()){
+        std::string line;
+        float rSelection = random(0.0f,1.0f);
+        float sumP = 0;
+        while ( sumP < rSelection){
+            getline(file, line);
+            //Skip if start with #
+            std::size_t pos = 0;
+            std::size_t idx = line.find("#",pos);
+            if(pos == std::string::npos){
+                std::stringstream iss(line);
+                getline (iss, d, ',');
+                getline (iss, p, 'k');
+                getline (iss, prob, 'p');
+                sumP += sToi(prob);
+            }else{
+                std::cout << "line [" << line << "]" << std::endl;
+            }
+        }
+        b.price = sToi(p);
+        b.description = d;
+    }else{
+        std::cout << "Fichier inexistant ou non lisible : " << fileName <<"\n";
+    }
+    return b;
+}
+
+void Item::operator+=(Item b){
+    name +=  b.getName();
+    price += b.getPrice();
+    description += b.getDesc();
 }

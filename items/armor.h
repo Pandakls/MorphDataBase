@@ -13,6 +13,7 @@ public:
     static Armor randomArmor();
 private:
     void loadRandomType();
+    static Item loadRandomArmorBuff();
 };
 
 #endif // ARMOR_H

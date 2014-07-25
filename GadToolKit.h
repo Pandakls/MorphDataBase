@@ -8,6 +8,18 @@
 #include <assert.h> /* assert */
 #include <iostream> /* std::cout << std::endl */
 
+//assert with specific message. Use : ASSERT(cond, msg);
+
+#   define ASSERT(condition, message) \
+    do { \
+        if (! (condition)) { \
+            std::cerr << "Assertion `" #condition "` failed in " << __FILE__ \
+                      << " line " << __LINE__ << ": " << message << std::endl; \
+            std::exit(EXIT_FAILURE); \
+        } \
+    } while (false)
+
+
 ///////////////
 //Random stuffs
 //Initialisation
