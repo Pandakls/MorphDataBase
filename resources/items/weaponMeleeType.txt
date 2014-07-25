@@ -1,3 +1,4 @@
+25
 dagger		1d4	cc+2	2k	0.07
 serpe		1d4	ccx3	6k	0.04
 short sword	1d6	cc+1	10k	0.07

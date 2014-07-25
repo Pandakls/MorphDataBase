@@ -1,40 +1,44 @@
 #include "armor.h"
 #include <fstream>
 
-Armor::Armor() : Item("",0,"Armor","")
+Armor::Armor() : Item("",0,"Armor",""), power(0)
 {
 }
 
 Armor Armor::randomArmor(){
     Armor a = Armor();
-    int price = random(0,1000);
+    int price = 0;
     a.setPrice(price);
     a.loadRandomType();
-    a += loadRandomArmorBuff();
+    a.setPower(randomPower(a.getPower()));
+    for (int i=0; i< a.getPower() ; i++){
+        a += loadRandomArmorBuff();
+    }
     return a;
 }
 
 void Armor::loadRandomType(){
-    std::string filename = "../resources/items/armorType.txt";
-    std::ifstream file(filename.c_str());
-    if (!file.fail()){
+    std::string fileName = "../resources/items/armorType.txt";
+    std::ifstream file(fileName.c_str());
+    if (!file){
+        std::cout << "Impossible d'ouvrir le fichier :" << fileName << std::endl;
+    }else if(!file.fail()){
         std::string line;
         getline( file, line );
-        std::cout << "line [" << line << "]" << std::endl;
         int nType = sToi(line);
-        nType = random(1,nType);
+        nType = random(1,nType-1);
         while ( getline( file, line ) && nType > 0 ){
             nType --;
-            std::cout << "line [" << line << "]" << std::endl;
         }
         type += line;
+    }else{
+        std::cout << "Fichier non lisible : " << fileName <<"\n";
     }
-    else{
-        std::cout << "Fichier inexistant ou non lisible : " << filename <<"\n";
-    }
+    file.close();
 }
 
 Item Armor::loadRandomArmorBuff(){
-    std::string filename = "../resources/items/nonWeaponBuffs.txt";
+        std::string filename = "../resources/items/nonWeaponBuffs.txt";
+//        std::string filename = "nonWeaponBuffs.txt";
     return loadRandomBuff(filename);
 }

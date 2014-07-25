@@ -65,14 +65,32 @@ Item Item::randomItemUnderPrice(int maxPrice){
 }
 
 std::string Item::randomTreasure(int price){
+    std::vector <Item> items;
     int treasureValue = price;
     std::string res = "";
-    while (treasureValue > 0.1*price){
+    while (treasureValue > 0.07*price){
         Item i = randomItemUnderPrice(treasureValue);
-        res += i.toString();
         treasureValue -= i.getPrice();
+        items.push_back(i);
     }
-    return res;
+    int minPrice = 0;
+    int nextMin =price;
+    while(minPrice<price){
+        for (unsigned i=0; i<items.size(); i++){
+            int priceCheck = items[i].getPrice();
+            if ( priceCheck == minPrice){
+                res += items[i].toString();
+            }else if(priceCheck > minPrice){
+                if (priceCheck < nextMin){
+                    nextMin = priceCheck;
+                }
+            }
+        }
+        minPrice = nextMin;
+        nextMin = price;
+
+    }
+    return res + "Remaining : " + iTos(treasureValue) + "k\n";
 }
 
 Item Item::loadRandomBuff(std::string fileName){
@@ -81,30 +99,29 @@ Item Item::loadRandomBuff(std::string fileName){
     std::ifstream file(fileName.c_str());
     std::string p,d,prob;
 
-    if (!file.fail()){
+    if (!file){
+        std::cout << "Impossible d'ouvrir le fichier :" << fileName << std::endl;
+    }else if(!file.fail()){
         std::string line;
         float rSelection = random(0.0f,1.0f);
         float sumP = 0;
-        while ( sumP < rSelection){
-            getline(file, line);
-            //Skip if start with #
-            std::size_t pos = 0;
-            std::size_t idx = line.find("#",pos);
-            if(pos == std::string::npos){
+        while ( sumP < rSelection && getline(file, line)){
+            //Skip if start with # & blank lines
+            while (line.size() == 0 || line[0] == '#'){
+                getline(file, line);
+            }
                 std::stringstream iss(line);
                 getline (iss, d, ',');
                 getline (iss, p, 'k');
                 getline (iss, prob, 'p');
-                sumP += sToi(prob);
-            }else{
-                std::cout << "line [" << line << "]" << std::endl;
-            }
+                sumP += sTof(prob);
         }
         b.price = sToi(p);
-        b.description = d;
+        b.description = ", " + d;
     }else{
-        std::cout << "Fichier inexistant ou non lisible : " << fileName <<"\n";
+        std::cout << "Fichier non lisible : " << fileName <<"\n";
     }
+    file.close();
     return b;
 }
 
@@ -112,4 +129,17 @@ void Item::operator+=(Item b){
     name +=  b.getName();
     price += b.getPrice();
     description += b.getDesc();
+}
+
+int Item::randomPower(int initPow){
+    float rand = random(0.0f,100.0f);
+    float add = 100.0f;
+    float prob = 0.0f;
+    int power = initPow;
+    while (prob < rand && power < 10){
+        add /=2.0f;
+        prob += add;
+        power ++;
+    }
+    return power;
 }

@@ -7,6 +7,7 @@
 #include <string>   /* string, stringstream */
 #include <assert.h> /* assert */
 #include <iostream> /* std::cout << std::endl */
+#include <vector>   /* vector<> */
 
 //assert with specific message. Use : ASSERT(cond, msg);
 
@@ -54,6 +55,14 @@ inline std::string fTos(float f){
 }
 inline int sToi(std::string s){
     int res;
+    std::stringstream str(s);
+    assert(str);
+    str >> res;
+    return res;
+}
+
+inline float sTof(std::string s){
+    float res;
     std::stringstream str(s);
     assert(str);
     str >> res;

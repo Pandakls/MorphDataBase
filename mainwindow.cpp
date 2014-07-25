@@ -26,9 +26,9 @@ void MainWindow::slotDiceGen(){
 
 void MainWindow::slotItemGen(){
     std::string res = "Random item :\n" + Item::randomItem().toString();
-    res += "\nRandom item Value = 666:\n" + Item::randomItemAtPrice(666).toString();
-    res += "\nRandom item Value < 666:\n" + Item::randomItemUnderPrice(666).toString();
-    res += "\nRandom treasure Value = 1666:\n" + Item::randomTreasure(1666);
+    res += "\nRandom item Value = 1000:\n" + Item::randomItemAtPrice(1000).toString();
+    res += "\nRandom item Value < 1000:\n" + Item::randomItemUnderPrice(1000).toString();
+    res += "\nRandom treasure Value = 10000:\n" + Item::randomTreasure(10000);
     ui->label->setText(QString(res.c_str()));
 }
 
