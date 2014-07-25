@@ -1,21 +1,21 @@
 #char Boost
-Shot		40k	0.08
-Range+5m	40k	0.18
-CC+1		330k	0.08
-AttackVamp_10%	250k	0.015
-AttackVamp_20%	500k	0.005
+Shot,		40k	0.08p
+Range+5m,	40k	0.18p
+CC+1,		330k	0.08p
+AttackVamp 10%,	250k	0.015p
+AttackVamp 20%,	500k	0.005p
 
 #Weapon Boost
-Blessed_Infi	666k	0.07
-Upgraded	888k	0.07
-Poison_Recep	444k	0.2
+Blessed Infi,	666k	0.07p
+Upgraded,	888k	0.07p
+Poison_Recep,	444k	0.2p
 
 
 #Effectife on hit
-Cursed		122k	0.07
-Elemental_Dmg	888k	0.10
-Poison_Damage	888k	0.10
-Hemmoragie 50	2000k	0.015
-Hemmoragie 100	4000k	0.005
-Shockwave	5000k	0.009
-Vorpale		10000k	0.001
+Cursed,		122k	0.07p
+Elemental Dmg,	888k	0.10p
+Poison_Damage,	888k	0.10p
+Hemmoragie 50,	2000k	0.015p
+Hemmoragie 100,	4000k	0.005p
+Shockwave,	5000k	0.009p
+Vorpale,	10000k	0.001p
