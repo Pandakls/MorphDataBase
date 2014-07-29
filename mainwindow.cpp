@@ -101,7 +101,8 @@ void MainWindow::setImage(){
     gridLayout->addWidget(label, 0, 0);
     ui->imageWidget->setLayout(gridLayout);
     ui->imageWidget->show();
-    WorldControler wc();
+    WorldControler wc = WorldControler();
+    wc.run();
 }
 
 MainWindow::~MainWindow()
