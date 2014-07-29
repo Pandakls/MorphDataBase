@@ -1,7 +1,6 @@
-soin +5,		5k	0.155p
 soin +10,		9k	0.07p
-soin +20,,		17k	0.05p
-soin +30		24k	0.03p
+soin +20,		17k	0.05p
+soin +30,		24k	0.03p
 soin +50,		38k	0.02p
 soin +100,		70k	0.01p
 boost +20 vita (1j),	20k	0.02p
@@ -28,9 +27,9 @@ degats 2d6  2 round,	38k	0.005p
 paralysie Vig-30 2d4r,	50k	0.04p
 paralysie vig-50 2d4r,	100k	0.03p
 paralysie vig-70 2d4r,	200k	0.01p
-sommeil	Vig-30 2d4r,	50k	0.04p
-sommeil	vig-50 2d4r,	100k	0.03p
-sommeil	vig-70 2d4r,	200k	0.01p
+sommeil Vig-30 2d4r,	50k	0.04p
+sommeil vig-50 2d4r,	100k	0.03p
+sommeil vig-70 2d4r,	200k	0.01p
 confusion Vig-30 2d4r,	50k	0.02p
 confusion vig-50 2d4r,	100k	0.015p
 confusion vig-70 2d4r,	200k	0.005p
@@ -43,11 +42,12 @@ malus reflexe -10,	25k	0.004p
 malus force M -10,	25k	0.004p
 hemorragie 50%,		50k	0.03p
 hemorragie 100%,	100k	0.01p
-lévitation 10min,	35k	0.01p
-invisibilité 10min,	45k	0.01p
+levitation 10min,	35k	0.01p
+invisibility 10min,	45k	0.01p
 transparence 10min,	55k	0.01p
 Foreign Language,	5k	0.048p
 polymorphisme,		1000k	0.001p
 agrandissement 10 min,	50k	0.035p
-rétrécissement 10 min,	50k	0.035p
+retrecissement 10 min,	50k	0.035p
 filtre d'amour,		500k	0.03p
+soin +5,		5k	0.155p

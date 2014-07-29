@@ -1,17 +1,12 @@
-#char Boost
 Shot,		2k	0.08p
 Range+5m,	2k	0.18p
 CC+1,		12k	0.08p
 AttackVamp 10%,	12k	0.015p
 AttackVamp 20%,	25k	0.005p
-
-#Weapon Boost
 Blessed Infi,	33k	0.02p
 Upgraded,	44k	0.02p
 Poison_Recep,	22k	0.09p
 sharpened+1,	3k	0.3p
-
-#Effectife on hit
 Cursed,		6k	0.02p
 Elemental Dmg,	44k	0.08p
 Poison Damage,	44k	0.08p

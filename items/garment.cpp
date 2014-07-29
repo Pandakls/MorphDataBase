@@ -1,7 +1,7 @@
 #include "garment.h"
 #include <fstream>
 
-Garment::Garment() : Item("",0,"Garment",""), power(0)
+Garment::Garment() : Item("Garment",0,""), power(0)
 {
 }
 
@@ -10,7 +10,7 @@ Garment Garment::randomGarment(){
     int price = 0;
     g.setPrice(price);
     g.loadRandomType();
-    g.setPower(randomPower(g.getPower()));
+    g.addPower();
     for (int i=0; i< g.getPower() ; i++){
         g += loadRandomGarmentBuff();
     }
@@ -20,6 +20,7 @@ Garment Garment::randomGarment(){
 void Garment::loadRandomType(){
     std::string fileName = "../resources/items/garmentType.txt";
     std::ifstream file(fileName.c_str());
+    std::string t,p;
     if (!file){
         std::cout << "Impossible d'ouvrir le fichier :" << fileName << std::endl;
     }else if(!file.fail()){
@@ -30,7 +31,12 @@ void Garment::loadRandomType(){
         while ( getline( file, line ) && nType > 0 ){
             nType --;
         }
-        type += line;
+        std::stringstream iss(line);
+        getline (iss, t, ',');
+        getline (iss, p, 'p');
+
+        power = sToi(p);
+        name = t;
     }else{
         std::cout << "Fichier non lisible : " << fileName <<"\n";
     }

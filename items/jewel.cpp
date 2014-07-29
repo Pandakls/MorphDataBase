@@ -1,7 +1,7 @@
 #include "jewel.h"
 #include <fstream>
 
-Jewel::Jewel() : Item("",0,"Jewel",""), power(0)
+Jewel::Jewel() : Item("Jewel",0,""), power(0)
 {
 }
 
@@ -10,7 +10,7 @@ Jewel Jewel::randomJewel(){
     int price = 0;
     j.setPrice(price);
     j.loadRandomType();
-    j.setPower(randomPower(j.getPower()));
+    j.addPower();
     for (int i=0; i< j.getPower() ; i++){
         j += loadRandomJewelBuff();
     }
@@ -18,8 +18,9 @@ Jewel Jewel::randomJewel(){
 }
 
 void Jewel::loadRandomType(){
-    std::string fileName = "../resources/items/armorType.txt";
+    std::string fileName = "../resources/items/jewelType.txt";
     std::ifstream file(fileName.c_str());
+    std::string t,p;
     if (!file){
         std::cout << "Impossible d'ouvrir le fichier :" << fileName << std::endl;
     }else if(!file.fail()){
@@ -30,7 +31,12 @@ void Jewel::loadRandomType(){
         while ( getline( file, line ) && nType > 0 ){
             nType --;
         }
-        type += line;
+        std::stringstream iss(line);
+        getline (iss, t, ',');
+        getline (iss, p, 'p');
+
+        power = sToi(p);
+        name = t;
     }else{
         std::cout << "Fichier non lisible : " << fileName <<"\n";
     }

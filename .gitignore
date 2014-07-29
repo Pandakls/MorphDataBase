@@ -2,6 +2,8 @@
 ## Eclipse
 #################
 
+MorphDataBase.pro
+MorphDataBase.pro.user
 *.pydevproject
 .project
 .metadata

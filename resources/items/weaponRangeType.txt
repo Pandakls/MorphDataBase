@@ -1,10 +1,10 @@
-short bow		1d6	ccx5	20m	30k	0.22
-long bow		1d8	ccx5	30m	75k	0.22
-oneïda bow		1d10	ccx5	35m	180k	0.05
-compound bow		2d6	ccx5	35m	450k	0.01
-hand crossbow		1d6	cc+1	9m	100k	0.05
-crossbow		1d8	cc+1	30m	35k	0.22
-heavy crossbow		1d10	cc+1	40m	50k	0.18
-repeatin light crossbow	1d8	cc+1	25m	250k	0.05
-repeatin heavy crossbow	1d10	cc+1	35m	400k	0.01
-compound crossbow	2d8	cc+1	45m	450k	0.01
+short bow,		1d6-	x5C	20m	30k	0.22p
+long bow,		1d8-	x5C	30m	75k	0.22p
+oneida bow,		1d10-	x5C	35m	180k	0.05p
+compound bow,		2d6-	x5C	35m	450k	0.01p
+hand crossbow,		1d6-	x4C	9m	100k	0.05p
+crossbow,		1d8-	x4C	30m	35k	0.22p
+heavy crossbow,		1d10-	x4C	40m	50k	0.18p
+repeatin light crossbow, 1d8-	x4C	25m	250k	0.05p
+repeatin heavy crossbow, 1d10-	x4C	35m	400k	0.01p
+compound crossbow,	2d8-	x4C	45m	450k	0.01p

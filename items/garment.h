@@ -13,7 +13,7 @@ public:
     static Garment randomGarment();
     //Getter & Setter
     inline int getPower(){return power;}
-    inline void setPower(int p){power = p;}
+    inline void addPower(){power = randomPower(power);}
 private:
     int power;
     void loadRandomType();

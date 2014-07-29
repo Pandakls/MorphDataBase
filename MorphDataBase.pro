@@ -35,6 +35,7 @@ HEADERS  += mainwindow.h \
     items/armor.h \
     items/garment.h \
     items/potion.h \
-    items/weapon.h
+    items/weapon.h \
+    items/buff.h
 
 FORMS    += mainwindow.ui

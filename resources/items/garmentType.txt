@@ -1,13 +1,13 @@
 12
-Socks		1
-Panties		1
-Shirt		1
-Under_Gloves	1
-Scarf		1
-Belt		1
-Hat		2
-Tunique		3
-Jacket		2
-Trousers	2
-Shoes		2
-Gloves		2
+Socks,		1p
+Panties,	1p
+Shirt,		1p
+Under Gloves,	1p
+Scarf,		1p
+Belt,		1p
+Hat,		2p
+Tunique,	3p
+Jacket,		2p
+Trousers,	2p
+Shoes,		2p
+Gloves,		2p

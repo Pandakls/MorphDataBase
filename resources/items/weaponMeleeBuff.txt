@@ -1,20 +1,12 @@
-#char Boost
-melee,		40k	0.11p
-
+Melee,		40k	0.11p
 CC+1,		330k	0.1p
 AttackVamp 10%,	250k	0.025p
 AttackVamp 20%,	500k	0.015p
-
-#Weapon Boost
 Blessed Infi,	666k	0.07p
 Upgraded,	888k	0.1p
 Poison_Recep,	444k	0.26p
-
-
-#Effectife on hit
 Cursed,		122k	0.07p
-Elemental Dmg,	888k	0.1p
-Poison Damage,	888k	0.1p
+Elemental DMG,	888k	0.2p
 Hemmoragie 50,	2000k	0.025p
 Hemmoragie 100,	4000k	0.015p
 Shockwave,	5000k	0.009p

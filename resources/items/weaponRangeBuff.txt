@@ -1,20 +1,13 @@
-#char Boost
 Shot,		40k	0.08p
 Range+5m,	40k	0.18p
 CC+1,		330k	0.08p
 AttackVamp 10%,	250k	0.015p
 AttackVamp 20%,	500k	0.005p
-
-#Weapon Boost
 Blessed Infi,	666k	0.07p
 Upgraded,	888k	0.07p
 Poison_Recep,	444k	0.2p
-
-
-#Effectife on hit
 Cursed,		122k	0.07p
-Elemental Dmg,	888k	0.10p
-Poison_Damage,	888k	0.10p
+Elemental DMG,	888k	0.20p
 Hemmoragie 50,	2000k	0.015p
 Hemmoragie 100,	4000k	0.005p
 Shockwave,	5000k	0.009p

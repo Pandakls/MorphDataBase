@@ -14,9 +14,18 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+
     ui->setupUi(this);
     connect(ui->actionDice_gen, SIGNAL(triggered()), this, SLOT(slotDiceGen()));
     connect(ui->actionItem_Gen, SIGNAL(triggered()), this, SLOT(slotItemGen()));
+    connect(ui->actionTreasur_Gen, SIGNAL(triggered()), this, SLOT(slotTreasureGen()));
+
+    connect(ui->actionTaille_tp, SIGNAL(triggered()), this, SLOT(slotCityGentp()));
+    connect(ui->actionTaille_p, SIGNAL(triggered()), this, SLOT(slotCityGenp()));
+    connect(ui->actionTaille_m, SIGNAL(triggered()), this, SLOT(slotCityGenm()));
+    connect(ui->actionTaille_g, SIGNAL(triggered()), this, SLOT(slotCityGeng()));
+    connect(ui->actionTaille_tg, SIGNAL(triggered()), this, SLOT(slotCityGentg()));
+    connect(ui->actionTaille_c, SIGNAL(triggered()), this, SLOT(slotCityGenc()));
 }
 
 void MainWindow::slotDiceGen(){
@@ -25,12 +34,32 @@ void MainWindow::slotDiceGen(){
 }
 
 void MainWindow::slotItemGen(){
-    std::string res = "Random item :\n" + Item::randomItem().toString();
-    res += "\nRandom item Value = 1000:\n" + Item::randomItemAtPrice(1000).toString();
-    res += "\nRandom item Value < 1000:\n" + Item::randomItemUnderPrice(1000).toString();
-    res += "\nRandom treasure Value = 10000:\n" + Item::randomTreasure(10000);
+    std::string res = "Random item :\n";
+    for (int i = 1; i< 21; i++){
+        res+= "DD" + iTos(i) + " : " + Item::randomItemAtPrice(10 * (i-1)*(i-1)).toString();
+    }
     ui->label->setText(QString(res.c_str()));
 }
+
+void MainWindow::slotTreasureGen(){
+    std::string res = "Treasures :\n";
+    int n1 = 1;
+    int n2 = 1;
+    int nTemp;
+    for(int i= 1; i<11; i++){
+        res += "\nSize : " + iTos(n2*100)+ "k :\n";
+        res += Item::randomTreasure(n2*100) + "\n";
+        nTemp = n1;
+        n1 = n2 ;
+        n2 = nTemp + n2;
+    }
+    ui->label->setText(QString(res.c_str()));
+}
+void MainWindow::slotCityGen(int nbMin, int nbMax){
+    std::string res = Item::randomCity(nbMin,nbMax);
+    ui->label->setText(QString(res.c_str()));
+}
+
 
 MainWindow::~MainWindow()
 {

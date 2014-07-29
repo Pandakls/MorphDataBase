@@ -78,10 +78,21 @@
     <property name="title">
      <string>Generator</string>
     </property>
+    <widget class="QMenu" name="menuCity_Gen">
+     <property name="title">
+      <string>City Gen</string>
+     </property>
+     <addaction name="actionTaille_tp"/>
+     <addaction name="actionTaille_p"/>
+     <addaction name="actionTaille_m"/>
+     <addaction name="actionTaille_g"/>
+     <addaction name="actionTaille_tg"/>
+     <addaction name="actionTaille_c"/>
+    </widget>
     <addaction name="actionDice_gen"/>
     <addaction name="actionPNJ_gen"/>
     <addaction name="actionItem_Gen"/>
-    <addaction name="actionCity_Gen"/>
+    <addaction name="menuCity_Gen"/>
     <addaction name="actionTreasur_Gen"/>
    </widget>
    <widget class="QMenu" name="menuOutils">
@@ -132,11 +143,6 @@
     <string>Item Gen</string>
    </property>
   </action>
-  <action name="actionCity_Gen">
-   <property name="text">
-    <string>City Gen</string>
-   </property>
-  </action>
   <action name="actionTreasur_Gen">
    <property name="text">
     <string>Treasure Gen</string>
@@ -145,6 +151,36 @@
   <action name="actionQuitter">
    <property name="text">
     <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionTaille_tp">
+   <property name="text">
+    <string>Taille tp</string>
+   </property>
+  </action>
+  <action name="actionTaille_p">
+   <property name="text">
+    <string>Taille p</string>
+   </property>
+  </action>
+  <action name="actionTaille_m">
+   <property name="text">
+    <string>Taille m</string>
+   </property>
+  </action>
+  <action name="actionTaille_g">
+   <property name="text">
+    <string>Taille g</string>
+   </property>
+  </action>
+  <action name="actionTaille_tg">
+   <property name="text">
+    <string>Taille tg</string>
+   </property>
+  </action>
+  <action name="actionTaille_c">
+   <property name="text">
+    <string>Taille c</string>
    </property>
   </action>
  </widget>
