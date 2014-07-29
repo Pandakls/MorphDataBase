@@ -15,9 +15,11 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = 0);
+    void setImage();
     ~MainWindow();
 
 public slots:
+    //Generator
     void slotDiceGen();
     void slotItemGen();
     void slotTreasureGen();
@@ -28,7 +30,11 @@ public slots:
     inline void slotCityGeng(){slotCityGen(11,25);}
     inline void slotCityGentg(){slotCityGen(26,50);}
     inline void slotCityGenc(){slotCityGen(51,100);}
-
+    //DataBase
+    void slotMasteries();
+    //Navigation
+    void slotStackedWidgetNext();
+    void slotStackedWidgetPrev();
 
 private:
     Ui::MainWindow *ui;

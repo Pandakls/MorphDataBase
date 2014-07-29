@@ -8,12 +8,23 @@
 #include "dice/dice.h"
 
 //Item Gen
-#include "items/item.h"
+#include "model/items/item.h"
+
+//Data : Masteries
+#include "model/masteries/mastery.h"
+
+//Wolrd Animation
+#include "controler/worldcontroler.h"
+
+//Number of page displayed
+
+#define NB_PAGE 2
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+
 
     ui->setupUi(this);
     connect(ui->actionDice_gen, SIGNAL(triggered()), this, SLOT(slotDiceGen()));
@@ -26,6 +37,11 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionTaille_g, SIGNAL(triggered()), this, SLOT(slotCityGeng()));
     connect(ui->actionTaille_tg, SIGNAL(triggered()), this, SLOT(slotCityGentg()));
     connect(ui->actionTaille_c, SIGNAL(triggered()), this, SLOT(slotCityGenc()));
+    connect(ui->actionMasteries, SIGNAL(triggered()), this, SLOT(slotMasteries()));
+
+    connect(ui->actionNext, SIGNAL(triggered()), this, SLOT(slotStackedWidgetNext()));
+    connect(ui->actionPrev, SIGNAL(triggered()), this, SLOT(slotStackedWidgetPrev()));
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 void MainWindow::slotDiceGen(){
@@ -60,6 +76,33 @@ void MainWindow::slotCityGen(int nbMin, int nbMax){
     ui->label->setText(QString(res.c_str()));
 }
 
+void MainWindow::slotMasteries(){
+    std::string res = Mastery::allMasteries();
+    ui->label->setText(QString(res.c_str()));
+}
+
+void MainWindow::slotStackedWidgetNext(){
+    ui->stackedWidget->setCurrentIndex( (ui->stackedWidget->currentIndex() + 1) % NB_PAGE );
+}
+
+void MainWindow::slotStackedWidgetPrev(){
+    ui->stackedWidget->setCurrentIndex( (ui->stackedWidget->currentIndex() - 1) % NB_PAGE );
+}
+
+void MainWindow::setImage(){
+
+    QLabel  *label  = new QLabel;
+    QPixmap *pixmap_img = new QPixmap("../resources/images/test.png");
+    // mon_logo se trouve dans le repertoire qui contient mon exe
+
+    label->setPixmap(*pixmap_img);
+
+    QGridLayout *gridLayout = new QGridLayout(ui->imageWidget);
+    gridLayout->addWidget(label, 0, 0);
+    ui->imageWidget->setLayout(gridLayout);
+    ui->imageWidget->show();
+    WorldControler wc();
+}
 
 MainWindow::~MainWindow()
 {
