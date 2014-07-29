@@ -18,9 +18,14 @@ public:
     ~MainWindow();
 
 public slots:
+    //Generator
     void slotDiceGen();
     void slotItemGen();
+    //DataBase
     void slotMasteries();
+    //Navigation
+    void slotStackedWidgetNext();
+    void slotStackedWidgetPrev();
 
 private:
     Ui::MainWindow *ui;

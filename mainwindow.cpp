@@ -13,6 +13,8 @@
 //Data : Masteries
 #include "masteries/mastery.h"
 
+#define NB_PAGE 2
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -21,6 +23,9 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionDice_gen, SIGNAL(triggered()), this, SLOT(slotDiceGen()));
     connect(ui->actionItem_Gen, SIGNAL(triggered()), this, SLOT(slotItemGen()));
     connect(ui->actionMasteries, SIGNAL(triggered()), this, SLOT(slotMasteries()));
+    connect(ui->actionNext, SIGNAL(triggered()), this, SLOT(slotStackedWidgetNext()));
+    connect(ui->actionPrev, SIGNAL(triggered()), this, SLOT(slotStackedWidgetPrev()));
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 void MainWindow::slotDiceGen(){
@@ -39,6 +44,14 @@ void MainWindow::slotItemGen(){
 void MainWindow::slotMasteries(){
     std::string res = Mastery::allMasteries();
     ui->label->setText(QString(res.c_str()));
+}
+
+void MainWindow::slotStackedWidgetNext(){
+    ui->stackedWidget->setCurrentIndex( (ui->stackedWidget->currentIndex() + 1) % NB_PAGE );
+}
+
+void MainWindow::slotStackedWidgetPrev(){
+    ui->stackedWidget->setCurrentIndex( (ui->stackedWidget->currentIndex() - 1) % NB_PAGE );
 }
 
 MainWindow::~MainWindow()
