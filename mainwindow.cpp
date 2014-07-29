@@ -10,6 +10,9 @@
 //Item Gen
 #include "items/item.h"
 
+//Data : Masteries
+#include "masteries/mastery.h"
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -17,6 +20,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     connect(ui->actionDice_gen, SIGNAL(triggered()), this, SLOT(slotDiceGen()));
     connect(ui->actionItem_Gen, SIGNAL(triggered()), this, SLOT(slotItemGen()));
+    connect(ui->actionMasteries, SIGNAL(triggered()), this, SLOT(slotMasteries()));
 }
 
 void MainWindow::slotDiceGen(){
@@ -29,6 +33,11 @@ void MainWindow::slotItemGen(){
     res += "\nRandom item Value = 1000:\n" + Item::randomItemAtPrice(1000).toString();
     res += "\nRandom item Value < 1000:\n" + Item::randomItemUnderPrice(1000).toString();
     res += "\nRandom treasure Value = 10000:\n" + Item::randomTreasure(10000);
+    ui->label->setText(QString(res.c_str()));
+}
+
+void MainWindow::slotMasteries(){
+    std::string res = Mastery::allMasteries();
     ui->label->setText(QString(res.c_str()));
 }
 

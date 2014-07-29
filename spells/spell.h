@@ -1,10 +1,10 @@
 #ifndef SPELL_H
 #define SPELL_H
 
-class spell
+class Spell
 {
 public:
-    spell();
+    Spell();
 };
 
 #endif // SPELL_H

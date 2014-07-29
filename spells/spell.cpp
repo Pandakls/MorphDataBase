@@ -2,6 +2,6 @@
 //Utils
 #include "GadToolKit.h"
 
-spell::spell()
+Spell::Spell()
 {
 }

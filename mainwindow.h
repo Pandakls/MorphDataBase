@@ -20,6 +20,7 @@ public:
 public slots:
     void slotDiceGen();
     void slotItemGen();
+    void slotMasteries();
 
 private:
     Ui::MainWindow *ui;

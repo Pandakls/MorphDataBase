@@ -22,7 +22,9 @@ SOURCES += main.cpp\
     items/armor.cpp \
     items/garment.cpp \
     items/potion.cpp \
-    items/weapon.cpp
+    items/weapon.cpp \
+    character/stats.cpp \
+    masteries/masterybonus.cpp
 
 HEADERS  += mainwindow.h \
     GadToolKit.h \
@@ -35,6 +37,8 @@ HEADERS  += mainwindow.h \
     items/armor.h \
     items/garment.h \
     items/potion.h \
-    items/weapon.h
+    items/weapon.h \
+    character/stats.h \
+    masteries/masterybonus.h
 
 FORMS    += mainwindow.ui
