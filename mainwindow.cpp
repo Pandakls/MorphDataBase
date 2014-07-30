@@ -43,6 +43,13 @@ MainWindow::MainWindow(QWidget *parent) :
     world = new World();
 }
 
+void MainWindow::setWorld(World *w){
+    world = w;
+}
+
+
+
+
 void MainWindow::slotDiceGen(){
     std::string res = diceGen();
     ui->label->setText(QString(res.c_str()));
@@ -88,23 +95,31 @@ void MainWindow::slotStackedWidgetPrev(){
     ui->stackedWidget->setCurrentIndex( (ui->stackedWidget->currentIndex() - 1 + NB_PAGE) % NB_PAGE );
 }
 
-void MainWindow::setImage(){
-
-    QLabel  *label  = new QLabel;
-    QPixmap *pixmap_img = new QPixmap("../resources/images/test.png");
-    // mon_logo se trouve dans le repertoire qui contient mon exe
-
-    label->setPixmap(*pixmap_img);
-
-    QGridLayout *gridLayout = new QGridLayout(ui->imageWidget);
-    gridLayout->addWidget(label, 0, 0);
-    ui->imageWidget->setLayout(gridLayout);
-    ui->imageWidget->show();
-}
-
 void MainWindow::animateOnce(){
-    QPoint v = world->getPos();
-    ui->imageWidget->move(v.x(), v.y());
+    for (unsigned i = 0; i< world->getEntities().size(); i++){
+
+        Entity e = world->getEntities().at(i);
+        std::cout << "here" << std::endl;
+        if (displayedEntities.size()> i){
+            std::cout << "in if" << std::endl;
+            displayedEntities.at(i)->setSizeIncrement(e.getSize());
+            displayedEntities.at(i)->move(e.getPos());
+        }else{
+            std::cout << "in else" << std::endl;
+            QWidget *widget;
+            QLabel  *label  = new QLabel;
+            QPixmap *pixmap_img = new QPixmap(e.getFile().c_str());
+            label->setPixmap(*pixmap_img);
+
+            QGridLayout *gridLayout = new QGridLayout(widget);
+            gridLayout->addWidget(label, 0, 0);
+            widget->setLayout(gridLayout);
+            widget->setSizeIncrement(e.getSize());
+            widget->move(e.getPos());
+            widget->show();
+            displayedEntities.push_back(widget);
+        }
+    }
 }
 
 void MainWindow::animate(){

@@ -1,6 +1,7 @@
 #include "world.h"
 
-World::World()
+World::World() : width(1100), height(550)
 {
-    pos = QPoint(0,0);
+    Entity e = Entity();
+    entities.push_back(e);
 }

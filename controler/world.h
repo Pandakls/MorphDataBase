@@ -4,15 +4,20 @@
 //Utils
 #include "GadToolKit.h"
 
+//Model : World filling
+#include "model/entity.h"
+
 class World
 {
 public:
     World();
-    inline QPoint getPos(){return pos;}
-    inline void setPos(QPoint p){pos = p;}
+    //Getter
+    inline std::vector<Entity> getEntities(){return entities;}
 
 private :
-    QPoint pos;
+    int width;
+    int height;
+    std::vector<Entity> entities;
 };
 
 #endif // WORLD_H

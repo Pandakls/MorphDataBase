@@ -19,8 +19,7 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     void setImage();
     ~MainWindow();
-
-    inline void setWorld(World *w){world = w;}
+    void setWorld(World *w);
 
 public slots:
     //Generator
@@ -46,6 +45,7 @@ public slots:
 private:
     Ui::MainWindow *ui;
     World *world;
+    std::vector<QWidget*> displayedEntities;
 };
 
 #endif // MAINWINDOW_H

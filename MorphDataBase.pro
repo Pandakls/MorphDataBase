@@ -26,7 +26,8 @@ SOURCES += main.cpp\
     model/character/stats.cpp \
     model/masteries/masterybonus.cpp \
     controler/worldcontroler.cpp \
-    controler/world.cpp
+    controler/world.cpp \
+    model/entity.cpp
 
 HEADERS  += mainwindow.h \
     GadToolKit.h \
@@ -45,6 +46,7 @@ HEADERS  += mainwindow.h \
     model/masteries/masterybonus.h \
     controler/worldcontroler.h \
     controler/world.h \
-    GadGeom.h
+    GadGeom.h \
+    model/entity.h
 
 FORMS    += mainwindow.ui

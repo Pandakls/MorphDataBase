@@ -2,5 +2,6 @@
 #define GADGEOM_H
 
 #include <QPoint>
+#include <QSize>
 
 #endif // GADGEOM_H
