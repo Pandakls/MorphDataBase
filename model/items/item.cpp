@@ -140,9 +140,6 @@ std::string Item::randomCity(int nbMin, int nbMax){
     return res;
 }
 
-
-
-
 void Item::operator+=(Item b){
     price += b.getPrice();
     description += b.getDesc();

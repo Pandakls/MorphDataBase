@@ -4,6 +4,8 @@
 //Qt
 #include <QMainWindow>
 
+//World Data
+#include "controler/world.h"
 
 namespace Ui {
 class MainWindow;
@@ -17,6 +19,8 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     void setImage();
     ~MainWindow();
+
+    inline void setWorld(World *w){world = w;}
 
 public slots:
     //Generator
@@ -36,8 +40,12 @@ public slots:
     void slotStackedWidgetNext();
     void slotStackedWidgetPrev();
 
+    void animate();
+    void animateOnce();
+
 private:
     Ui::MainWindow *ui;
+    World *world;
 };
 
 #endif // MAINWINDOW_H

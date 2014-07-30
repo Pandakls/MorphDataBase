@@ -9,6 +9,8 @@
 #include <iostream> /* std::cout << std::endl */
 #include <vector>   /* vector<> */
 
+#include "GadGeom.h" /*basic geometry lib */
+
 //assert with specific message. Use : ASSERT(cond, msg);
 
 #   define ASSERT(condition, message) \
@@ -41,7 +43,7 @@ inline int dice (int e){
     return random(1,e);
 }
 
-///////////////
+/////////////
 //Itoa & Atoi
 inline std::string iTos(int i){
     std::ostringstream os;
@@ -60,13 +62,26 @@ inline int sToi(std::string s){
     str >> res;
     return res;
 }
-
 inline float sTof(std::string s){
     float res;
     std::stringstream str(s);
     assert(str);
     str >> res;
     return res;
+}
+
+////////////////////
+//sleep redefinition
+inline void miliSleep(int milliseconds) // cross-platform sleep function
+{
+    clock_t time_end;
+    time_end = clock() + milliseconds * CLOCKS_PER_SEC/1000;
+    while (clock() < time_end)
+    {
+    }
+}
+inline void secSleep(float secondes){
+    miliSleep((int)(secondes*1000));
 }
 
 #endif // RANDOMSTUFF_H

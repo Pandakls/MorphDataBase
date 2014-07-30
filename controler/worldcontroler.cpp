@@ -1,23 +1,15 @@
 #include "worldcontroler.h"
+#include "math.h"
 
+WorldControler::WorldControler(){}
 
+WorldControler::WorldControler(World *w) : world(w){
 
-WorldControler::WorldControler()
-{
 }
 
-void* animateWorld(void *arg){
-    std::cout << "THREAD OK" << std::endl;
-    (void) arg;
-    pthread_exit(NULL);
-}
-
-int WorldControler::run(){
-    pthread_t mainThread;
-    if(pthread_create(&mainThread, NULL, animateWorld, NULL) == -1) {
-        perror("pthread_create");
-    }
-    if (pthread_join(mainThread, NULL)) {
-        perror("pthread_join");
-    }
+void WorldControler::animate(float time){
+    int x = 500 + (int) (50.0f * cos(time));
+    int y = 200 + (int) (50.0f * sin(time));
+    QPoint pos = QPoint(x,y);
+    world->setPos(pos);
 }

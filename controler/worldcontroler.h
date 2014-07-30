@@ -1,7 +1,7 @@
 #ifndef WORLDCONTROLER_H
 #define WORLDCONTROLER_H
 
-#include <pthread.h>
+#include "world.h"
 
 //Utils
 #include "GadToolKit.h"
@@ -10,10 +10,11 @@ class WorldControler
 {
 public:
     WorldControler();
-    int run();
+    WorldControler(World *w);
+    void animate(float time);
 
 private:
-//        void *animateWorld(void *arg);
+    World *world;
 };
 
 #endif // WORLDCONTROLER_H

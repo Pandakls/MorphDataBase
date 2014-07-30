@@ -64,19 +64,6 @@
      </widget>
     </widget>
     <widget class="QWidget" name="page_2">
-     <widget class="QDialogButtonBox" name="buttonBox">
-      <property name="geometry">
-       <rect>
-        <x>1000</x>
-        <y>550</y>
-        <width>156</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="standardButtons">
-       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
-      </property>
-     </widget>
      <widget class="QWidget" name="imageWidget" native="true">
       <property name="geometry">
        <rect>
@@ -85,6 +72,32 @@
         <width>101</width>
         <height>80</height>
        </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="updateButton">
+      <property name="geometry">
+       <rect>
+        <x>1004</x>
+        <y>560</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Update</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="viewButton">
+      <property name="geometry">
+       <rect>
+        <x>860</x>
+        <y>560</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Live View</string>
       </property>
      </widget>
     </widget>

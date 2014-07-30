@@ -10,22 +10,16 @@
 //Item Gen
 #include "model/items/item.h"
 
-//Data : Masteries
+//Data
 #include "model/masteries/mastery.h"
 
-//Wolrd Animation
-#include "controler/worldcontroler.h"
 
 //Number of page displayed
-
 #define NB_PAGE 2
 
 MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::MainWindow)
+    QMainWindow(parent),ui(new Ui::MainWindow)
 {
-
-
     ui->setupUi(this);
     connect(ui->actionDice_gen, SIGNAL(triggered()), this, SLOT(slotDiceGen()));
     connect(ui->actionItem_Gen, SIGNAL(triggered()), this, SLOT(slotItemGen()));
@@ -42,6 +36,11 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionNext, SIGNAL(triggered()), this, SLOT(slotStackedWidgetNext()));
     connect(ui->actionPrev, SIGNAL(triggered()), this, SLOT(slotStackedWidgetPrev()));
     ui->stackedWidget->setCurrentIndex(0);
+
+    connect(ui->updateButton, SIGNAL(clicked()), this, SLOT(animateOnce()));
+    connect(ui->viewButton, SIGNAL(clicked()), this, SLOT(animate()));
+
+    world = new World();
 }
 
 void MainWindow::slotDiceGen(){
@@ -86,7 +85,7 @@ void MainWindow::slotStackedWidgetNext(){
 }
 
 void MainWindow::slotStackedWidgetPrev(){
-    ui->stackedWidget->setCurrentIndex( (ui->stackedWidget->currentIndex() - 1) % NB_PAGE );
+    ui->stackedWidget->setCurrentIndex( (ui->stackedWidget->currentIndex() - 1 + NB_PAGE) % NB_PAGE );
 }
 
 void MainWindow::setImage(){
@@ -101,8 +100,22 @@ void MainWindow::setImage(){
     gridLayout->addWidget(label, 0, 0);
     ui->imageWidget->setLayout(gridLayout);
     ui->imageWidget->show();
-    WorldControler wc = WorldControler();
-    wc.run();
+}
+
+void MainWindow::animateOnce(){
+    QPoint v = world->getPos();
+    ui->imageWidget->move(v.x(), v.y());
+}
+
+void MainWindow::animate(){
+    int count =0;
+    while(count<500){
+        secSleep(0.05);
+        animateOnce();
+        update();
+        repaint();
+        count ++;
+    }
 }
 
 MainWindow::~MainWindow()
