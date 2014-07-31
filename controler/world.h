@@ -13,7 +13,8 @@ public:
     World();
     //Getter
     inline std::vector<Entity> getEntities(){return entities;}
-
+    inline void setEntityPos(int i, QPoint p){entities.at(i).setPos(p);}
+    void live(float time);
 private :
     int width;
     int height;

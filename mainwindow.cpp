@@ -35,7 +35,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     connect(ui->actionNext, SIGNAL(triggered()), this, SLOT(slotStackedWidgetNext()));
     connect(ui->actionPrev, SIGNAL(triggered()), this, SLOT(slotStackedWidgetPrev()));
-    ui->stackedWidget->setCurrentIndex(0);
+    ui->stackedWidget->setCurrentIndex(1);
 
     connect(ui->updateButton, SIGNAL(clicked()), this, SLOT(animateOnce()));
     connect(ui->viewButton, SIGNAL(clicked()), this, SLOT(animate()));
@@ -97,34 +97,25 @@ void MainWindow::slotStackedWidgetPrev(){
 
 void MainWindow::animateOnce(){
     for (unsigned i = 0; i< world->getEntities().size(); i++){
-
         Entity e = world->getEntities().at(i);
-        std::cout << "here" << std::endl;
         if (displayedEntities.size()> i){
-            std::cout << "in if" << std::endl;
             displayedEntities.at(i)->setSizeIncrement(e.getSize());
             displayedEntities.at(i)->move(e.getPos());
         }else{
-            std::cout << "in else" << std::endl;
-            QWidget *widget;
             QLabel  *label  = new QLabel;
             QPixmap *pixmap_img = new QPixmap(e.getFile().c_str());
             label->setPixmap(*pixmap_img);
-
-            QGridLayout *gridLayout = new QGridLayout(widget);
-            gridLayout->addWidget(label, 0, 0);
-            widget->setLayout(gridLayout);
-            widget->setSizeIncrement(e.getSize());
-            widget->move(e.getPos());
-            widget->show();
-            displayedEntities.push_back(widget);
+            label->setSizeIncrement(e.getSize());
+            label->move(e.getPos());
+            ui->gridLayout->addWidget(label, 0, 0);
+            displayedEntities.push_back(label);
         }
     }
 }
 
 void MainWindow::animate(){
     int count =0;
-    while(count<500){
+    while(count<100){
         secSleep(0.05);
         animateOnce();
         update();

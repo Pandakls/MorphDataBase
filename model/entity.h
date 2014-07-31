@@ -14,8 +14,13 @@ public:
     inline QPoint getPos(){return pos;}
     //Setters
     inline void setPos(QPoint p){pos = p;}
+
+    void live(float time);
+    void bound(int width, int height);
+
 protected:
     QPoint pos;
+    QPoint direction;
     QSize size;
     std::string imageFileName;
 };
