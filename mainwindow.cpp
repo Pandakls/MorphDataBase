@@ -99,13 +99,12 @@ void MainWindow::animateOnce(){
     for (unsigned i = 0; i< world->getEntities().size(); i++){
         Entity e = world->getEntities().at(i);
         if (displayedEntities.size()> i){
-            displayedEntities.at(i)->setSizeIncrement(e.getSize());
             displayedEntities.at(i)->move(e.getPos());
         }else{
             QLabel  *label  = new QLabel;
-            QPixmap *pixmap_img = new QPixmap(e.getFile().c_str());
-            label->setPixmap(*pixmap_img);
-            label->setSizeIncrement(e.getSize());
+            QPixmap pixmap(e.getFile().c_str());
+            QPixmap scaledPixmap(pixmap.scaled(e.getSize()));
+            label->setPixmap(scaledPixmap);
             label->move(e.getPos());
             ui->gridLayout->addWidget(label, 0, 0);
             displayedEntities.push_back(label);
@@ -115,7 +114,7 @@ void MainWindow::animateOnce(){
 
 void MainWindow::animate(){
     int count =0;
-    while(count<100){
+    while(count<500){
         secSleep(0.05);
         animateOnce();
         update();

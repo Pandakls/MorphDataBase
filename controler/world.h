@@ -7,6 +7,8 @@
 //Model : World filling
 #include "model/entity.h"
 
+#define NB_MAX_ENTITY 30
+
 class World
 {
 public:

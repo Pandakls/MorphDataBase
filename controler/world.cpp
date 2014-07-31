@@ -2,11 +2,10 @@
 
 World::World() : width(1100), height(550)
 {
-    Entity e = Entity();
-    entities.push_back(e);
-    Entity f = Entity();
-    f.setPos(QPoint(500,10));
-    entities.push_back(f);
+    for (int i=0; i<NB_MAX_ENTITY; i++){
+        Entity e = Entity();
+        entities.push_back(e);
+    }
 }
 
 void World::live(float time){
@@ -14,8 +13,8 @@ void World::live(float time){
         entities.at(i).live(time);
         if (entities.at(i).getPos().x() < 0 ||
                 entities.at(i).getPos().x() > width ||
-                entities.at(i).getPos().y() < 0 ||
-                entities.at(i).getPos().y() > height){
+                entities.at(i).getPos().y() < -height/2 ||
+                entities.at(i).getPos().y() > height/2){
             entities.at(i).bound(width, height);
         }
     }

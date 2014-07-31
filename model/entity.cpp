@@ -18,8 +18,7 @@ void Entity::live(float time){
 
 }
 
-
 void Entity::bound(int width, int height){
     pos.setX((pos.x() + width)% width);
-    pos.setY((pos.y() + height)% height);
+    pos.setY((pos.y() + height/2 + height)% height -height/2);
 }
