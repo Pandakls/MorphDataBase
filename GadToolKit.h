@@ -26,15 +26,20 @@
 ///////////////
 //Random stuffs
 //Initialisation
-inline void initRandom(){
+static bool is_random_initialized = false;
+static void initializeR(){
     srand (time(NULL));
+    is_random_initialized = true;
 }
+
 //Random int
 inline int random(int s, int e){
+    if (!is_random_initialized){initializeR();}
     return rand() % (e - s + 1) + s;
 }
 //Random float
 inline float random (float s, float e){
+    if (!is_random_initialized){initializeR();}
     float res = (float)(rand() % 10000) /10000.;
     return res * (e-s)+s;
 }

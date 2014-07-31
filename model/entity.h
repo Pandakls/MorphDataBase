@@ -8,6 +8,7 @@ class Entity
 {
 public:
     Entity();
+    Entity(QPoint p, QSize s, std::string fileName);
     //Getters
     inline std::string getFile(){return imageFileName;}
     inline QSize getSize(){return size;}

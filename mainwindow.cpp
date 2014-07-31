@@ -110,15 +110,15 @@ void MainWindow::animateOnce(){
             displayedEntities.push_back(label);
         }
     }
+    update();
+    repaint();
 }
 
 void MainWindow::animate(){
     int count =0;
-    while(count<500){
+    while(count<200){
         secSleep(0.05);
         animateOnce();
-        update();
-        repaint();
         count ++;
     }
 }

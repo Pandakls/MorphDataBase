@@ -16,7 +16,9 @@ public:
     //Getter
     inline std::vector<Entity> getEntities(){return entities;}
     inline void setEntityPos(int i, QPoint p){entities.at(i).setPos(p);}
+    inline void addEntity(Entity e){entities.push_back(e);}
     void live(float time);
+
 private :
     int width;
     int height;

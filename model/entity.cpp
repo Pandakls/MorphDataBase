@@ -1,10 +1,17 @@
 #include "entity.h"
 
 Entity::Entity() :
-    pos(QPoint(100,100)),
+    pos(100,100),
     direction(0,0),
     size(20,20),
-    imageFileName("../resources/images/test.png"){
+    imageFileName("../resources/images/mob2.png"){
+}
+
+Entity::Entity(QPoint p, QSize s, std::string fileName) :
+    pos(p),
+    direction(0,0),
+    size(s),
+    imageFileName(fileName){
 }
 
 void Entity::live(float time){

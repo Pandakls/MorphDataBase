@@ -2,7 +2,7 @@
 
 World::World() : width(1100), height(550)
 {
-    for (int i=0; i<NB_MAX_ENTITY; i++){
+    for (int i=0; i<NB_MAX_ENTITY/5; i++){
         Entity e = Entity();
         entities.push_back(e);
     }
