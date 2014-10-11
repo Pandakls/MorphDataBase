@@ -14,24 +14,24 @@ std::string Mastery::allMasteries(){
     std::string res = "";
 
     DIR* rep = opendir("../resources/masteries/");
-       if ( rep == NULL){
-          std::cout << "Impossible de lister le répertoire" << std::endl;
-       }else{
-          struct dirent * ent;
-          //Parse resources/masteries
-          while ( (ent = readdir(rep)) != NULL)
-          {
-              std::string fileName = (std::string)(ent->d_name);
-              if (fileName != "." && fileName != ".."){
+    if ( rep == NULL){
+        std::cout << "Impossible de lister le répertoire" << std::endl;
+    }else{
+        struct dirent * ent;
+        //Parse resources/masteries
+        while ( (ent = readdir(rep)) != NULL)
+        {
+            std::string fileName = (std::string)(ent->d_name);
+            if (fileName != "." && fileName != ".."){
                 fileName = "../resources/masteries/" + fileName;
                 //Load the concerned mastery
                 Mastery mastery = loadMastery(fileName);
                 //Add it to res
                 res += mastery.toString() + "\n";
-              }
-          }
-          closedir(rep);
-       }
+            }
+        }
+        closedir(rep);
+    }
     return res;
 }
 

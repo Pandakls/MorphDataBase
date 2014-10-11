@@ -1,5 +1,8 @@
 #include <fstream>
 
+//To parse a directory
+#include "dirent.h"
+
 #include "item.h"
 #include "jewel.h"
 #include "armor.h"
@@ -181,4 +184,43 @@ std::string Item::itemSort(std::vector<Item> items, int maxPrice){
 
 Item Item::loadRandomBuff(std::string fileName){
     return randomBuff(fileName);
+}
+
+std::string Item::basics(){
+    std::string res = "Items de Base : \n";
+    DIR* rep = opendir("../resources/items/");
+    if ( rep == NULL){
+        std::cout << "Impossible de lister le répertoire" << std::endl;
+    }else{
+        struct dirent * ent;
+        //Parse resources/masteries
+        while ( (ent = readdir(rep)) != NULL)
+        {
+            std::string fileName = (std::string)(ent->d_name);
+            if (fileName != "." && fileName != ".."){
+                fileName = "../resources/items/" + fileName;
+                //Add it to res
+                res += loadItemsFromFile(fileName) + "\n";
+            }
+        }
+        closedir(rep);
+    }
+    return res;
+}
+
+std::string Item::loadItemsFromFile(std::string fileName){
+    std::ifstream file(fileName.c_str());
+    std::string d = fileName + "\n";
+
+    if (!file){
+        std::cout << "Impossible d'ouvrir le fichier :" << fileName << std::endl;
+    }else if(!file.fail()){
+        std::string line;
+        while( getline(file, line)){
+            d += line + "\n";
+        }
+    }else{
+        std::cout << "Fichier non lisible : " << fileName <<"\n";
+    }
+    return d;
 }

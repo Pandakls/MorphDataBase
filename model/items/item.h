@@ -20,6 +20,8 @@ public:
     static std::string randomCity(int minArt, int nbMax);
     static Item loadRandomBuff(std::string fileName);
     static int randomPower(int initPower);
+    static std::string basics();
+    static std::string loadItemsFromFile(std::string fileName);
 
     // += operator between items
     void operator+=(Item b);

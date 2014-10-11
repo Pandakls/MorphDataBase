@@ -1,7 +1,7 @@
 Ceinture d'Obzedat le sage : 5x gemme spirituelle 50, rechargement en spi/10.
 Havre sac de la guilde des marchands : Sac contenant une salle immense (30m x 30m)
-Sceau de deplacement de la guilde des voyageurs : Permet une téléportation dans tout les lieux deja visités
+Sceau de deplacement de la guilde des voyageurs : Permet une teleportation dans tout les lieux deja visites
 Passe-partout de la guilde des voleurs : Crochetage +20 sur les serrures difficiles, automatique sinon.
 Martelo de la guilde des forgerons : forge, enchantement +20 sur les jets difficiles, automatique sinon.
-Den-Den Mushi de l'ile céleste : 3 Den-den permettant de communiquer à distance
-XénoGreffe des sages Novijen : Permet de greffer des parties de corps encore fraiches sur un jet de premier secours.
+Den-Den Mushi de l'ile celeste : 3 Den-den permettant de communiquer a distance
+XenoGreffe des sages Novijen : Permet de greffer des parties de corps encore fraiches sur un jet de premier secours.

@@ -1,6 +1,6 @@
 5
 Ring,		1p
-Bracelet,	1p
-Pendant,	1p
+Bracelet,		1p
+Pendant,		1p
 Crown,		2p
 Tiara,		2p

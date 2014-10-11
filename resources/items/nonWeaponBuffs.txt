@@ -12,16 +12,16 @@ Mental,			75k	0.05p
 Gift,			0k	0.02p
 Spell,			0k	0.001p
 Domain,			3000k	0.0003p
-Immunite Foudre,	800k	0.002p
+Immunite Foudre,		800k	0.002p
 Immunite Glace,		800k	0.002p
 Immunite Terre,		800k	0.002p
 Immunite Feu,		800k	0.002p
 Immunite Air,		800k	0.002p
-Immunite Maladie,	800k	0.002p
-Immunite Illusion,	800k	0.002p
+Immunite Maladie,		800k	0.002p
+Immunite Illusion,		800k	0.002p
 Immunite Telekinesie,	800k	0.002p
 Immunite Temps,		800k	0.002p
-Immunite Poison,	800k	0.002p
+Immunite Poison,		800k	0.002p
 Resistance Foudre +5,	90k	0.005p
 Resistance Glace +5,	90k	0.005p
 Resistance Terre +5,	90k	0.005p
@@ -29,15 +29,15 @@ Resistance Feu +5,	90k	0.005p
 Resistance Air +5,	90k	0.005p
 Resistance Maladie +5,	90k	0.005p
 Resistance Illusion +5,	90k	0.005p
-Resistance Telekinesie +5, 90k	0.005p
+Resistance Telekinesie +5,	90k	0.005p
 Resistance Temps +5,	90k	0.005p
 Resistance Poison +5,	90k	0.005p
 Resistance Magie +5,	1300k	0.005p
 Resistance Physique +5,	1300k	0.005p
-Entropy-Shield 5,	350k	0.02p
-Entropy-Shield 10,	700k	0.015p
-Entropy-Shield 20,	1400k	0.01p
-Entropy-Shield 50,	3500k	0.005p
+Entropy-Shield 5,		350k	0.02p
+Entropy-Shield 10,		700k	0.015p
+Entropy-Shield 20,		1400k	0.01p
+Entropy-Shield 50,		3500k	0.005p
 Spirit Gem 5,		210k	0.015p
 Spirit Gem 10,		420k	0.01p
 Spirit Gem 20,		840k	0.004p
@@ -61,5 +61,5 @@ Without Hunger Living,	1333k	0.001p
 Without Fatigue Living,	1777k	0.001p
 Minor Wish,		1000k	0.001p
 Major Wish,		5000k	0.0004p
-Mastery,		5000k	0.0003p
-Ability,		10k	0.21p
+Mastery,			5000k	0.0003p
+Ability,			10k	0.21p

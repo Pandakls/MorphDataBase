@@ -13,4 +13,4 @@ Poison Damage,	44k	0.08p
 Hemmoragie 50,	100k	0.015p
 Hemmoragie 100,	200k	0.005p
 Shockwave,	250k	0.009p
-Vorpale,	500k	0.001p
+Vorpale,		500k	0.001p

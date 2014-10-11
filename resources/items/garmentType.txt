@@ -1,13 +1,13 @@
 12
 Socks,		1p
-Panties,	1p
+Panties,		1p
 Shirt,		1p
 Under Gloves,	1p
 Scarf,		1p
 Belt,		1p
 Hat,		2p
-Tunique,	3p
+Tunique,		3p
 Jacket,		2p
-Trousers,	2p
+Trousers,		2p
 Shoes,		2p
 Gloves,		2p

@@ -11,4 +11,4 @@ Elemental DMG,	888k	0.20p
 Hemmoragie 50,	2000k	0.015p
 Hemmoragie 100,	4000k	0.005p
 Shockwave,	5000k	0.009p
-Vorpale,	10000k	0.001p
+Vorpale,		10000k	0.001p

@@ -35,6 +35,7 @@ public slots:
     inline void slotCityGenc(){slotCityGen(51,100);}
     //DataBase
     void slotMasteries();
+    void slotItems();
     //Navigation
     void slotStackedWidgetNext();
     void slotStackedWidgetPrev();

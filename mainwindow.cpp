@@ -20,26 +20,40 @@
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),ui(new Ui::MainWindow)
 {
+    //Ajout de la page Qtdesign a la classe mainwindow
     ui->setupUi(this);
-    connect(ui->actionDice_gen, SIGNAL(triggered()), this, SLOT(slotDiceGen()));
-    connect(ui->actionItem_Gen, SIGNAL(triggered()), this, SLOT(slotItemGen()));
-    connect(ui->actionTreasur_Gen, SIGNAL(triggered()), this, SLOT(slotTreasureGen()));
 
+    ///////////////////////////////////////////////////////////
+    ///Connection des différents boutons aux fonctions associées
+    //Changement de pages
+    connect(ui->actionNext, SIGNAL(triggered()), this, SLOT(slotStackedWidgetNext()));
+    connect(ui->actionPrev, SIGNAL(triggered()), this, SLOT(slotStackedWidgetPrev()));
+    ui->stackedWidget->setCurrentIndex(0);
+    //GENERATION ALEATOIRE
+    //dés
+    connect(ui->actionDice_gen, SIGNAL(triggered()), this, SLOT(slotDiceGen()));
+    //Items de tout prix
+    connect(ui->actionItem_Gen, SIGNAL(triggered()), this, SLOT(slotItemGen()));
+    //Trésors en tout genre
+    connect(ui->actionTreasur_Gen, SIGNAL(triggered()), this, SLOT(slotTreasureGen()));
+    //Villes par taille
     connect(ui->actionTaille_tp, SIGNAL(triggered()), this, SLOT(slotCityGentp()));
     connect(ui->actionTaille_p, SIGNAL(triggered()), this, SLOT(slotCityGenp()));
     connect(ui->actionTaille_m, SIGNAL(triggered()), this, SLOT(slotCityGenm()));
     connect(ui->actionTaille_g, SIGNAL(triggered()), this, SLOT(slotCityGeng()));
     connect(ui->actionTaille_tg, SIGNAL(triggered()), this, SLOT(slotCityGentg()));
     connect(ui->actionTaille_c, SIGNAL(triggered()), this, SLOT(slotCityGenc()));
+    //BASE DE DONNEE
+    //Maitrises
     connect(ui->actionMasteries, SIGNAL(triggered()), this, SLOT(slotMasteries()));
+    //Items de base (Armes et autres)
+    connect(ui->actionItems, SIGNAL(triggered()), this, SLOT(slotItems()));
 
-    connect(ui->actionNext, SIGNAL(triggered()), this, SLOT(slotStackedWidgetNext()));
-    connect(ui->actionPrev, SIGNAL(triggered()), this, SLOT(slotStackedWidgetPrev()));
-    ui->stackedWidget->setCurrentIndex(0);
-
+    //Animation du monde
     connect(ui->updateButton, SIGNAL(clicked()), this, SLOT(animateOnce()));
     connect(ui->viewButton, SIGNAL(clicked()), this, SLOT(animate()));
 
+    //Creation et initialisation du monde
     world = new World();
 }
 
@@ -49,7 +63,8 @@ void MainWindow::setWorld(World *w){
 
 
 
-
+///////////////////////////////////////////////////////////////////////////
+///Slot (fonctions des différents boutons)
 void MainWindow::slotDiceGen(){
     std::string res = diceGen();
     ui->label->setText(QString(res.c_str()));
@@ -77,6 +92,7 @@ void MainWindow::slotTreasureGen(){
     }
     ui->label->setText(QString(res.c_str()));
 }
+
 void MainWindow::slotCityGen(int nbMin, int nbMax){
     std::string res = Item::randomCity(nbMin,nbMax);
     ui->label->setText(QString(res.c_str()));
@@ -84,6 +100,11 @@ void MainWindow::slotCityGen(int nbMin, int nbMax){
 
 void MainWindow::slotMasteries(){
     std::string res = Mastery::allMasteries();
+    ui->label->setText(QString(res.c_str()));
+}
+
+void MainWindow::slotItems(){
+    std::string res = Item::basics();
     ui->label->setText(QString(res.c_str()));
 }
 
@@ -106,14 +127,17 @@ void MainWindow::animateOnce(){
             displayedEntities.at(i)->move(e.getPos());
         }else{
             std::cout << "in else" << std::endl;
-            QWidget *widget;
+            QWidget *widget = new QWidget;
             QLabel  *label  = new QLabel;
             QPixmap *pixmap_img = new QPixmap(e.getFile().c_str());
             label->setPixmap(*pixmap_img);
-
+            std::cout << "in else" << std::endl;
             QGridLayout *gridLayout = new QGridLayout(widget);
+            std::cout << "in else" << std::endl;
             gridLayout->addWidget(label, 0, 0);
+            std::cout << "in else" << std::endl;
             widget->setLayout(gridLayout);
+            std::cout << "in else" << std::endl;
             widget->setSizeIncrement(e.getSize());
             widget->move(e.getPos());
             widget->show();
