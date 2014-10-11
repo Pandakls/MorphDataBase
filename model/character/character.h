@@ -12,10 +12,16 @@
 //Masteries
 #include "../masteries/mastery.h"
 
-class Character
+//Parent class Entity
+#include "../entity.h"
+
+class Character : public Entity
 {
 public:
     Character();
+    Character(QPoint p, QSize s, std::string fileName, int lvl) ;
+    static Character randomCharacter();
+
 protected:
     std::string name;
     int level;

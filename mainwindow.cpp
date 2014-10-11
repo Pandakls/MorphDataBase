@@ -25,10 +25,11 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ///////////////////////////////////////////////////////////
     ///Connection des différents boutons aux fonctions associées
-    //Changement de pages
+    //NAVIGATION
     connect(ui->actionNext, SIGNAL(triggered()), this, SLOT(slotStackedWidgetNext()));
     connect(ui->actionPrev, SIGNAL(triggered()), this, SLOT(slotStackedWidgetPrev()));
     ui->stackedWidget->setCurrentIndex(0);
+
     //GENERATION ALEATOIRE
     //dés
     connect(ui->actionDice_gen, SIGNAL(triggered()), this, SLOT(slotDiceGen()));
@@ -43,18 +44,19 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionTaille_g, SIGNAL(triggered()), this, SLOT(slotCityGeng()));
     connect(ui->actionTaille_tg, SIGNAL(triggered()), this, SLOT(slotCityGentg()));
     connect(ui->actionTaille_c, SIGNAL(triggered()), this, SLOT(slotCityGenc()));
+
     //BASE DE DONNEE
     //Maitrises
     connect(ui->actionMasteries, SIGNAL(triggered()), this, SLOT(slotMasteries()));
     //Items de base (Armes et autres)
     connect(ui->actionItems, SIGNAL(triggered()), this, SLOT(slotItems()));
 
+    //JEU
+    //Creation et initialisation du monde
+    world = new World();
     //Animation du monde
     connect(ui->updateButton, SIGNAL(clicked()), this, SLOT(animateOnce()));
     connect(ui->viewButton, SIGNAL(clicked()), this, SLOT(animate()));
-
-    //Creation et initialisation du monde
-    world = new World();
 }
 
 void MainWindow::setWorld(World *w){
@@ -118,41 +120,45 @@ void MainWindow::slotStackedWidgetPrev(){
 
 void MainWindow::animateOnce(){
     for (unsigned i = 0; i< world->getEntities().size(); i++){
-
         Entity e = world->getEntities().at(i);
-        std::cout << "here" << std::endl;
         if (displayedEntities.size()> i){
-            std::cout << "in if" << std::endl;
-            displayedEntities.at(i)->setSizeIncrement(e.getSize());
             displayedEntities.at(i)->move(e.getPos());
         }else{
-            std::cout << "in else" << std::endl;
-            QWidget *widget = new QWidget;
+//            std::cout << "in else" << std::endl;
+//            QWidget *widget = new QWidget;
+//            QLabel  *label  = new QLabel;
+//            QPixmap *pixmap_img = new QPixmap(e.getFile().c_str());
+//            label->setPixmap(*pixmap_img);
+//            std::cout << "in else" << std::endl;
+//            QGridLayout *gridLayout = new QGridLayout(widget);
+//            std::cout << "in else" << std::endl;
+//            gridLayout->addWidget(label, 0, 0);
+//            std::cout << "in else" << std::endl;
+//            widget->setLayout(gridLayout);
+//            std::cout << "in else" << std::endl;
+//            widget->setSizeIncrement(e.getSize());
+//            widget->move(e.getPos());
+//            widget->show();
+//            displayedEntities.push_back(widget);
+
             QLabel  *label  = new QLabel;
-            QPixmap *pixmap_img = new QPixmap(e.getFile().c_str());
-            label->setPixmap(*pixmap_img);
-            std::cout << "in else" << std::endl;
-            QGridLayout *gridLayout = new QGridLayout(widget);
-            std::cout << "in else" << std::endl;
-            gridLayout->addWidget(label, 0, 0);
-            std::cout << "in else" << std::endl;
-            widget->setLayout(gridLayout);
-            std::cout << "in else" << std::endl;
-            widget->setSizeIncrement(e.getSize());
-            widget->move(e.getPos());
-            widget->show();
-            displayedEntities.push_back(widget);
+            QPixmap pixmap(e.getFile().c_str());
+            QPixmap scaledPixmap(pixmap.scaled(e.getSize()));
+            label->setPixmap(scaledPixmap);
+            label->move(e.getPos());
+            ui->gridLayout->addWidget(label, 0, 0);
+            displayedEntities.push_back(label);
         }
     }
+    update();
+    repaint();
 }
 
 void MainWindow::animate(){
     int count =0;
-    while(count<500){
+    while(count<200){
         secSleep(0.05);
         animateOnce();
-        update();
-        repaint();
         count ++;
     }
 }

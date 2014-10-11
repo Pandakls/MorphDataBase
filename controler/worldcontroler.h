@@ -6,6 +6,9 @@
 //Utils
 #include "GadToolKit.h"
 
+//Generation of characters
+#include "../model/character/character.h"
+
 class WorldControler
 {
 public:

@@ -3,6 +3,7 @@
 
 //Qt
 #include <QMainWindow>
+#include <QLabel>
 
 //World Data
 #include "controler/world.h"
@@ -46,7 +47,7 @@ public slots:
 private:
     Ui::MainWindow *ui;
     World *world;
-    std::vector<QWidget*> displayedEntities;
+    std::vector<QLabel*> displayedEntities;
 };
 
 #endif // MAINWINDOW_H

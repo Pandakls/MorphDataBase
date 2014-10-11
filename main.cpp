@@ -32,9 +32,6 @@ void* animateWorld(void *arg){
 
 int main(int argc, char *argv[])
 {
-    //Initialisation of GadToolKit
-    initRandom();
-
     //Creation of world and worldcontroler
     World *world = new World();
     wc = WorldControler(world);
