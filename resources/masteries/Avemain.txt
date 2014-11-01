@@ -1,11 +1,10 @@
 Avemain
 Superbia
-Traits Naevi",1,"+10 SPI, -8 DEX, -8KNO
-Compétence supplémentaire",1,"Perception visuelle (1,4,9,14 et 19)
-Don supplémentaire",2,"Don supplémentaire de déplacement
-Nouveau Domaine",3,"Domaine obligatoire au niveau 3: Elementaire air
-Vol débutant",4,"Peut voler et combattre en vol (malus -10)
-Vol",10,"Peut voler et combattre en vol sans malus");a.add(p);
-Vol confirmé",15,"Peut voler et combattre en vol (bonus +10)
-Maitre des airs",20,"+20 Reflexes et +20 FM en l'air
-			
+Polyvalent
+Traits Avemain +10 SPI, -8 DEX, -8KNO
+Perception visuelle ++ (LVL 1,4,9,14 et 19)
+Domaine obligatoire : Elementaire Air.
+Don possible : Vol debutant Peut voler et combattre en vol (malus -10 a l'attaque)
+don possible : Vol (req:Vol debutant) Peut voler et combattre en vol sans malus
+don possible : Vol Confirme (req: vol) Peut voler et combattre en vol (bonus +10 a l'attaque)
+don possible : Maitre des airs (req: vol confirme) +20 Reflexes et +20 FM en l'air	

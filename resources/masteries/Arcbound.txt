@@ -1,8 +1,7 @@
 Arcbound
 Centurial
-p = new Passive("Traits Arcbound",1,"+2 points de Carac");a.add(p);
-			p = new Passive("Compétence supplémentaire",1,"Haltérophilie (1,4,9,14 et 19)");a.add(p);
-			p = new Passive("Nouveau Domaine",3,"Domaine obligatoire au niveau 3: Elementaire Foudre");a.add(p);
-			p = new Passive("Demembrement",5,"Possibilité de se remettre une jambe/un bras perdu");a.add(p);
-			p = new Passive("Demembrement",10,"L'Arcbound peut se reconstituer, peu importe son état (si hp>0)");a.add(p);
-			
+Polyvalent
+Traits Arcbound +2 points de Carac.
+Domaine obligatoire : Foudre
+LVL 5 : Demembrement leger:Possibilite de se remettre une jambe/un bras perdu
+LVL 10: Demembrement total : Peut se reconstituer, peu importe son etat (si hp>0)
