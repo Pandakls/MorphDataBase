@@ -1,19 +1,19 @@
-Passif Feu I,1L		0A	0S	L'elementaliste peut changer la surface de son corps en l'element maitrise
-Kick de Feu,1L  	3A	3S	Touche avec le jet de melee, portee:soi, dgt:1d8, comp:1d12, cc:x2
-Splash de Feu,1L	4A	6S	Zone de degats autour du lanceur de sort (5m), 1d12/Distance degats normaux, effet supp:1d12, crit x2
+Passif Foudre I,1L	0A	0S	L'elementaliste peut changer la surface de son corps en l'element maitrise
+Kick de Foudre,1L  	3A	3S	Touche avec le jet de melee, portee:soi, dgt:1d8, comp:1d12, cc:x2
+Splash de Foudre,1L	4A	6S	Zone de degats autour du lanceur de sort (5m), 1d12/Distance degats normaux, effet supp:1d12, crit x2
 
-Passif Feu II,2L 	0A	0S	L'elementaliste peut manipuler son element en dehors de son corps pour une courte duree
-Boule de feu,2L 	3A	3S	Projectile de Feu. portee:15m, dgt:1d6, comp:1d12, cc:x2
-Armure de Feu,2L  	5A	5S	Des particules elementaires blessent les ennemis a proximite. duree: jusqu'a la fin de la journee, portee:soi, dgt:(SPI-20)/2, comp:1d12, cc:sans
+Passif Foudre II,2L 	0A	0S	L'elementaliste peut manipuler son element en dehors de son corps pour une courte duree
+Eclair,2L 		3A	3S	Projectile de Foudre. portee:15m, dgt:1d6, comp:1d12, cc:x2
+Armure de Foudre,2L  	5A	5S	Des particules elementaires blessent les ennemis a proximite. duree: jusqu'a la fin de la journee, portee:soi, dgt:(SPI-20)/2, comp:1d12, cc:sans
 
-Passif Feu III,3L	0A	0S	L'elementaliste peut fixer son element en dehors de son corps
-LinkinSpark("Eclair en série", "ElementaireFoudre",3, 4, 9, "Link 5: les 5 ennemis les plus proches subissent le sort aussi: portée:30m, dgt:1d8, comp:paralysie, cc:x3"),
+Passif Foudre III,3L	0A	0S	L'elementaliste peut fixer son element en dehors de son corps
+LinkinSpark,3L		4A	9S	Link 5: les 4 entites les plus proches de la cibles subissent le sort (pas de rebond): portee:30m, dgt:1d8, comp:paralysie, cc:x3
 Armes Sifflantes,3L	5A	10S	Enchante une arme jusqu'a la fin de la journee portee:cac. Bonus de l'arme: SPI/5 dgts. 
 
-Passif Feu IV,4L	0A	0S	L'elementaliste peut controler une simili-vie de son element
-Fire Spirit,4L		10A	15S	Invocation d'un pseudo elemental de Feu qui ne peut que se deplacer et combattre: Vie=SPI,SP=15,ref=0,MR=0,5PC, competences = Boule de Feu et Kick de Feu(pas de cout)"),
-Cone de Feu,4L		3A	5S	Cone de Feu (5mx3m): portee:5m, dgt:1d10/dist, comp:1d12, cc:x2
+Passif Foudre IV,4L	0A	0S	L'elementaliste peut controler une simili-vie de son element
+Thunder Spirit,4L	10A	15S	Invocation d'un pseudo elemental de Foudre qui ne peut que se deplacer et combattre: Vie=SPI,SP=15,ref=0,MR=0,5PC, competences = Boule de Foudre et Kick de Foudre(pas de cout)"),
+Cone de Foudre,4L	3A	5S	Cone de Foudre (5mx3m): portee:5m, dgt:1d10/dist, comp:1d12, cc:x2
 
-Passif Feu V,5L		0A	0S	L'elementaliste peut faire ce qu'il veut de son element dans la limite du raisonnable
-Tempete de Feu,5L	10A	20S	Tempete sur un rayon de 100m, portee:0m, dgt:1d4, comp:1d12, cc:sans, duree = lvl
-Fire Elemental,5L	15A	30S	Invocation d'un elemental de Feu qui obeit a son invocateur: Vie=SPI,SP=30,ref=33,MR=33,7PC , competences = Boule de Feu, Kick de Feu(pas de cout), Cone de Feu et Armure de Feu(pas de cout)");	
+Passif Foudre V,5L	0A	0S	L'elementaliste peut faire ce qu'il veut de son element dans la limite du raisonnable
+Tempete de Foudre,5L	10A	20S	Tempete sur un rayon de 100m, portee:0m, dgt:1d4, comp:1d12, cc:sans, duree = lvl
+Thunder Elemental,5L	15A	30S	Invocation d'un elemental de Foudre qui obeit a son invocateur: Vie=SPI,SP=30,ref=33,MR=33,7PC , competences = Boule de Foudre, Kick de Foudre(pas de cout), Cone de Foudre et Armure de Foudre(pas de cout)");	
