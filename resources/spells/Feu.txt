@@ -1,19 +1,19 @@
-PassifIfeu("Passif feu lvl 1", "ElementaireFeu",1, 3, 4, "Au lvl 1, l'élémentaliste peut changer la surface de son corps en l'élément maitrisé" ),
-KickDeFeu("Kick de feu", "ElementaireFeu",1, 3, 3, "Touche avec le jet de mélée, portée:soi, dgt:1d8, comp:brûlure 1d6, cc:x2. (50% dégats magiques, 50%dégats physiques)" ),
-Splashfeu("Splash de feu", "ElementaireFeu",1, 4, 6, "Zone de dégats autour du lanceur de sort (5m), 1d12/Distance dégats normaux, effet supp:Brûlure 1d6, crit x2" ),
+Passif Feu I,1L		0A	0S	L'elementaliste peut changer la surface de son corps en l'element maitrise
+Kick de Feu,1L  	3A	3S	Touche avec le jet de melee, portee:soi, dgt:1d8, comp:1d12, cc:x2
+Splash de Feu,1L	4A	6S	Zone de degats autour du lanceur de sort (5m), 1d12/Distance degats normaux, effet supp:1d12, crit x2
 
-PassifIIfeu("Passif feu lvl 2", "ElementaireFeu",2, 3, 4, "Au lvl 2, l'élémentaliste peut manipuler son élément en dehors de son corps" ),
-Bouledefeu("Boule de feu", "ElementaireFeu",2, 3, 3, "projectile de feu. portée:15m, dgt:1d6, comp:brûlure 1d6, cc:x2 " ),
-ArmureDeFeu("Armure de feu", "ElementaireFeu",2, 5, 5, "Des particules élémentaires blessent les ennemis à proximité. durée: jusqu'a la fin de la journée, portée:soi, dgt:(SPI-20)/2, comp:brûlure 1d6, cc:sans " ),
+Passif Feu II,2L 	0A	0S	L'elementaliste peut manipuler son element en dehors de son corps pour une courte duree
+Boule de feu,2L 	3A	3S	Projectile de Feu. portee:15m, dgt:1d6, comp:1d12, cc:x2
+Armure de Feu,2L  	5A	5S	Des particules elementaires blessent les ennemis a proximite. duree: jusqu'a la fin de la journee, portee:soi, dgt:(SPI-20)/2, comp:1d12, cc:sans
 
-PassifIIIfeu("Passif feu lvl 3", "ElementaireFeu",3, 3, 4, "Au lvl 3, l'élémentaliste peut fixer son élément en dehors de son corps" ),
-SmallMeteor("Météorite", "ElementaireFeu",3, 4, 9, "Projectile de zone: portée:30m, dgt:1d8, comp:brûlure 1d6, cc:x3"),
-ArmesEnflammees("Armes enchantées", "ElementaireFeu",3, 5, 10, "enchante une arme jusqu'à la fin de la journée portée:cac. Bonus de l'arme: "),
+Passif Feu III,3L	0A	0S	L'elementaliste peut fixer son element en dehors de son corps
+SmallMeteor,3L		4A	9S	Projectile de zone: portée:30m, dgt:1d8, comp:brulure 1d6, cc:x3
+Armes Sifflantes,3L	5A	10S	Enchante une arme jusqu'a la fin de la journee portee:cac. Bonus de l'arme: SPI/5 dgts. 
 
-PassifIVfeu("Passif feu lvl 4", "ElementaireFeu",4, 3, 4, "Au lvl 4, l'élémentaliste peut controler une simili-vie de son élément." ),
-FireSpirit("Spirit of fire", "ElementaireFeu",4, 10, 15, "Invocation d'un pseudo élémental de feu qui ne peut que se déplacer et combattre: Vie=SPI,SP=15,ref=0,MR=0,5PC, compétences = Boule de feu et Kick de feu(pas de cout)"),
-ConeDeFeu("Cone de feu", "ElementaireFeu",4, 3, 5, "Cone de feu (5mx3m): portée:5m, dgt:1d10/dist, comp:brûlure 1d6, cc:x2"),
+Passif Feu IV,4L	0A	0S	L'elementaliste peut controler une simili-vie de son element
+Fire Spirit,4L		10A	15S	Invocation d'un pseudo elemental de Feu qui ne peut que se deplacer et combattre: Vie=SPI,SP=15,ref=0,MR=0,5PC, competences = Boule de Feu et Kick de Feu(pas de cout)"),
+Cone de Feu,4L		3A	5S	Cone de Feu (5mx3m): portee:5m, dgt:1d10/dist, comp:1d12, cc:x2
 
-PassifVfeu("Passif feu lvl 5", "ElementaireFeu",5, 3, 4, "Au lvl 5, l'élémentaliste peut faire ce qu'il veut de son élément dans la limite du raisonnable" ),
-TempeteDeFeu("Tempete", "ElementaireFeu",5, 10, 20, "Tempête sur un rayon de 100m, portée:0m, dgt:1d4, comp:brûlure 1d6, cc:x2, durée = lvl" ),
-FireElemental("Elemental de feu", "ElementaireFeu",5, 15, 30, "Invocation d'un élémental de feu qui obéit a son invocateur: Vie=SPI,SP=30,ref=33,MR=33,7PC , compétences = Boule de feu, Kick de feu(pas de cout), Cone de feu et Armure de feu(pas de cout)"),
+Passif Feu V,5L		0A	0S	L'elementaliste peut faire ce qu'il veut de son element dans la limite du raisonnable
+Tempete de Feu,5L	10A	20S	Tempete sur un rayon de 100m, portee:0m, dgt:1d4, comp:1d12, cc:sans, duree = lvl
+Fire Elemental,5L	15A	30S	Invocation d'un elemental de Feu qui obeit a son invocateur: Vie=SPI,SP=30,ref=33,MR=33,7PC , competences = Boule de Feu, Kick de Feu(pas de cout), Cone de Feu et Armure de Feu(pas de cout)");	

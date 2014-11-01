@@ -1,19 +1,19 @@
-PassifIAir("Passif Air lvl 1", "ElementaireAir",1, 3, 4, "Au lvl 1, l'élémentaliste peut changer la surface de son corps en l'élément maitrisé" ),
-KickDeAir("Kick d'Air", "ElementaireAir",1, 3, 3, "Touche avec le jet de mélée, portée:soi, dgt:1d8, comp:1d12, cc:x2" ),
-SplashAir("Splash d'Air", "ElementaireAir",1, 4, 6, "Zone de dégats autour du lanceur de sort (5m), 1d12/Distance dégats normaux, effet supp:1d12, crit x2" ),
+Passif Air I,1L		0A	0S	L'elementaliste peut changer la surface de son corps en l'element maitrise
+Kick d'Air,1L  		3A	3S	Touche avec le jet de melee, portee:soi, dgt:1d8, comp:1d12, cc:x2
+Splash d'Air,1L		4A	6S	Zone de degats autour du lanceur de sort (5m), 1d12/Distance degats normaux, effet supp:1d12, crit x2
 
-PassifIIAir("Passif Air lvl 2", "ElementaireAir",2, 3, 4, "Au lvl 2, l'élémentaliste peut manipuler son élément en dehors de son corps" ),
-OndeDeChoc("Onde de choc", "ElementaireAir",2, 3, 3, "projectile de Air. portée:15m, dgt:1d6, comp:1d12, cc:x2 " ),
-ArmureDeAir("Armure d'Air", "ElementaireAir",2, 5, 5, "Des particules élémentaires blessent les ennemis à proximité. durée: jusqu'a la fin de la journée, portée:soi, dgt:(SPI-20)/2, comp:1d12, cc:sans " ),
+Passif Air II,2L 	0A	0S	L'elementaliste peut manipuler son element en dehors de son corps pour une courte duree
+Onde De Choc,2L 	3A	3S	Projectile d'Air. portee:15m, dgt:1d6, comp:1d12, cc:x2
+Armure D'Air,2L  	5A	5S	Des particules elementaires blessent les ennemis a proximite. duree: jusqu'a la fin de la journee, portee:soi, dgt:(SPI-20)/2, comp:1d12, cc:sans
 
-PassifIIIAir("Passif Air lvl 3", "ElementaireAir",3, 3, 4, "Au lvl 3, l'élémentaliste peut fixer son élément en dehors de son corps" ),
-Tornade("Tornade", "ElementaireAir",3, 4, 9, "Dégats en ligne sur 3m de largeur: portée:1->200m, dgt:1d8, comp:renversement, cc:x3"),
-ArmesSifflantes("Armes enchantées", "ElementaireAir",3, 5, 10, "enchante une arme jusqu'à la fin de la journée portée:cac. Bonus de l'arme: "),
+Passif Air III,3L	0A	0S	L'elementaliste peut fixer son element en dehors de son corps
+Tornade,3L		4A	9S	Degats en ligne sur 3m de largeur: portee:1->200m, dgt:1d8, comp:renversement, cc:x3
+Armes Sifflantes,3L	5A	10S	Enchante une arme jusqu'a la fin de la journee portee:cac. Bonus de l'arme: SPI/5 dgts. 
 
-PassifIVAir("Passif Air lvl 4", "ElementaireAir",4, 3, 4, "Au lvl 4, l'élémentaliste peut controler une simili-vie de son élément." ),
-AirSpirit( "Esprit d'Air", "ElementaireAir",4, 10, 15, "Invocation d'un pseudo élémental d'Air qui ne peut que se déplacer et combattre: Vie=SPI,SP=15,ref=0,MR=0,5PC, compétences = Onde de choc et Kick d'Air(pas de cout)"),
-ConeDeAir("Cone de Air", "ElementaireAir",4, 3, 5, "Cone de Air (5mx3m): portée:5m, dgt:1d10/dist, comp:1d12, cc:x2"),
+Passif Air IV,4L 	0A	0S	L'elementaliste peut controler une simili-vie de son element
+Air Spirit,4L		10A	15S	Invocation d'un pseudo elemental d'Air qui ne peut que se deplacer et combattre: Vie=SPI,SP=15,ref=0,MR=0,5PC, competences = Onde de choc et Kick d'Air(pas de cout)"),
+Cone D'Air,4L		3A	5S	Cone d'Air (5mx3m): portee:5m, dgt:1d10/dist, comp:1d12, cc:x2
 
-PassifVAir("Passif Air lvl 5", "ElementaireAir",5, 3, 4, "Au lvl 5, l'élémentaliste peut faire ce qu'il veut de son élément dans la limite du raisonnable" ),
-TempeteDeAir("Tempete", "ElementaireAir",5, 10, 20, "Tempête sur un rayon de 100m, portée:0m, dgt:1d4, comp:1d12, cc:x2, durée = lvl" ),
-AirElemental("Elemental d'Air", "ElementaireAir",5, 15, 30, "Invocation d'un élémental d'Air qui obéit a son invocateur: Vie=SPI,SP=30,ref=33,MR=33,7PC , compétences = Onde de choc, Kick de Air(pas de cout), Cone d'Air et Armure d'Air(pas de cout)");	
+Passif Air V,5L		0A	0S	L'elementaliste peut faire ce qu'il veut de son element dans la limite du raisonnable
+Tempete D'Air,5L	10A	20S	Tempete sur un rayon de 100m, portee:0m, dgt:1d4, comp:1d12, cc:sans, duree = lvl
+Air Elemental,5L	15A	30S	Invocation d'un elemental d'Air qui obeit a son invocateur: Vie=SPI,SP=30,ref=33,MR=33,7PC , competences = Onde de choc, Kick d'Air(pas de cout), Cone d'Air et Armure d'Air(pas de cout)");	
