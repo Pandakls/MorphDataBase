@@ -1,10 +1,11 @@
-case "TirRapide":return "div: cumulable; cond: Dex>20 (+10 par palier); effet: Shoot -10 Tir, -1PC";
-case "TirDePrecision":return "div: cumulable; cond: Sgf> 15 (+10 par palier); effet: Shoot +1PC, +20 Tir";
-case "DoubleFLeche":return "div: unique; cond: Dex>30; effet: Permet de tirer simultanément deux flèches sur une même cible (tir +1PC)";
-case "TripleFleche":return "div: unique; cond: Double flèche, Dex>40; effet: Permet de tirer simultanément trois flèches sur une même cible (tir +2PC)";
-case "TirCritique":return "div: unique; cond: For>30; effet: Dégats x3, coût en PC x2 (Tir)";
-case "TirEnMouvement":return "div: unique; cond: Sgf>20; effet: Permet de faire 1 déplacement en tirant";
-case "RechEnMouvement":return "div: unique; cond: Sgf>20; effet: Permet de faire 1 déplacement en rechargant";
-case "TirPuissant":return "div: cumulable; cond: For> 15 (+10 par palier); effet:  +1d dgt , -10 Tir";
-case "TirDAppoint":return "div: cumulable; cond: Sgf> 15 (+10 par palier); effet:  +10 tir, +1 cc, -1d dgt";
-case "Embuscade":return "div: cumulable; cond: Sgf> 20, For>20 (+10 par palier); effet: +1d dgt, +5 tir sur la prochaine attaque en étant caché";
+Power Shot, FOR>10 (+10 per stack)C -10 shot, +1d Dgt
+Critical Shot, For>25 & Powershot2C effet: initial attack costx2, +1cc, +1d, final damages x2
+Accruate Shot, SGF>15 (+10 per stack)C attack cost +1AP +20 shot
+Quick Shot, DEX>15 (+10 per stack)C attack cost -1PA -10 shot (Min 1PA)
+Safe Shot,SFG>15 (+10 per stack)C -10 shot, +15 reflexes for 1 ennemy round.
+Double Arrow, DEX>30C allows to shot 2 arrow on the same target at the same time cost+1AP
+Triple Arrow, Double Arrow & DEX>45C allows to shot 3 arrow on the same target at the same time cost+2AP
+Embusc, SGF> 20, FOR>10 (+10 par palier)C when hidden : +1 dmg dice, +5 shot
+Easy Reload, SGF>20, DEX>20C Reload time -1PA (for crossbow only)
+Reload in movement, DEX>30C allows to use AP for movement and reloading at the same time.
+Shot in movement, DEX>30C allows to use AP for movement and shooting at the same time, shot -20.

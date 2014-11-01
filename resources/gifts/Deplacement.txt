@@ -1,6 +1,6 @@
-case "GrandPas":return "\ndiv: cumulable, passif; cond: none; effet: déplacement +2m";
-se "Sprint":return "div: unique; cond: charge légère; effet: permet 3 déplacement pour 2pc";
-case "DeplacementEclair":return "div: unique; cond: charge légère, dex>30; effet: 1 déplacement gratuit par tour";
-case "Pietinement":return "div: unique; cond: for>20, vit >20; effet: le pj passe à travers ses ennemis en les piétinant: il inflige (diff de taille)^3+FOR/5. Il déclanche des attaques d'opportunités pour chaque cible qui à réussi son jet de reflexe.";
-case "DeplacementDOmbre":return "div: unique, passif; cond: dex >30; effet: Le pj ne déclanche pas d'attaques d'opportunité en se déplaçant";
-ase "Stabilite":return "div: unique, passif; cond: for>20, vit >20; effet: Le pj ne peut plus se faire renverser/bousculer/porter et il aquièrt +20 en lutte";
+Big foot, noneC Move +1m.
+Sprint, small packageC Allows to spent 2AP in order to make 3 moves.
+Flash move, small package & DEX>30C First move of the round is free.
+Trample, FOR>30, VIT>40 & StabilityC Allows to walk through people dealing (size gap)^3 + FOR/5. Targets can choose bewteen dodge or retail after succeeding a reflex test;
+Shadow move, DEX>45C Allows to move without triggering retail attacks. (can't be used with trample)
+Stability, FOR>20, VIT>30C The player can't be send to the floor with basic method, +15 in Lutte";

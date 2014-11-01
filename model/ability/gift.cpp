@@ -23,7 +23,7 @@ std::string Gift::allGifts(){
         {
             std::string fileName = (std::string)(ent->d_name);
             if (fileName != "." && fileName != ".."){
-                res += "\n\n Dons : " + fileName + "\n";
+                res += "\n\nGifts : " + fileName + "\n";
                 fileName = "../resources/gifts/" + fileName;
                 //Add all the related gifts to res
                 res += loadGifts(fileName) + "\n";
@@ -53,7 +53,7 @@ std::string Gift::loadGifts(std::string fileName){
             getline (iss, n, ',');
             getline (iss, c, 'C');
             getline (iss, d);
-            if (n!=""){res += n +"(req : " + c + ")," + d;}
+            if (n!=""){res += n +" (req : " + c + ")," + d;}
             res += "\n";
         }
     }else{

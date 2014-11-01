@@ -1,9 +1,10 @@
-case "Econome":return "\ndiv: cumulable, passif; cond: kno>20 (+10 par palier); effet: les sorts coutent 1PS de moins à lancer (min 1PS)";
-case "IncantationRapide":return "div: cumulable; cond: kno>25 (+10 par palier); effet: -1PC, +2 PS";
-case "IncantationSure":return "div: unique; cond: spi>30; effet: aucun dé de dégat ne peut faire 1 (relance) +1PS/dé";
-case "ExtensionDeDuree":return "div: unique; cond: spi>15, kno>15; effet: durée doublée cout en PS + 50% (x1,5)";
-case "ExtensionDePortee":return "div: unique; cond: spi>15, kno>15; effet: portée doublée, coute en PS +2";
-case "IncantationTactique":return "div: unique; cond: kno>30; effet: les effets du sorts sont divisés par deux up, le cout en PS des divisé par deux up";
-case "IncantationSilencieuse":return "div: unique; cond: spi>15, kno>15; effet: permet de lancer un sort sans faire de bruit cout +1PS";
-case "IncantationStatique":return "div: unique; cond: spi>15, kno>15; effet: permet de lancer un sort sans composante gestuelle +1PS";
-case "QuintessenceDesSorts":return "div: cumulable; cond: spi>45, kno>30 (+5/palier); effet: Augmente la classe des des de 1 (+1 PS/dé): (1d4, 1d6, 1d8, 1d10, 1d12, 2d8, 3d6, 2d10, 2d12, 3d10, 3d12, 6d6, 4d10)";
+,C Spells can't cost less than 1PA &/ 1PS, All spells need gesture and loud speaking to be casted.
+Economy, SAV>15 (+10/stack)C Spells cost 1PS less to cast (min 1PS)
+Quick Cast, SAV>25 (+10/stack)C cost -1AP, +2PS
+Safe Case, ESP>35C No damages dice can roll 1 (you may reroll it) cost 1PS to reroll 2 times
+Extention in time, ESP>20, SAV>20C duration of spell x2, Cost +2PS
+Extention in space, ESP>20, SAV>20C Range of spell x2, Cost +2PS
+Strategic Cast, SAV>25C Spell effect divided by 2(up), Cost in PS divided by 2(up) 
+Silent Cast, ESP>15, SAV>15C Allows to cast spell without sound, cost +1PS
+Static Cast, ESP>15, SAV>15C Allows to cast spell without moving cost +1PS
+Quint of Spells, spi>40, kno>30 (+10/palier)C Raise the size of dices, cost +2PS: (1 > 1d4 > 1d6 > 1d8 > 1d10 > 1d12 > 2d8 > 3d6 > 2d10 > 2d12 > 3d10 > 3d12 > 6d6 > 4d10)
