@@ -52,7 +52,7 @@ Mastery Mastery::loadMastery(std::string fileName){
         getline(file, n);
         getline(file, f);
         while( getline(file, line)){
-            d += line;
+            d += line + "\n";
         }
         if (d!= ""){ d += "\n";}
     }else{

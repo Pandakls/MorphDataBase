@@ -1,2 +1,4 @@
 Kobold
 Superbia
+Bonus : +1 don / lvl
+traits Kobold : +15 Dex -5 Esp -5Sav -5For

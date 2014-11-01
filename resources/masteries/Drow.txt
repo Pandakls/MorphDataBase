@@ -1,6 +1,6 @@
 Drow
 Omber Tertuo
 Polyvalent
-Domaine obligatoire 1 : Necromancie ou Malédiction
+Domaine obligatoire 1 : Necromancie ou Malediction
 Traits draw : -5 vit, -5 for, +10 sav, +5 dex
-Vulnérable à la lumière non naturelle. 
+Vulnerable a la lumiere non naturelle (x2)

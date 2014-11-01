@@ -1,0 +1,7 @@
+Grobat
+Neutre
+Polyvalent
+Traits Grobat : -5 partout.
+Teleportation de Grobat (distance = lvl^2 x10m) declanche une onde malefique de la taille du deplacement effectue
+Pas de domaine obligatoire au lvl 1 parce que c'est un grobat'
+Moule de Grobat, +5 de chance quand il s'agit de droper
