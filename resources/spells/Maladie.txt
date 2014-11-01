@@ -1,7 +1,21 @@
-ResistMaladie("ResistMaladie", "Maladie",1, 3, 3, "-5 Stats 1d4 tours" ),
-Rhume("Rhume", "Maladie",1, 3, 3, "-5 Stats 1d4 tours" ),
-Boulette("Boulette", "Maladie",1, 4, 4, "projectile de truc. portée:15m, dgt:1d6, comp:rhume, cc:x2" ),
-Nausée("Nausée", "Maladie",2, 3, 10, "Le pj créé une aura qui augmente les Compétences des alliés proches (Bonus = SPI/2-10)" ),
-Malaise("Malaise", "Maladie",3, 3, 10, "Le pj créé une aura qui augmente les Compétences des alliés proches (Bonus = SPI/2-10)" ),
-Putrefaction("Putrefaction", "Maladie",2, 3, 10, "Le pj créé une aura qui augmente les Compétences des alliés proches (Bonus = SPI/2-10)" ),
-Plague("Peste", "Maladie",2, 3, 10, "Le pj créé une aura qui augmente les Compétences des alliés proches (Bonus = SPI/2-10)" ),
+Passif Resistance,1L	0A	0S	Le PJ a un bonus de +10 en FM et en VIG pour resister aux maladies et au poison
+Rhume,1L		3A	3S	portee 15m -5 Stats 1d4 tours, comp-5, ccx2
+Boulette,1L		4A	4S	projectile de truc. portee:15m, dgt:1d6, comp:rhume, cc:x2
+poison leger,1L		2A	2S	portee contact, la cible subit 1d4 poison 2 rounds, comp +1 rounds, ccx2
+
+Passif Resistance,2L	0A	0S	Le PJ a un bonus de +20 en FM et en VIG pour resister resister aux maladies et au poison
+Nausee,2L		2A	5S	La cible ne peut sempecher de vomir si elle ne reussit pas un jet de de vigueur : -3AP(VIG) pour le prochain round -10 stats, comp -3AP(VIG) -10 stats, ccx2
+Poison,2L		3A	5S	portee contact, la cible subit 1d8 pdt 2 rounds, comp +1 round, ccx2
+
+Passif Resistance,3L	0A	0S	Le PJ a un bonus de +40 en FM et en VIG pour resister resister aux maladies et au poison
+Plague,3L		7A	15S	portee 15m, Lance la peste sur une cible, si la elle meurt toutes les personnes dans un rayon de 5m subissent la peste. dgt 1d6 comp : 1d6, ccx5
+Poison paralysant,3L	4A	4S	Le PJ tente de paralyser la cible (contact) pendant 1d4 rounds, (vsFM)
+
+Passif Resistance,4L	0A	0S	Le PJ a un bonus de +80 en FM et en VIG pour resister resister aux maladies et au poison
+Putrefaction,4L 	6A	9S	La Cible se decompose a haute vitesse, portee 6m, 1d10, comp: paralysie(DDVIG) -20Stats(DDFM), ccx2 
+Poison lourd,4L 	4A	8S	portee contact, la cible subit 2d6 pdt 2tours, comp +1round, ccx2
+
+Passif Resistance,5L	0A	0S	Le PJ est immunise aux maladies et au poison
+Passif Venom,5L 	0A	0S	Les personnages perdent de la vie au lieu d'en gagner s'ils tentent de drainer de la vie.
+Aura de mort,5L 	10A	20S	Le PJ s'entour d'une aura virale (3m, 1 round/lvl), y subissent par demi round respectivement : (0.5r:rhum)(1r: poison leger)(1.5r:2xrhume)(2r:poison)(2.5r:Nausee)(3r:plague)(3+.5r:Nausee)(4+rpoison lourd)
+Poison mortel,5L	5A	12S	Portee contact, 2d10 pendant 2rounds, comp +1 round, ccx2
