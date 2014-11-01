@@ -1,23 +1,23 @@
-Brouillard("Brouillard", "Illusion",1, 3, 8, "Génère une zone de brouillard de 10m de diamètre qui réduit la visibilité de tout le monde. (-20 mélée/Tast/Tir/Ref/FM) 1min/lvl" ),
-Lumiere("Lumière", "Illusion",1, 2, 3, "Génère un cone de lumière intense qui réduit la visibilité pendant un round. (-10 mélée/Tast/Tir/Ref/FM) SPI/10+1 dégat de lumière, portée: 5M/3m" ),
-Illusiontp("Illusion", "Illusion",1, 5, 5, "Génère une illusion visuelle de taille très petite pendant SPI/3 min"),
+Brouillard,1L		3A	8S	Genere une zone de brouillard de 10m de diametre qui reduit la visibilite de tout le monde. (-20 melee/Tast/Tir/Ref/FM) 1min/lv
+Lumiere,1L		2A	3S	Genere un cone de lumiere intense qui reduit la visibilite pendant un round. (-10 melee/Tast/Tir/Ref/FM) 1 degat de lumiere, portee: 5M/3m
+Illusiont I,1L		5A	5S	Genere une illusion visuelle de taille tres petite pendant SPI/3 min
 
-Nausee("Nausée", "Illusion",2, 3, 5, "Génère un sentiment de nausée chez une cible 1 min/lvl. (-20 tout les jets)" ),
-Odeur("Odeur", "Illusion",2, 3, 5, "Une illusion olfactive est émise à moins de 30 m" ),
-Illusionp("Illusion", "Illusion",2, 15, 10, "Génère une illusion visuelle et olfactive de taille petite pendant SPI/2 min" ),
-IllusionO("Illusion Olfactive", "Illusion",2, 0, 5, "Les illusions des plus bas niveau peuvent etre désormais olfactives pour un cout supplémentaire de 2PS" ),
+Nausee,2L		3A	5S	Genere un sentiment de nausee chez une cible 1 min/lvl. (-20 tout les jets)
+Odeur,2L		3A	3S	Une illusion olfactive est emise a moins de 30 m
+Illusion II,2L		15A	10S	Genere une illusion visuelle et olfactive de taille petite pendant SPI/2 min
+Illusion II,2L		0A	2S	Les illusions des plus bas niveaus peuvent etre desormais olfactives pour un cout supplementaire de 2PS
 
-Bruit("Bruit", "Illusion",3, 3, 5, "Une illusion sonore est émise à moins de 30 m" ),
-VoiceExtinction("Exctinction de voix", "Illusion",3, 3, 6, "une cible au contact n'émet plus aucun son 1min/lvl" ),
-VoiceMultiplier("Décuplement de voix", "Illusion",3, 3, 3, "Multiplie jusqu'à 5 la voix de la cible 1min/lvl" ),
-IllusionM("Illusion", "Illusion",3, 30, 15, "Génère une illusion visuelle, olfactive et sonore de taille Grande pendant SPI min" ),
-IllusionS("Illusion Sonore", "Illusion",3, 0, 5, "Les illusions des plus bas niveau peuvent etre désormais sonores pour un cout supplémentaire de 5PS" ),
+Bruit,3L		3A	3S	Une illusion sonore est emise a moins de 30 m
+Extinction de voix,3L	3A	5S	une cible au contact n'emet plus aucun son 1min/lvl
+Voice Raise,3L		3A	3S	Multiplie jusqu'a 5 la voix de la cible 1min/lvl
+Illusion III,3L		30A	15S	Genere une illusion visuelle, olfactive et sonore de taille Grande pendant SPI min
+Illusion III,3L		0A	3S	Les illusions des plus bas niveaus peuvent etre desormais sonores pour un cout supplementaire de 3PS
 
-Obscurite("Obscurité", "Illusion",4, 5, 10, "Génère une zone d'ombre (5m diam) qui réduit la visibilité à néant pendant 1 min/lvl. (-100 mélée/Tast/Tir/Ref/FM)" ),
-Toucher("Touché modifié", "Illusion",4, 3, 5, "La sensation de toucher est changée chez la cible (de meme que la température sans qu'il puisse avoir mal)" ),
-IllusionTG("Illusion", "Illusion",4, 90, 30, "Génère une illusion visuelle, olfactive, sonore et tactile de taille Gigantesque pendant SPIx2 min" ),
-IllusionT("Illusion du toucher", "Illusion",4, 0, 5, "Les illusions des plus bas niveau peuvent être désormais tactile pour un cout supplémentaire de 5PS" ),
-	
-Douleur("Sensation de douleur", "Illusion",5, 3, 5, "Provoque une douleur ou une brûlure chez la cible (sans infliger de dégats pour autant)" ),
-IllusionCol("Illusion", "Illusion",5, 600, 60, "Génère une illusion visuelle, olfactive, sonore, tactile et de douleur de taille Col pendant SPIx3 min" ),
-IllusionD("Illusion de douleur", "Illusion",5, 0, 10, "Les illusions des plus bas niveau peuvent être désormais douloureuses pour un cout supplémentaire de 10PS" ),
+Obscurite,4L		5A	10S	Genere une zone d'ombre (5m diam) qui reduit la visibilite a neant pendant 1 min/lvl. (-100 melee/Tast/Tir/Ref/FM)
+Toucher,4L		3A	5S	La sensation de toucher est changee chez la cible (de meme que la temperature sans qu'il puisse avoir mal) 1min/lvl
+Illusion IV,4L		90A	30S	Genere une illusion visuelle, olfactive, sonore et tactile de taille Gigantesque pendant SPIx2 min
+Illusion IV,4L		0A	4S	Les illusions des plus bas niveau peuvent etre desormais tactile pour un cout supplementaire de 5PS
+
+Douleur,5L		3A	5S	Provoque une douleur ou une brulure chez la cible (sans infliger de degats pour autant) 1min/lvl
+Illusion V,5L		600A	60S	Genere une illusion visuelle, olfactive, sonore, tactile et de douleur de taille Col pendant SPIx3 min
+Illusion V,5L		0A	5S	Les illusions des plus bas niveau peuvent etre desormais douloureuses pour un cout supplementaire de 5PS
