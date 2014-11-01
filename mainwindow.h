@@ -34,10 +34,15 @@ public slots:
     inline void slotCityGeng(){slotCityGen(11,25);}
     inline void slotCityGentg(){slotCityGen(26,50);}
     inline void slotCityGenc(){slotCityGen(51,100);}
+    void slotNounGen();
+
     //DataBase
     void slotMasteries();
     void slotItems();
+    void slotGifts();
+    void slotSpells();
     //Navigation
+    void slotCloseWindow();
     void slotStackedWidgetNext();
     void slotStackedWidgetPrev();
 

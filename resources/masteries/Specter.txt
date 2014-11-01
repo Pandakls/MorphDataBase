@@ -1,2 +1,13 @@
 Specter
 Omber Tertuo
+p = new Passive("Traits Spectral",1,"-10 VIT, +10KNO");a.add(p);
+			p = new Passive("Compétence supplémentaire",1,"Intimidation (1,4,9,14 et 19)");a.add(p);
+			p = new Passive("Transparence",1,"2/jour le spectre peut passer à travers les objets pendant 10 minute");a.add(p);
+			p = new Passive("Nouveau Domaine",1,"Domaine obligatoire au niveau 1: Maladie ou Illusion");a.add(p);
+			p = new Passive("Nouveau Domaine",4,"Domaine obligatoire au niveau 4: Illusion ou Malédiction");a.add(p);
+			p = new Passive("Nouveau Domaine",7,"Domaine obligatoire au niveau 7: Necromancie ou Malédiction");a.add(p);
+			p = new Passive("Levitation",5,"2/jour le spectre peut léviter 10 minute en portant une charge légère");a.add(p);
+			p = new Passive("Transparence",10,"5/jour le spectre peut passer à travers les objets et les personnes pendant 10 minute");a.add(p);
+			p = new Passive("Levitation",15,"5/jour le spectre peut léviter 10 minute en portant une charge Moyenne");a.add(p);
+			p = new Passive("Transparence",20,"Le spectre peut passer à travers tout et léviter en portant une charge lourde");a.add(p);
+			

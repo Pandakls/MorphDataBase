@@ -1,0 +1,14 @@
+Ralentissement("Ralentissement", "Temps",1, 1, 1, "Le pj ralenti une cible. Portée 3m, -1PC et -5 jets de combat, comp: -1PC et -5 jets de combat, cc x4"),
+Prescience("Préscience", "Temps",1, 2, 2, "Le pj distord le temps pour s'accelérer au prochain tour. Portée contact, +2PC, comp: +2PC, cc x3"),
+
+Acceleration("Accélération", "Temps",2, 1, 1, "Le pj accélère une cible. Portée 3m, +2PC, comp: +2PC, cc x2"),
+Prevision("Prévision", "Temps",2, 1, 1, "Le pj voit dans le futur proche, il lance deux dés pour son prochain jet et en choisit un, comp: le jet suivant pareil, cc:les deux jets d'après aussi"),
+
+InsensibiliteTemp("Insensibilité", "Temps",3, 3, 5, "Le pj n'est plus affecté par le ralentissement du temps. Portée contact, durée:1d4 round, comp:1d4round, cc x2"),
+Brumetemp("Brume temporelle", "Temps",3, 4, 5, "Le Pj ralenti (-2PC) tout le monde dans un rayon de 15m. Portée contact, durée:1d4 round, comp:1d4round, cc x2"),
+
+Flashback("Flashback", "Temps",4, 4, 0, "Le Pj remonte le temps avec tout ses souvenirs(cout en PS: X). Portée contact, durée:(1d12)X x (SPI-20)min max, comp: (1d6+3)X x (SPI-20)min max, cc: 6X x(SPI-20)x  min"),
+doubletemp("Double temporel", "Temps",4, 0, 0, "Le Pj créé une boucle temporelle d'un round sur une cible à XPC cout:X/2PC, XPS. Portée 3m, la cible joue un nouveau tour, comp: la moitié des PS dépensés regagnés, cc: le clone gagne 4PC"),
+
+Boucletemp("Boucle temporelle", "Temps",5, 180, 0, "Le Pj créé une boucle temporelle pour lui et Y personnes consententes, X est le cout en PS: Portée contact, retour dans le passé de 1d12 x X/Y x(SPI-20)/10 heures, comp: 1d6+3 x X/Y x(SPI-20)/10, cc: regain de la moitié des PS dépensés"),
+Arretdutemp("Arret du temps", "Temps",5, 5, 20, "Le Pj arrete le temps(-12pc). Portée contact, durée:1d8 round, comp:1d8 round, cc x2"),

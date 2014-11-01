@@ -1,0 +1,6 @@
+Gnome
+Aquena
+Traits Gnome",1,"+5 SPI, +5 KNO, -5 VIT, -5 FOR
+Petite taille",1,"Taille -- au dela de 50% de constitution Gnome
+Compétence supplémentaire",1,"Connaissance des mystères (1,4,9,14 et 19)
+Nouveau Domaine prodige",3,"Nouveau Domaine au choix

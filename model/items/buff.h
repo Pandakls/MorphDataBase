@@ -154,7 +154,7 @@ inline Item insertBuff(int price, std::string desc){
             desc = "Bricolage/Métier";
             break;
         }
-        int qty = Item::randomPower(1);
+        int qty = Item::randomPower(2);
         price *= qty;
         desc += " +" + iTos(qty);
     }else if (desc.find("Range") != std::string::npos){

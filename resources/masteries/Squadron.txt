@@ -1,0 +1,6 @@
+Squadron
+Superbia
+Traits Squadron",1,"+2 points de Carac, possède 4 bras
+Compétence supplémentaire",1,"Natation (1,4,9,14 et 19)
+Nouveau Domaine",3,"Domaine obligatoire au niveau 3: Elementaire Glace
+			

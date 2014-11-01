@@ -1,2 +1,8 @@
 Fee
 Aquena
+Traits Feeriques",1,"-20 FOR, -20 VIT, +5 DEX, +5 SPI, +5 SGF, +5 KNO
+Vol",1,"Vol maitrisé, peu combattre en vol sans malus.
+Très petite taille",1,"Taille -- par tranche de 40% (Taille TP sur 100%)
+Nouveau Domaine",1,"Domaine obligatoire au niveau 1: Auramancie ou Guérison
+Nouveau Domaine",4,"Domaine obligatoire au niveau 4: Guérison ou Illusion
+Nouveau Domaine",7,"Domaine obligatoire au niveau 7: Auramancie ou Invocation

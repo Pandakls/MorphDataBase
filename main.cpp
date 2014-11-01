@@ -47,9 +47,6 @@ int main(int argc, char *argv[])
     if(pthread_create(&mainThread, NULL, animateWorld, NULL) == -1) {
         perror("pthread_create");
     }
-//    if (pthread_join(mainThread, NULL)) {
-//        perror("pthread_join");
-//    }
 
     //Get user event on window
     return a.exec();

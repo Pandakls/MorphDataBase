@@ -1,0 +1,6 @@
+Minotaure
+Superbia
+p = new Passive("Trait minotaures",1,"+20 FOR, -8 DEX, -8 SGF, -8SPI, -8KNO.");a.add(p);
+			p = new Passive("Grande Taille",0,"Taille ++ au dela de 50% de constitution minotaure");a.add(p);
+			p = new Passive("Don supplémentaire",0,"Grand pas x2");a.add(p);
+			

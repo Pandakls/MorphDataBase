@@ -1,3 +1,15 @@
 Melodeon
 Omber Tertuo
 [Enhanced]
+Savoir des Melodeons",1,"+10 KNO.
+Compétence supplémentaire",1,"Diplomatie (lvl 1,4,8)
+Chatiment du bien et du juste",1,"1/jour
+Aura du Mal",1,"Le personnage dégage une aura maléfique
+Detection du bien et du juste",2,"Le personnage peut détecter ses ennemis
+Chatiment du bien et du juste",3,"2/jour
+Ailes de Mélodeon",5,"Le personnage peut voler
+Chatiment du bien et du juste",6,"3/jour
+Combat en vol",7,"Le personnage peut Combattre en vol -10 à tout ses jets
+Chatiment du bien et du juste",9,"5/jour
+Combat en vol maîtrisé",10,"Le personnage peut Combattre en vol sans malus
+Plénitude",10,"+1 PC

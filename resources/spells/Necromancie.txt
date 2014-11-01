@@ -1,0 +1,13 @@
+ReanimationI("Reanimation", "Necromancie",1, 5, 8, "Le pj réanime un cadavre qui répond aux ordre simples (déplacement, combat) . Portée 3m, ec:le cadavre revient en tant qu'ennemi du joueur, e: rien, r: tout est ok, comp: regain d'1/4 des SP, cc:regain de 1/2 des sp en plus"),
+ReanimationII("Reanimation", "Necromancie",2, 5, 12, "Le pj réanime un cadavre qui récupère presque ses capacités de combat (-10 jets de combats). Portée 3m, ec:le cadavre revient en tant qu'ennemi du joueur, e: rien, r: tout est ok, comp: regain d'1/4 des SP, cc:regain de 1/2 des sp en plus"),
+ReanimationIII("Reanimation", "Necromancie",3, 5, 16, "Le pj réanime un cadavre qui répond aux ordre complexes. Portée 3m, ec:le cadavre revient en tant qu'ennemi du joueur, e: rien, r: tout est ok, comp: regain d'1/4 des SP, cc:regain de 1/2 des sp en plus"),
+ReanimationIV("Reanimation", "Necromancie",4, 5, 24, "Le pj réanime un cadavre qui récupère ses sorts. Portée 3m, ec:le cadavre revient en tant qu'ennemi du joueur, e: rien, r: tout est ok, comp: regain d'1/4 des SP, cc:regain de 1/2 des sp en plus"),
+ReanimationV("Reanimation", "Necromancie",5, 5, 28, "Le pj réanime un cadavre identique au personnage avant sa mort. Portée 3m, ec:le cadavre revient en tant qu'ennemi du joueur, e: rien, r: tout est ok, comp: regain d'1/4 des SP, cc:regain de 1/2 des sp en plus"),
+
+MagiedusangI("Magie du sang", "Necromancie",1, 0, 0, "Le pj peut décider a tout moment de passer 'mage du sang' jusqu'a la fin de la journée. Il peut alors lancer des sorts avec ses PV et débloque la magie du sang de plus haut niveau."),
+MagiedusangIbis("Magie du sang", "Necromancie",1, 0, 0, "En état Mage du sang, le pj change sa constitution, il manipule a volonté le flux sanguin de son corps: il ne peux plus recevoir de soins mais ne saigne plus et est immunisé a toute forme d'hémorragie ou de poison"),
+MagiedusangII("Magie du sang", "Necromancie",2, 3, 5, "Vol de vie, 100% de lien de vie: portée 1m, 1d6, comp 1d6, ccx2"),
+MagiedusangIII("Magie du sang", "Necromancie",3, 0, 0, "Coagulation, le mage de sang peut controler a volonté le sang hors de son corps."),
+MagiedusangIIIbis("Magie du sang", "Necromancie",3, 4, 7, "Blood kick, portée:6m 1d10, 1d6, ccx4."),
+MagiedusangIV("Magie du sang", "Necromancie",4, 2, 5, "Transfert de vie, le mage du sang soigne les alliés proches (3m) et s'inflige des blessures: soin/dégat: 1d6, regagne 1/4 des pv perdus, cc: Regagne tt les pv perdus."),
+MagiedusangV("Magie du sang", "Necromancie",5, 0, 0, "Transformation, le mage du sang peut changer son corps en sang. Lui offrant: -3PC, immunité aux attaques physiques, forme non définie."),

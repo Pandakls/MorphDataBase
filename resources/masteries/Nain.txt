@@ -1,2 +1,6 @@
 Nain
 Aquena
+Traits Nains",1,"-5 DEX, -5 SPI, +10 VIT
+Lien Nains",1,"+20 diplomatie avec les autres nains, -10 avec les elfes
+Compétence supplémentaire",1,"Connaissance Roche et pierres précieuse +15
+Compétence supplémentaire",1,"Connaissance Armes et Armures +15

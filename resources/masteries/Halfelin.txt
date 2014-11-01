@@ -1,2 +1,7 @@
 Halfelin
 Aquena
+Traits Halfelins",1,"-10 FOR, +5 KNO, +5 DEX
+Petite taille",1,"Taille -- au dela de 50% de constitution halfeline
+Compétence supplémentaire",1,"Marchandage (1,4,9,14 et 19)
+Compétence supplémentaire",1,"Crochetage, Désamorçage, Fouille
+Compétence supplémentaire",2,"Vol à la tire (2,5,10,15 et 20

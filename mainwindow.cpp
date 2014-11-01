@@ -12,7 +12,8 @@
 
 //Data
 #include "model/masteries/mastery.h"
-
+#include "model/ability/gift.h"
+#include "model/ability/spell.h"
 
 //Number of page displayed
 #define NB_PAGE 2
@@ -26,6 +27,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ///////////////////////////////////////////////////////////
     ///Connection des différents boutons aux fonctions associées
     //NAVIGATION
+    connect(ui->actionQuitter, SIGNAL(triggered()), this, SLOT(slotCloseWindow()));
     connect(ui->actionNext, SIGNAL(triggered()), this, SLOT(slotStackedWidgetNext()));
     connect(ui->actionPrev, SIGNAL(triggered()), this, SLOT(slotStackedWidgetPrev()));
     ui->stackedWidget->setCurrentIndex(0);
@@ -33,7 +35,7 @@ MainWindow::MainWindow(QWidget *parent) :
     //GENERATION ALEATOIRE
     //dés
     connect(ui->actionDice_gen, SIGNAL(triggered()), this, SLOT(slotDiceGen()));
-    //Items de tout prix
+    //Items en tout genre
     connect(ui->actionItem_Gen, SIGNAL(triggered()), this, SLOT(slotItemGen()));
     //Trésors en tout genre
     connect(ui->actionTreasur_Gen, SIGNAL(triggered()), this, SLOT(slotTreasureGen()));
@@ -44,12 +46,19 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionTaille_g, SIGNAL(triggered()), this, SLOT(slotCityGeng()));
     connect(ui->actionTaille_tg, SIGNAL(triggered()), this, SLOT(slotCityGentg()));
     connect(ui->actionTaille_c, SIGNAL(triggered()), this, SLOT(slotCityGenc()));
+    //Noms
+    connect(ui->actionNoun_Gen, SIGNAL(triggered()), this, SLOT(slotNounGen()));
+
 
     //BASE DE DONNEE
     //Maitrises
     connect(ui->actionMasteries, SIGNAL(triggered()), this, SLOT(slotMasteries()));
     //Items de base (Armes et autres)
     connect(ui->actionItems, SIGNAL(triggered()), this, SLOT(slotItems()));
+    //Gifts
+    connect(ui->actionGift, SIGNAL(triggered()), this, SLOT(slotGifts()));
+    //Spells
+    connect(ui->actionSpells, SIGNAL(triggered()), this, SLOT(slotSpells()));
 
     //JEU
     //Creation et initialisation du monde
@@ -73,9 +82,21 @@ void MainWindow::slotDiceGen(){
 }
 
 void MainWindow::slotItemGen(){
-    std::string res = "Random item :\n";
+    std::string res = "Random item :\n\n";
+    res+= "Start Adventure\n";
     for (int i = 1; i< 21; i++){
-        res+= "DD" + iTos(i) + " : " + Item::randomItemAtPrice(10 * (i-1)*(i-1)).toString();
+        if(i == 20){i*=2;}
+        res+= "DD" + iTos(i) + " : " + Item::randomItemAtPrice(10 * (i-1)).toString();
+    }
+    res+= "\n\nMid Adventure\n";
+    for (int i = 1; i< 21; i++){
+        if(i == 20){i*=2;}
+        res+= "DD" + iTos(i) + " : " + Item::randomItemAtPrice(5 * (i-1)*(i-1)).toString();
+    }
+    res+= "\n\nEnd Adventure\n";
+    for (int i = 1; i< 21; i++){
+        if(i == 20){i*=2;}
+        res+= "DD" + iTos(i) + " : " + Item::randomItemAtPrice(10 * (i-1)*i).toString();
     }
     ui->label->setText(QString(res.c_str()));
 }
@@ -85,7 +106,7 @@ void MainWindow::slotTreasureGen(){
     int n1 = 1;
     int n2 = 1;
     int nTemp;
-    for(int i= 1; i<11; i++){
+    for(int i= 1; i<12; i++){
         res += "\nSize : " + iTos(n2*100)+ "k :\n";
         res += Item::randomTreasure(n2*100) + "\n";
         nTemp = n1;
@@ -100,8 +121,26 @@ void MainWindow::slotCityGen(int nbMin, int nbMax){
     ui->label->setText(QString(res.c_str()));
 }
 
+void MainWindow::slotNounGen(){
+    std::string res = "";
+    for (int i=0;i<50;i++){
+        res += randomName() + "\n";
+    }
+    ui->label->setText(QString(res.c_str()));
+}
+
 void MainWindow::slotMasteries(){
     std::string res = Mastery::allMasteries();
+    ui->label->setText(QString(res.c_str()));
+}
+
+void MainWindow::slotGifts(){
+    std::string res = Gift::allGifts();
+    ui->label->setText(QString(res.c_str()));
+}
+
+void MainWindow::slotSpells(){
+    std::string res = Spell::allSpells();
     ui->label->setText(QString(res.c_str()));
 }
 
@@ -110,10 +149,12 @@ void MainWindow::slotItems(){
     ui->label->setText(QString(res.c_str()));
 }
 
+void MainWindow::slotCloseWindow(){
+    this->close();
+}
 void MainWindow::slotStackedWidgetNext(){
     ui->stackedWidget->setCurrentIndex( (ui->stackedWidget->currentIndex() + 1) % NB_PAGE );
 }
-
 void MainWindow::slotStackedWidgetPrev(){
     ui->stackedWidget->setCurrentIndex( (ui->stackedWidget->currentIndex() - 1 + NB_PAGE) % NB_PAGE );
 }

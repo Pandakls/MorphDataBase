@@ -7,13 +7,13 @@
 #include "GadToolKit.h"
 
 //Spells
-#include "../spells/spell.h"
+#include "../ability/spell.h"
 
 //Masteries
 #include "../masteries/mastery.h"
 
 //Parent class Entity
-#include "../entity.h"
+#include "entity.h"
 
 class Character : public Entity
 {

@@ -1,2 +1,11 @@
 Hydriae
 Centurial
+p = new Passive("Traits Hydriaë",1,"+5 SGF, +5 KNO, -5 FOR, -5 DEX");a.add(p);
+			p = new Passive("Faiblesse feu et glace",1,"dégats doublés");a.add(p);
+			p = new Passive("Résistance Terre, Air, Foudre et Contendants",1,"dégats divisés par deux (rounded down)");a.add(p);
+			p = new Passive("Phytosynthèse",1,"Ses points de sorts se régénèrent à l'exterieur (1ps/niveau/heure)");a.add(p);
+			p = new Passive("Compétence supplémentaire",1,"Discretion (1,4,9,14 et 19)");a.add(p);
+			p = new Passive("Nouveau Domaine",1,"Domaine obligatoire au niveau 1: Création ou guérison");a.add(p);
+			p = new Passive("Nouveau Domaine",4,"Domaine obligatoire au niveau 4: Auramancie ou Malédiction");a.add(p);
+			p = new Passive("Nouveau Domaine",7,"Domaine obligatoire au niveau 7: Elementaire Terre ou Telekinésie");a.add(p);
+			

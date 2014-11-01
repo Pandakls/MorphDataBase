@@ -8,6 +8,7 @@ Character::Character() : Entity()
 
 Character::Character(QPoint p, QSize s, std::string fileName, int lvl) :
     Entity(p, s, fileName),
+    name (randomName()),
     level(lvl),
     stats(),
     spells(),

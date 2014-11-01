@@ -1,2 +1,7 @@
 Elfe
 Aquena
+Traits Elfiques",1,"+5 SPI, +5 SGF, -10 VIT
+Compétence supplémentaire",1,"Connaissance de la nature
+Vison",1,"Nocturne
+Lien Elfique",1,"+20 diplomatie avec les autres elfes, -10 avec les nains"
+Nouveau Domaine",3,"Domaine obligatoire au niveau 3: Création

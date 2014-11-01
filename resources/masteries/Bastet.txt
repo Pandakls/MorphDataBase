@@ -1,2 +1,17 @@
 Bastet
 Superbia
+p = new Passive("Traits Bastet",1,"-5 FOR, +5 DEX, -5 VIT, +5 SGF");a.add(p);
+Don attaque en Finesse",1,"Permet de prendre le Bonus de DEX a la place du bonus de FOR lors d'un coup au CaC
+Compétence supplémentaire",2,"Acrobatie (1,4,9,14 et 19)
+Précision Mentale",3,"Lors d'une attaque magie, l'adversaire perd 10 de Force Mentale
+Nouveau Domaine",3,"Domaine obligatoire au niveau 3: Telekinesie
+Ataque de précision",4,"Lors d'une attaque en Finesse, augmente les dégats de 1dX
+Précision Mentale",7,"Lors d'une attaque magie, l'adversaire perd 20 de Force Mentale
+Ataque de précision",8,"Lors d'une attaque en Finesse, augmente les dégats de 2dX
+Précision Mentale",11,"Lors d'une attaque magie, l'adversaire perd 30 de Force Mentale
+Ataque de précision",12,"Lors d'une attaque en Finesse, augmente les dégats de 3dX
+Précision Mentale",15,"Lors d'une attaque magie, l'adversaire perd 40 de Force Mentale
+Ataque de précision",16,"Lors d'une attaque en Finesse, augmente les dégats de 4dX
+Précision Mentale",19,"Lors d'une attaque magie, l'adversaire perd 50 de Force Mentale
+Ataque de précision",20,"Lors d'une attaque en Finesse, augmente les dégats de 5dX
+		

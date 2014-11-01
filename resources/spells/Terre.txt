@@ -1,0 +1,19 @@
+PassifITerre("Passif Terre lvl 1", "ElementaireTerre",1, 3, 4, "Au lvl 1, l'élémentaliste peut changer la surface de son corps en l'élément maitrisé" ),
+KickDeTerre("Kick de Terre", "ElementaireTerre",1, 3, 3, "Touche avec le jet de mélée, portée:soi, dgt:1d8, comp:1d12, cc:x2. (50% dégats magiques, 50%dégats physiques)" ),
+SplashTerre("Splash de Terre", "ElementaireTerre",1, 4, 6, "Zone de dégats autour du lanceur de sort (5m), 1d12/Distance dégats normaux, effet supp:1d12, crit x2" ),
+
+PassifIITerre("Passif Terre lvl 2", "ElementaireTerre",2, 3, 4, "Au lvl 2, l'élémentaliste peut manipuler son élément en dehors de son corps" ),
+Rocher("Rocher", "ElementaireTerre",2, 3, 3, "projectile de Terre. portée:15m, dgt:1d6, comp:1d12, cc:x2 " ),
+ArmureDeTerre("Armure de Terre", "ElementaireTerre",2, 5, 5, "Des particules élémentaires blessent les ennemis à proximité. durée: jusqu'a la fin de la journée, portée:soi, dgt:(SPI-20)/2, comp:1d12, cc:sans " ),
+
+PassifIIITerre("Passif Terre lvl 3", "ElementaireTerre",3, 3, 4, "Au lvl 3, l'élémentaliste peut fixer son élément en dehors de son corps" ),
+StoneFist("Démolission", "ElementaireTerre",3, 4, 9, "L'ennemi ciblé se prend un gros punch: portée:30m, dgt:1d8, comp:SPI/3, cc:x4"),
+ArmesDesstructrices("Armes enchantées", "ElementaireTerre",3, 5, 10, "enchante une arme jusqu'à la fin de la journée portée:cac. Bonus de l'arme: "),
+
+PassifIVTerre("Passif Terre lvl 4", "ElementaireTerre",4, 3, 4, "Au lvl 4, l'élémentaliste peut controler une simili-vie de son élément." ),
+RockSpirit("Esprit de Terre", "ElementaireTerre",4, 10, 15, "Invocation d'un pseudo élémental de Terre qui ne peut que se déplacer et combattre: Vie=SPI,SP=15,ref=0,MR=0,5PC, compétences = Rocher et Kick de Terre(pas de cout)"),
+ConeDeTerre("Cone de Terre", "ElementaireTerre",4, 3, 5, "Cone de Terre (5mx3m): portée:5m, dgt:1d10/dist, comp:1d12, cc:x2"),
+
+PassifVTerre("Passif Terre lvl 5", "ElementaireTerre",5, 3, 4, "Au lvl 5, l'élémentaliste peut faire ce qu'il veut de son élément dans la limite du raisonnable" ),
+TempeteDeTerre("Tempete", "ElementaireTerre",5, 10, 20, "Tempête sur un rayon de 100m, portée:0m, dgt:1d4, comp:1d12, cc:x2, durée = lvl" ),
+RockElemental("Elemental de Terre", "ElementaireTerre",5, 15, 30, "Invocation d'un élémental de Terre qui obéit a son invocateur: Vie=SPI,SP=30,ref=33,MR=33,7PC , compétences = Rocher, Kick de Terre(pas de cout), Cone de Terre et Armure de Terre(pas de cout)"),

@@ -5,8 +5,10 @@
 
 #include <fstream>
 
-Mastery::Mastery(std::string n, Faction f, std::string d) : name(n), faction(f), description(d)
-{
+Mastery::Mastery(std::string n, Faction f, std::string d) :
+    name(n),
+    faction(f),
+    description(d){
 }
 
 std::string Mastery::allMasteries(){

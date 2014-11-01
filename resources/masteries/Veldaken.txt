@@ -1,2 +1,6 @@
 Veldaken
 Centurial
+p = new Passive("Traits Veldaken",1,"+10 SGF, +5 KNO, -5SPI, -10 DEX, possède 4 bras");a.add(p);
+			p = new Passive("Compétence supplémentaire",1,"Bricolage (1,4,9,14 et 19)");a.add(p);
+			p = new Passive("Nouveau Domaine",3,"Domaine obligatoire au niveau 3: Temps ou Telekinesie");a.add(p);
+			

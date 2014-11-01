@@ -1,0 +1,19 @@
+PassifIFoudre("Passif Foudre lvl 1", "ElementaireFoudre",1, 3, 4, "Au lvl 1, l'élémentaliste peut changer la surface de son corps en l'élément maitrisé" ),
+KickDeFoudre("Kick de Foudre", "ElementaireFoudre",1, 3, 3, "Touche avec le jet de mélée, portée:soi, dgt:1d8, comp:Paralysie, cc:x2. (50% dégats magiques, 50%dégats physiques)" ),
+SplashFoudre("Splash de Foudre", "ElementaireFoudre",1, 4, 6, "Zone de dégats autour du lanceur de sort (5m), 1d12/Distance dégats normaux, effet supp:paralysie, crit x2" ),
+
+PassifIIFoudre("Passif Foudre lvl 2", "ElementaireFoudre",2, 3, 4, "Au lvl 2, l'élémentaliste peut manipuler son élément en dehors de son corps" ),
+Eclair("Eclair", "ElementaireFoudre",2, 3, 3, "projectile de Foudre. portée:15m, dgt:1d6, comp:paralysie, cc:x2 " ),
+ArmureDeFoudre("Armure de Foudre", "ElementaireFoudre",2, 5, 5, "Des particules élémentaires blessent les ennemis à proximité. durée: jusqu'a la fin de la journée, portée:soi, dgt:(SPI-20)/2, comp:paralysie, cc:sans " ),
+
+PassifIIIFoudre("Passif Foudre lvl 3", "ElementaireFoudre",3, 3, 4, "Au lvl 3, l'élémentaliste peut fixer son élément en dehors de son corps" ),
+LinkinSpark("Eclair en série", "ElementaireFoudre",3, 4, 9, "Link 5: les 5 ennemis les plus proches subissent le sort aussi: portée:30m, dgt:1d8, comp:paralysie, cc:x3"),
+ArmesElectriques("Armes enchantées", "ElementaireFoudre",3, 5, 10, "enchante une arme jusqu'à la fin de la journée portée:cac. Bonus de l'arme: "),
+
+PassifIVFoudre("Passif Foudre lvl 4", "ElementaireFoudre",4, 3, 4, "Au lvl 4, l'élémentaliste peut controler une simili-vie de son élément." ),
+BoltSpirit("Esprit de Foudre", "ElementaireFoudre",4, 10, 15, "Invocation d'un pseudo élémental de Foudre qui ne peut que se déplacer et combattre: Vie=SPI,SP=15,ref=0,MR=0,5PC, compétences = Eclair et Kick de Foudre(pas de cout)"),
+ConeDeFoudre("Cone de Foudre", "ElementaireFoudre",4, 3, 5, "Cone de Foudre (5mx3m): portée:5m, dgt:1d10/dist, comp:paralysie, cc:x2"),
+
+PassifVFoudre("Passif Foudre lvl 5", "ElementaireFoudre",5, 3, 4, "Au lvl 5, l'élémentaliste peut faire ce qu'il veut de son élément dans la limite du raisonnable" ),
+TempeteDeFoudre("Tempete", "ElementaireFoudre",5, 10, 20, "Tempête sur un rayon de 100m, portée:0m, dgt:1d4, comp:paralysie, cc:x2, durée = lvl" ),
+BoltElemental("Elemental de Foudre", "ElementaireFoudre",5, 15, 30, "Invocation d'un élémental de Foudre qui obéit a son invocateur: Vie=SPI,SP=30,ref=33,MR=33,7PC , compétences = Eclair, Kick de Foudre(pas de cout), Cone de Foudre et Armure de Foudre(pas de cout)"),

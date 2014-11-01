@@ -55,7 +55,7 @@ Item Item::randomItemAtPrice(int price){
     while (ratioPrice < 0.8 || ratioPrice> 1.2){
         count ++;
         if (count > 200){
-            return Item("Caillou", 0, ", completement inutile");
+            return Item("Gold", price, "");
         }
         item = randomItem();
         ratioPrice = (float)item.getPrice()/(float)price;
@@ -79,6 +79,9 @@ Item Item::randomItemUnderPrice(int maxPrice){
 std::string Item::randomTreasure(int price){
     std::vector <Item> items;
     int treasureValue = price;
+    Item i = randomItemAtPrice(treasureValue/2);
+    treasureValue -= i.getPrice();
+    items.push_back(i);
     while (treasureValue > 0.1*price){
         Item i = randomItemUnderPrice(treasureValue);
         treasureValue -= i.getPrice();
@@ -96,50 +99,68 @@ std::string Item::randomCity(int nbMin, int nbMax){
     std::string res = "Ville: :\n";
 
     int nbArticle = random(nbMin, nbMax);
-    res += "\nForgeron (Armures) : " + iTos(nbArticle) + " articles.\n";
     for (int i=0;i<nbArticle;i++){
         Armor a = Armor::randomArmor();
         items.push_back(a);
     }
+    res += "\nForgeron (Armures) : " + iTos(nbArticle) + " articles.\n";
     res += itemSort(items, maxPrice);
     items.clear();
 
     nbArticle = random(nbMin, nbMax);
-    res += "\nForgeron (Armes) : " + iTos(nbArticle) + " articles.\n";
     for (int i=0;i<nbArticle;i++){
         Weapon a = Weapon::randomWeapon();
         items.push_back(a);
     }
+    res += "\nForgeron (Armes) : " + iTos(nbArticle) + " articles.\n";
     res += itemSort(items, maxPrice);
     items.clear();
 
     nbArticle = random(nbMin, nbMax);
-    res += "\nBijoutier : " + iTos(nbArticle) + " articles.\n";
     for (int i=0;i<nbArticle;i++){
         Jewel j = Jewel::randomJewel();
         items.push_back(j);
     }
+    res += "\nBijoutier : " + iTos(nbArticle) + " articles.\n";
     res += itemSort(items, maxPrice);
     items.clear();
 
     nbArticle = random(nbMin, nbMax);
-    res += "\nTailleur : " + iTos(nbArticle) + " articles.\n";
     for (int i=0;i<nbArticle;i++){
         Garment g = Garment::randomGarment();
         items.push_back(g);
     }
+    res += "\nTailleur : " + iTos(nbArticle) + " articles.\n";
     res += itemSort(items, maxPrice);
     items.clear();
 
+    std::vector<Item> pots;
+    std::vector<int> qties;
     nbArticle = random(nbMin, nbMax);
-    res += "\nAlchimiste : " + iTos(nbArticle) + " articles.\n";
     for (int i=0;i<nbArticle;i++){
         Potion p = Potion::randomPotion();
-        p.setDescription(p.getDesc() + " (x" +iTos(random(1,7)) + ")");
+        pots.push_back( p);
+        qties.push_back(random(1,7) );
+    }
+    while(pots.size() > 0){
+        Item save = pots[0];
+        int qty = qties[0];
+        pots.erase(pots.begin());
+        qties.erase(qties.begin());
+        for(unsigned i=0; i<pots.size()-1;i++){
+            if(i>=pots.size()){break;}
+            if (pots[i].getDesc() == save.getDesc()){
+                qty += qties[i];
+                pots.erase(pots.begin()+ i);
+                qties.erase(qties.begin() + i);
+                i-=1;
+            }
+        }
+        Item p = Item(save.getName(), save.getPrice(), save.getDesc() + " (" + iTos(qty) + " in stock)");
         items.push_back(p);
     }
+    res += "\nAlchimiste : " + iTos(items.size()) + " articles.\n";
     res += itemSort(items, maxPrice);
-
     return res;
 }
 
@@ -147,6 +168,7 @@ void Item::operator+=(Item b){
     price += b.getPrice();
     description += b.getDesc();
 }
+
 
 int Item::randomPower(int initPower){
     float rand = random(0.0f,100.0f);
@@ -162,6 +184,7 @@ int Item::randomPower(int initPower){
 }
 
 std::string Item::itemSort(std::vector<Item> items, int maxPrice){
+    //Tri des items par prix (tri nul n²)
     std::string res = "";
     int minPrice = 0;
     int nextMin = maxPrice;

@@ -1,2 +1,9 @@
 Loxodon
 Superbia
+Traits Loxodon",1,"(-10 DEX, +5 SGF, +5 VIT
+Embrochement",1,"Le Loxodon est considéré armé avec ses défenses: peut s'utiliser en lutte contrairement aux autres armes. dgts: For/10d8
+Don supplémentaire",1,"Piétinement
+Compétence supplémentaire",1,"Diplomatie (1,4,9,14 et 19
+Nouveau Domaine",1,"Domaine obligatoire au niveau 1: Runes ou Auramancie
+Nouveau Domaine",4,"Domaine obligatoire au niveau 4: Auramancie ou Telekinesie
+Nouveau Domaine",7,"Domaine obligatoire au niveau 7: Runes ou Elementaire choix

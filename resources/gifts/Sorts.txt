@@ -1,0 +1,9 @@
+case "Econome":return "\ndiv: cumulable, passif; cond: kno>20 (+10 par palier); effet: les sorts coutent 1PS de moins à lancer (min 1PS)";
+case "IncantationRapide":return "div: cumulable; cond: kno>25 (+10 par palier); effet: -1PC, +2 PS";
+case "IncantationSure":return "div: unique; cond: spi>30; effet: aucun dé de dégat ne peut faire 1 (relance) +1PS/dé";
+case "ExtensionDeDuree":return "div: unique; cond: spi>15, kno>15; effet: durée doublée cout en PS + 50% (x1,5)";
+case "ExtensionDePortee":return "div: unique; cond: spi>15, kno>15; effet: portée doublée, coute en PS +2";
+case "IncantationTactique":return "div: unique; cond: kno>30; effet: les effets du sorts sont divisés par deux up, le cout en PS des divisé par deux up";
+case "IncantationSilencieuse":return "div: unique; cond: spi>15, kno>15; effet: permet de lancer un sort sans faire de bruit cout +1PS";
+case "IncantationStatique":return "div: unique; cond: spi>15, kno>15; effet: permet de lancer un sort sans composante gestuelle +1PS";
+case "QuintessenceDesSorts":return "div: cumulable; cond: spi>45, kno>30 (+5/palier); effet: Augmente la classe des des de 1 (+1 PS/dé): (1d4, 1d6, 1d8, 1d10, 1d12, 2d8, 3d6, 2d10, 2d12, 3d10, 3d12, 6d6, 4d10)";

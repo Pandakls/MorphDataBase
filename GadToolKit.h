@@ -43,9 +43,108 @@ inline float random (float s, float e){
     float res = (float)(rand() % 10000) /10000.;
     return res * (e-s)+s;
 }
+
 //Random dice
 inline int dice (int e){
     return random(1,e);
+}
+//Random consonne
+inline std::string randomCons(){
+    std::string cons;
+    int R = dice(18);
+    int Q = dice(4);
+
+    switch(R) {
+    case 1:cons="b";break;
+    case 2:cons="c";break;
+    case 3: if (Q == 1) cons="j";
+        else if (Q == 2) cons="y";
+        else cons="h";break;
+    case 4:cons="d";break;
+    case 5: if (Q == 1) cons="w";
+        else if (Q == 2) cons="z";
+        else cons ="x"; break;
+    case 6:if (Q == 1) cons="ff";
+        else cons="f";break;
+    case 7:cons="g";break;
+    case 8:cons="v";break;
+    case 10:cons="k";break;
+    case 11:if (Q == 1) cons="ll";
+        else cons="l";break;
+    case 12:if (Q == 1) cons="mm";
+        else cons="m";break;
+    case 13:if (Q == 1) cons="nn";
+        else cons="n";break;
+    case 14:if (Q == 1) cons="ph";
+        else cons="p";break;
+    case 15:cons="qu";break;
+    case 16:if (Q == 1) cons="rr";
+        else cons="r";break;
+    case 17:cons="s"; break;
+    case 18: cons = "t";break;
+    case 9:if (Q == 1) cons="sh";
+        else if (Q == 2) cons = "ss";
+        else cons="th";break;
+    }
+    return cons;
+}
+//Random voyelle
+inline std::string randomVoy(){
+    std::string voy;
+
+    int R = dice(8);
+    int Q;
+    switch(R) {
+    case 1: voy="a";break;
+    case 2: voy="e";break;
+    case 3: Q = dice(4);
+        if(Q != 1) voy="o";
+        else voy="y"; break;
+    case 4: voy="i";break;
+    case 5: Q = dice(4);
+        if(Q!=1) voy="u";
+        else voy="y"; break;
+    case 6: Q = dice(3);
+        if(Q==1) voy="ou";
+        else if(Q==2) voy="au";
+        else voy="eu";break;
+    case 7: Q = dice(4);
+        if(Q==1) voy="en";
+        else if(Q==2) voy="on";
+        else if(Q==3) voy = "an";
+        else voy = "in"; break;
+    case 8: Q = dice(18);
+        switch(Q){
+        case 1:voy="ö";break;
+        case 2:voy="ü";break;
+        case 3:voy="ë";break;
+        case 4:voy="ï";break;
+        case 5:voy="ê";break;
+        case 6:voy="è";break;
+        case 7:voy="ä";break;
+        default: voy="é";break;
+        }
+        break;
+    }
+    return voy;
+}
+//Random name
+inline std::string randomName(){
+    std::string name = "";
+    int nounSize= dice(4);
+    bool wasVoy = (dice(2)==1)? true : false;
+
+    for(int i=0; i<nounSize;i++){
+        if(dice(10)==1){ wasVoy=!wasVoy;}
+        if(wasVoy){
+            name += randomCons();
+            name +=randomVoy();
+        }else{
+            name +=randomVoy();
+            name += randomCons();
+        }
+    }
+return name;
 }
 
 /////////////

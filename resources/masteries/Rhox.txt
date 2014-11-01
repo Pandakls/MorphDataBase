@@ -1,2 +1,11 @@
 Rhox
 Superbia
+Traits Rhox",1,"+5 FOR, +5 VIT, -10 DEX
+Embrochement",1,"Le Rhox est considéré armé avec sa corne: peut s'utiliser en lutte contrairement aux autres armes. dgts: For/10d8
+Compétence supplémentaire",1,"Lutte (1, 5, 10, 15 et 20)
+Stabilité",2,"Le Rhox Aquièrt stabilité en tant que don supplémentaire
+Riposte mineure",3,"Une fois en dehors de son tour :le Rhox à le droit a une attaque d'opportunité (-20) lorsqu'il se fait toucher.
+Riposte ",7,"Une fois en dehors de son tour :le Rhox à le droit a une attaque d'opportunité (-10) lorsqu'il se fait toucher.
+Riposte importante",11,"Une fois en dehors de son tour :le Rhox à le droit a une attaque d'opportunité lorsqu'il se fait toucher.
+Riposte lourde",15,"deux fois en dehors de son tour :le Rhox à le droit a une attaque d'opportunité lorsqu'il se fait toucher.
+Riposte du Maître",19,"Le Rhox à le droit a une attaque d'opportunité lorsqu'il se fait toucher.

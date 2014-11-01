@@ -1,0 +1,19 @@
+Souffle(passif),1L	0A	0S 	le Dugokalt commence a maitriser ses poumons pour envoyer valser ses ennemis.
+Souffle Tranchant,1L	2xA	2xS 	degats air (5mx3m): portee:5m, dgt:xd6/dist, comp:xd6, cc:x2
+Souffle d'impulsion,1L	3A	2S 	repousse les cibles de 6m. comp +4m, cc : +10m
+
+Flammes(passif),2L	0A	0S 	le dugokalt maitrise son feu interieur et peut en souffler par magie.
+Souffle de flamme,2L	2xA	2xS 	degats feu (5mx3m): portee:5m, dgt:xd6/dist, comp:brulure xd6, cc:x2
+Appel draconique,2L	3A	2S	le dugokalt communique avec ses congenaires dans un rayon de 1km, seuls les entites draconiques l'entendent, les autres ressentent un courant d'air.
+
+Froid (passif),3L	0A	0S 	le dugokalt maitrise son froid interieur et peut en souffler par magie.
+Souffle de glace,3L	2xA	2xS 	degats glace (5mx3m): portee:5m, dgt:xd6/dist, comp:Gel DDVig xRnds, cc:x2
+Souffle Ralentissant,3L	5A	10S 	S'approchant du zero absolu, les particules ralentissent : PA/2 rounded up, comp: rounded down, cc -1PA (apres comp).
+
+Vie et Mort (passif),4L	0A	0S 	le dugokalt a compris l'essence meme de la vie et inssufle mort ou vie sur son passage.
+Souffle de peste,4L	2xA	2xS 	degats maladie (5mx3m): portee:5m, dgt:xd6/dist, comp:x rhume, cc:x2
+Souffle de guerison,4L	2xA	5xS 	soigne dans un cone 5x3m : soin:xd6, comp : xd6, cc:x2
+
+Telekinesie(passif),5L	0A	0S 	le dugokalt peut ajuster la longueur d'onde de son souffle a celui des pensees
+Langue telekinetique,5L	0A	0S 	le dugokalt peut parler dans les pensees des gens sans que d'autres l'entendent
+Souffle de frayeur,5L	2xA	2xS 	degats telekinesiques (5mx3m): portee:5m, dgt:xd6/dist, comp:Fray DDFM xRnds, cc:x2

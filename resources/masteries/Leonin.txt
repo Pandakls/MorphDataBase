@@ -1,2 +1,7 @@
 Leonin
 Superbia
+p = new Passive("Traits Léonins",1,"+2 points de Carac");a.add(p);
+			p = new Passive("Prestance naturelle",1,"Séduction, Diplomatie, Marchandage, Renseignement");a.add(p);
+			p = new Passive("Compétence supplémentaire",1,"Perception olfactive (1,4,9,14 et 19)");a.add(p);
+			p = new Passive("Nouveau Domaine",3,"Domaine obligatoire au niveau 3: Elementaire Feu");a.add(p);
+			

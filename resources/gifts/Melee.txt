@@ -1,0 +1,11 @@
+case "AttaqueEnPuissance":return "\ndiv: cumulable; cond: for>15 (+10 par palier); effet: -10 Melee, +1d Dgt";
+case "AttaqueEnFinesse":return "div: unique; cond: Sgf>15, Dex >25; effet: permet de toucher au CaC avec sa dex plutot qu'avec sa force (les dégats restent avec la force)";
+case "AttaqueADeuxMains":return "div: unique; cond: dex>20; effet: réduit de 1 le cout en PC total d'une attaque en mélée avec deux armes différentes dans un meme round";
+case "AttaqueCritique":return "div: unique; cond: For>30; effet: dgts x3, cout en PC x2 (mélée)";
+case "AttaqueDePrecision":return "div: cumulable; cond: Sfg>15 (+10 par palier); effet: +1PC, +20 melee"; 
+case "AttaqueRapide":return "div: cumulable; cond: Dex>15 (+10 par palier); effet: -1 PC, -10 melee";
+case "AttaquePrudente":return "div: ; cond: sfg>15 (+10 par palier); effet: -10 melee, +10 reflexes";
+case "PriseEnMain":return "div: unique, passif; cond: none; effet: permet de prendre une arme (normalement a une main) à deux mains et d'augmenter le dé de dégat d'une classe: (1d4, 1d6, 1d8, 2d4, 1d10, 1d12, 2d6, 2d8, 3d6, 2d10, 2d12, 4d6, 3d10, 3d12, 5d6, 4d10)";
+case "AttaqueSournoise":return "div: cumulable; cond: sfg>15, Dex>15 (+10 par palier); effet: +10 mélée, +1 cc, -1d dgt";
+case "AttaqueEnRotation":return "Atk +2 PA, -20 Mélée, angle d'attaque";
+case "Charge":return "div: unique; cond: none; effet: permet d'avoir une attaque à 1pc après un déplacement de plus de 5m avec un bonus de +1d dgt";

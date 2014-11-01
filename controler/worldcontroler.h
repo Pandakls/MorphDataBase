@@ -7,7 +7,7 @@
 #include "GadToolKit.h"
 
 //Generation of characters
-#include "../model/character/character.h"
+#include "../model/entities/character.h"
 
 class WorldControler
 {

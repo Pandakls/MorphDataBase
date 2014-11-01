@@ -1,2 +1,12 @@
 Nucleoli
 Centurial
+p = new Passive("Traits Nucleolien",1,"-10 KNO, +10 SPI");a.add(p);
+			p = new Passive("Compétence supplémentaire",1,"Perception auditive (1,4,9,14 et 19)");a.add(p);
+			p = new Passive("Nouveau Domaine",1,"Domaine obligatoire au niveau 1: Maladie ou Illusion");a.add(p);
+			p = new Passive("Vol novice",5,"Peut voler");a.add(p);
+			p = new Passive("Nouveau Domaine",4,"Domaine obligatoire au niveau 4: Illusion ou Telekinésie");a.add(p);
+			p = new Passive("Nouveau Domaine",7,"Domaine obligatoire au niveau 7: Elementaire Air ou Maladie");a.add(p);
+			p = new Passive("Vol débutant",10,"Peut voler et combattre en vol (Malus -10)");a.add(p);
+			p = new Passive("Vol débutant",15,"Peut voler et combattre en vol sans malus");a.add(p);
+			p = new Passive("Vol débutant",20,"Peut voler et combattre en vol (Bonus +10)");a.add(p);
+			

@@ -1,2 +1,10 @@
 Limon
 Omber Tertuo
+p = new Passive("Traits Limon",1,"+2 points de Carac");a.add(p);
+			p = new Passive("Compétence supplémentaire",1,"Fouille (1,4,9,14 et 19)");a.add(p);
+			p = new Passive("Amorphe",1,"Le limon ne possède pas de forme propre, il n'a cependant pas les talents pour copier quelqu'un.");a.add(p);
+			p = new Passive("Reconstitution",1,"En outre il peut passer dans des endroits très étroits et régénérer les parties manquantes de son corps (long)");a.add(p);
+			p = new Passive("Nouveau Domaine",1,"Domaine obligatoire au niveau 1: Maladie ou Elementaire Choix");a.add(p);
+			p = new Passive("Nouveau Domaine",4,"Domaine obligatoire au niveau 4: Auramancie ou Malédiction");a.add(p);
+			p = new Passive("Nouveau Domaine",7,"Domaine obligatoire au niveau 7: Necromancie ou Invocation");a.add(p);
+			

@@ -3,19 +3,20 @@
 World::World() : width(1100), height(550)
 {
     for (int i=0; i<NB_MAX_ENTITY/5; i++){
-        Entity e = Entity();
-        entities.push_back(e);
+        Monster m = Monster::randomMonster();
+        addMonster(m);
     }
 }
 
-void World::live(float time){
-    for (unsigned i= 0; i< entities.size();i++){
-        entities.at(i).live(time);
-        if (entities.at(i).getPos().x() < 0 ||
-                entities.at(i).getPos().x() > width ||
-                entities.at(i).getPos().y() < -height/2 ||
-                entities.at(i).getPos().y() > height/2){
-            entities.at(i).bound(width, height);
-        }
+void World::live(float /*time*/){
+    for (unsigned i= 0; i< cliques.size();i++){
+        cliques.at(i).live(width, height);
     }
+}
+
+void World::addMonster(Monster m){
+    Clique c;
+    c.addMonster(m);
+    cliques.push_back(c);
+    entities.push_back(m);
 }

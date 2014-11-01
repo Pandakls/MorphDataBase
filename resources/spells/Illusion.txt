@@ -1,0 +1,23 @@
+Brouillard("Brouillard", "Illusion",1, 3, 8, "Génère une zone de brouillard de 10m de diamètre qui réduit la visibilité de tout le monde. (-20 mélée/Tast/Tir/Ref/FM) 1min/lvl" ),
+Lumiere("Lumière", "Illusion",1, 2, 3, "Génère un cone de lumière intense qui réduit la visibilité pendant un round. (-10 mélée/Tast/Tir/Ref/FM) SPI/10+1 dégat de lumière, portée: 5M/3m" ),
+Illusiontp("Illusion", "Illusion",1, 5, 5, "Génère une illusion visuelle de taille très petite pendant SPI/3 min"),
+
+Nausee("Nausée", "Illusion",2, 3, 5, "Génère un sentiment de nausée chez une cible 1 min/lvl. (-20 tout les jets)" ),
+Odeur("Odeur", "Illusion",2, 3, 5, "Une illusion olfactive est émise à moins de 30 m" ),
+Illusionp("Illusion", "Illusion",2, 15, 10, "Génère une illusion visuelle et olfactive de taille petite pendant SPI/2 min" ),
+IllusionO("Illusion Olfactive", "Illusion",2, 0, 5, "Les illusions des plus bas niveau peuvent etre désormais olfactives pour un cout supplémentaire de 2PS" ),
+
+Bruit("Bruit", "Illusion",3, 3, 5, "Une illusion sonore est émise à moins de 30 m" ),
+VoiceExtinction("Exctinction de voix", "Illusion",3, 3, 6, "une cible au contact n'émet plus aucun son 1min/lvl" ),
+VoiceMultiplier("Décuplement de voix", "Illusion",3, 3, 3, "Multiplie jusqu'à 5 la voix de la cible 1min/lvl" ),
+IllusionM("Illusion", "Illusion",3, 30, 15, "Génère une illusion visuelle, olfactive et sonore de taille Grande pendant SPI min" ),
+IllusionS("Illusion Sonore", "Illusion",3, 0, 5, "Les illusions des plus bas niveau peuvent etre désormais sonores pour un cout supplémentaire de 5PS" ),
+
+Obscurite("Obscurité", "Illusion",4, 5, 10, "Génère une zone d'ombre (5m diam) qui réduit la visibilité à néant pendant 1 min/lvl. (-100 mélée/Tast/Tir/Ref/FM)" ),
+Toucher("Touché modifié", "Illusion",4, 3, 5, "La sensation de toucher est changée chez la cible (de meme que la température sans qu'il puisse avoir mal)" ),
+IllusionTG("Illusion", "Illusion",4, 90, 30, "Génère une illusion visuelle, olfactive, sonore et tactile de taille Gigantesque pendant SPIx2 min" ),
+IllusionT("Illusion du toucher", "Illusion",4, 0, 5, "Les illusions des plus bas niveau peuvent être désormais tactile pour un cout supplémentaire de 5PS" ),
+	
+Douleur("Sensation de douleur", "Illusion",5, 3, 5, "Provoque une douleur ou une brûlure chez la cible (sans infliger de dégats pour autant)" ),
+IllusionCol("Illusion", "Illusion",5, 600, 60, "Génère une illusion visuelle, olfactive, sonore, tactile et de douleur de taille Col pendant SPIx3 min" ),
+IllusionD("Illusion de douleur", "Illusion",5, 0, 10, "Les illusions des plus bas niveau peuvent être désormais douloureuses pour un cout supplémentaire de 10PS" ),

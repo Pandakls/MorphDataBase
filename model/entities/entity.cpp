@@ -22,7 +22,6 @@ void Entity::live(float /*time*/){
     else if (direction.y()<-10){direction.setY(-8);}
 
     pos += direction;
-
 }
 
 void Entity::bound(int width, int height){

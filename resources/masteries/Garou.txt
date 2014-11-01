@@ -1,3 +1,18 @@
 Garou
 Omber Tertuo
 [Enhanced][Half-Blood]
+p = new Passive("Les caractéristiques garou, s'ajoutent à la race 'garou'",1,"+10 FOR, +5 DEX, -15 SGF");a.add(p);
+			p = new Passive("Compétence supplémentaire",1,"Pistage (1,4,7,10)");a.add(p);
+			p = new Passive("Soif de sang",1,"La présence de sang rend le loup garou incontrôlable");a.add(p);
+			p = new Passive("Transformation",1,"A la pleine lune, le Garou se tranforme de gré ou de force");a.add(p);
+			p = new Passive("Faiblesse Argent",1,"Dégats doublés");a.add(p);
+			p = new Passive("Transformation",2,"le Garou peut se tranforme de son plein gré 1/3jours");a.add(p);
+			p = new Passive("Detection",3,"le Garou sent la présence des être vivants (taille>tp) à moins de 15m (avec un minimum d'attention)");a.add(p);
+			p = new Passive("Transformation",5,"le Garou peut se tranforme de son plein gré 1/jour");a.add(p);
+			p = new Passive("Detection",6,"le Garou sent la présence des être vivants (taille>tp) à moins de 50m (avec un minimum d'attention)");a.add(p);
+			p = new Passive("Transformation",8,"le Garou peut se tranforme de son plein gré 2/jour");a.add(p);
+			p = new Passive("Detection",9,"le Garou sent la présence des être vivants (taille>tp) à moins de 100m (avec un minimum d'attention)");a.add(p);
+			p = new Passive("Detection",9,"le Garou détecte automatiquement tout danger à moins de 10m peu importe son état");a.add(p);
+			p = new Passive("Transformation",10,"le Garou peut se tranforme de son plein gré autant qu'il le désir et ne devient plus fou en présence de sang");a.add(p);
+			p = new Passive("Forme Alpha",10,"+1PC");a.add(p);
+			

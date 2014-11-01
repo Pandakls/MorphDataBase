@@ -1,0 +1,20 @@
+CreationI("Passif de création", "Creation",1, 0, 2, "Le pj peut matérialiser un objet de la taille d'une pièce par minute avec les materieux qu'il contrôle"),
+TransformationT("transformation du tissus", "Creation",1, 15, 5, "Le pj peut changer la forme des pièces de tissu (5PS/m²x10cm) tenue complète =10PS"),
+TransformationPl("transformation des plantes", "Creation",1, 15, 5, "Le pj peut changer la forme des plantes sans les tuer (5PS/m²x10cm) Arbre Taille M(2,5Mcube) = 125PS, Arbre Taille G (10Mcube) = 500 PS"),
+CreationsElementires("Materialisation d'éléments", "Creation",1, 15, 5, "Le pj peut créér de l'énergie élémentaire (froid/chaud/éléctricité/eau). "),
+
+CreationII("Passif de création", "Creation",2, 0, 4, "Le pj peut matérialiser un objet de la taille d'une pomme par minute avec les materieux qu'il contrôle" ),
+Creationsdarmes("Création d'armes", "Creation",2, 0, 0, "Le pj peut créér des armes par materialisation. Avec un cout en PSx3 et Un temps x180, peut aquérir des bonus"),
+TransformationB("transformation du bois", "Creation",2, 15, 5, "Le pj peut changer la forme du bois (5PS/m²x10cm) porte = 10PS" ),
+Creationsdarc("création d'arc", "Creation",2, 0, 0, "arc court :8 PS , 2 minutes. arc long: 12PS, 3 minutes. Arc long du maître: +10: 36 PS, 9 heures"),
+
+CreationIII("Passif de création", "Creation",3, 0, 0, "Le pj peut matérialiser instantanément un objet qu'il peut déja créer pour un prix en PS x3" ),
+CreationIIIbis("Passif de création", "Creation",3, 0, 0, "Le pj peut matérialiser temporairement un objet qu'il peut déja créer pour un prix en PS /3 (1 min/lvl)" ),
+TransformationPi("transformation de la pierre", "Creation",3, 15, 5, "Le pj peut changer la forme de la pierre et de la terre (5PS/m²x10cm) Gros rocher (1Mcube) = 50PS, Mur (80cmx80cm = 5PS)" ),
+Creationsdarmeinstant("création d'armes instantané", "Creation",3, 0, 0, "arc court :24 PS. arc long: 36PS. Armes de maître: impossible"),
+
+CreationIV("Passif de création", "Creation",4, 0, 8, "Le pj peut matérialiser un objet de la taille d'une pastèque en 1 minute avec les materieux qu'il contrôle" ),
+TransformationM("transformation du métal", "Creation",4, 15, 5, "Le pj peut changer la forme du métal (5PS/m²x10cm) Une armure = 15 PS, une bouclier = 5PS" ),
+
+CreationV("Passif de création", "Creation",5, 0, 16, "Le pj peut matérialiser un objet de la taille d'un tonneau en 1 minute avec les materieux qu'il contrôle" ),
+TransformationP("transformation de tout", "Creation",5, 15, 5, "Le pj peut changer toutes formes de matériaux non vivants (5PS/m²x10cm)" ),

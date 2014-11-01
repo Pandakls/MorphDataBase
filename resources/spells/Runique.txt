@@ -1,0 +1,13 @@
+RunepreludeI("Regles d'enchantement", "Runes",1, 0, 0, "Le pj peut sceller une aura magie dans un objet inanimé. La magie à besoin d'un conteneur où rester. Voici les différentes catégorie de runes:"),
+RunepreludeII("Regles d'enchantement", "Runes",1, 600, 5, "(10 min) rune superficielle, réceptacle adéquat: tout, coût des composantes materielles: 50PO"),
+RunepreludeIII("Regles d'enchantement", "Runes",1, 1800, 10, "(30 min) rune mineur, réceptacle minimum: bois modelé, coût des composantes materielles: 100PO"),
+RunepreludeIV("Regles d'enchantement", "Runes",1, 7200, 20, "(2h) rune conséquente, réceptacle minimum: métal modelé, coût des composantes materielles: 250PO"),
+RunepreludeV("Regles d'enchantement", "Runes",1, 18000, 40, "(5h) rune majeur, réceptacle minimum: pierre précieuse, coût des composantes materielles: 500PO"),
+RunepreludeVI("Regles d'enchantement", "Runes",1, 43200, 80, "(12h) rune de maître, réceptacle minimum: pierre précieuse de tres bonne qualité, coût des composantes materielles: 1000PO"),
+RunepreludeVII("Regles d'enchantement", "Runes",1, 0, 0, "le résultat du dé donne: SEC:destruction de l'objet et des composantes, EC: perte des composantes materielles, E:Perte de 2X% des composantes (X étant le jet de dé), R:réussite partielle de l'enchantement (effet aléatoire), RC: réussite totale de l'enchantement, SRC:Méga bonus on weapon"),
+
+RuneI("Runes", "Runes",1, 0, 0, "Au niveau 1 les runes disponibles sont: Bonus tir(+1,+5,+10,+15,+20), Bonue mélée(+1,+5,+10,+15,+20), Bonus Cast(+1,+5,+10,+15,+20)"),
+RuneII("Runes", "Runes",2, 0, 0, "Au niveau 2 les runes disponibles sont: Bonus reflexes(+1,+5,+10,+15,+20), Bonue force mentale(+1,+5,+10,+15,+20), Bonus Compétence(+1,+5,+10,+15,+20)"),
+RuneIII("Runes", "Runes",3, 0, 0, "Au niveau 3 les runes disponibles sont: Bonus cc(+0,+1,+2,+3,+5), Bonue soin(+1,+2,+4,+7,+10), Bonus Dégats élémentaires(+1,+1d6,+1d10,+2d6,+2d10)"),
+RuneIV("Runes", "Runes",4, 0, 0, "Au niveau 4 les runes disponibles sont: Don supplémentaire (+0,+0,+1,+1,+1), détaillé dans la table des dons"),
+RuneV("Runes", "Runes",5, 0, 0, "Au niveau 5 les runes disponibles sont: Domaine supplémentaire (+0,+0,+0,+0,+1), Bonus PC (+0,+0,+0,+0,+1)"),

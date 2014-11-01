@@ -148,6 +148,7 @@
     <addaction name="actionItem_Gen"/>
     <addaction name="menuCity_Gen"/>
     <addaction name="actionTreasur_Gen"/>
+    <addaction name="actionNoun_Gen"/>
    </widget>
    <widget class="QMenu" name="menuOutils">
     <property name="title">
@@ -253,6 +254,11 @@
   <action name="actionPrev">
    <property name="text">
     <string>Prev</string>
+   </property>
+  </action>
+  <action name="actionNoun_Gen">
+   <property name="text">
+    <string>Noun Gen</string>
    </property>
   </action>
  </widget>

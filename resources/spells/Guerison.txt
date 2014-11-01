@@ -1,0 +1,14 @@
+Soin("Soin", "Guerison",1, 3, 3, "Le pj soigne une cible. Portée 3m, soin: SPI/5, comp: SPI/5, cc x3"),
+Soinleg("Soin légers", "Guerison",1, 1, 1, "Le pj soigne une cible. Portée 3m, soin: 1, comp: 1, cc x3"),
+
+SoinAltruiste("Soin Altruiste", "Guerison",2, 2, 4, "Le pj soigne une cible en se blessant. Portée 6m, dégats: SPI/4, soin: SPI/2, comp:soin SPI/2, cc x3"),
+regeneration("regeneration", "Guerison",2, 5, 5, "Le pj fait repousser des parties du corps manquantes. Portée: contact, cout supplémentaire: 10 PS pour les membres, 5PS pour une main/un pied"),
+
+Rappelm("Rappel mineur", "Guerison",3, 10, 15, "Le pj redonne vie à une cible qui vient de mourrir (moins d'une minute), portée:contact Retour à la vie avec 1pv, comp: soin SPI/5, cc x3"),
+Soinlegdegroupe("Soin légers de groupe", "Guerison",3, 1, 3, "soigne toutes les personnes présentes dans une zone de 5m de diam. Portée 3m, soin: 1, comp: 1, cc x3"),
+
+soindegroupe("Rappel", "Guerison",4, 3, 4, "Le pj soigne toutes les personnes présentes dans une zone de 5m de diam. Portée 3m, soin: SPI/10, comp: SPI/10, cc x3"),
+Rappel("Rappel", "Guerison",4, 10, 15, "Le pj redonne vie à une cible dont le corps est entier, portée:contact Retour à la vie avec 1pv, comp: soin SPI/5, cc x3"),
+
+Reconstitution("Reconstitution", "Guerison",5, 5, 10, "Le pj soigne une cible au maximum de sa vie. Portée 3m."),
+RappelM("Rappel majeur", "Guerison",5, 10, 15, "Le pj redonne vie à une cible dont le corps est partiel (cout supplémentaire: 10 PS par membre, 15PS tete, 20PS buste manquant), portée:contact Retour à la vie avec 1pv, comp: soin SPI/5, cc x3"),

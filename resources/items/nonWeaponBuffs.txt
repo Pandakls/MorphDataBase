@@ -53,7 +53,7 @@ Heal+2,			100k	0.015p
 Heal+5,			250k	0.005p
 CC+1,			330k	0.02p
 Feather Weight,		5k	0.09p
-Blessed	1/j, 		266k	0.01p
+Blessed 1/j, 		266k	0.01p
 Levitation,		777k	0.002p
 Transparency,		777k	0.001p
 Invisibility,		777k	0.001p

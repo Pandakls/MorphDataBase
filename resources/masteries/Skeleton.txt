@@ -1,3 +1,16 @@
 Skeleton
 Omber Tertuo
 [Half-Blood]
+p = new Passive("Traits Squelettes",1,"+10 SPI, -10 VIT");a.add(p);
+			p = new Passive("Compétence supplémentaire",1,"Bluff (1,4,9,14 et 19)");a.add(p);
+			p = new Passive("Malus Compétences",1,"Diplomatie, Marchandage, Renseignement");a.add(p);
+			p = new Passive("Immunnité",1,"Poison et maladies");a.add(p);
+			p = new Passive("Insensibilité",2,"Dégats perforants -10, dégats contendants +10");a.add(p);
+			p = new Passive("Nouveau Domaine",3,"Domaine obligatoire au niveau 3: Necromancie");a.add(p);
+			p = new Passive("Démembrement Léger",5,"Le squelette peut se une main, un pied détaché");a.add(p);
+			p = new Passive("Insensibilité",7,"Dégats perforants -10, dégats critiques +10");a.add(p);
+			p = new Passive("Démembrement",10,"Le squelette peut se remettre un bras, une jambe détachée");a.add(p);
+			p = new Passive("Insensibilité",12,"Dégats perforants -10, dégats feu,glace +10");a.add(p);
+			p = new Passive("Insensibilité",17,"Dégats perforants -10, dégats foudre,terre,air -10");a.add(p);
+			p = new Passive("Démembrement Lourd",20,"Le squelette peut se reconstituer, peu importe son état (si hp>0)");a.add(p);
+			
