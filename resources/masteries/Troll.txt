@@ -1,2 +1,10 @@
 Troll
 Omber Tertuo
+[Optimus]
+Trait troll +10 VIT -10 ESP -10 SAV
+Connaissance de la nature (LVL 1,4,9,14,19)
+Taille ++ au dela de 50% de constitution Troll
+don possible : (req:VIT>15 +5/stack) Regeneration trollesque 1 PV/round <> 10pv/minutes
+Don possible : Big Foot + (Gain de 2m au lieu de 1m)
+Don possible : Allonge + (Permet de taper a 3m au lieu de 1m50)
+Don possible : Arme imposante, Le minotaure peut manipuler des armes plus grandes : augmente la classe du de de 1

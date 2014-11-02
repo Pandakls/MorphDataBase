@@ -1,6 +1,7 @@
 Kantar
 Omber Tertuo
-p = new Passive("Traits Kantar",1,"+2 points de Carac, possède 4 bras");a.add(p);
-			p = new Passive("Compétence supplémentaire",1,"Discretion (1,4,9,14 et 19)");a.add(p);
-			p = new Passive("Nouveau Domaine",3,"Domaine obligatoire au niveau 3: Elementaire Terre");a.add(p);
+[Polyvalent]
+Traits Kantar +2 points de Carac, possede 4 bras
+Discretion (LVL : 1,4,9,14 et 19)
+Nouveau  Domaine obligatoire : Elementaire Terre
 			

@@ -1,6 +1,6 @@
 Bastet
 Superbia
-Polyvalent
+[Polyvalent]
 Domaine Obligatoire : Telekinesie
 Traits Bastets -5 FOR, +5 DEX, -5 VIT, +5 SGF
 Acrobatie ++ (LVL : 1,4,9,14 et 19)

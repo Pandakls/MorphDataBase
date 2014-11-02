@@ -1,15 +1,17 @@
 Serian
 Centurial
 [Enhanced]
-Savoir des Serianne",1,"+10 KNO.
-Compétence supplémentaire",1,"Diplomatie (lvl 1,4,8)
-Chatiment du mal et du juste",1,"1/jour
-Aura du Bien",1,"Le personnage dégage une aura de Bonté
-Detection du mal et du juste",2,"Le personnage peut détecter ses ennemis
-Chatiment du mal et du juste",3,"2/jour
-Ailes de Serianne",5,"Le personnage peut voler
-Chatiment du mal et du juste",6,"3/jour
-Combat en vol",7,"Le personnage peut Combattre en vol -10 à tout ses jets
-Chatiment du mal et du juste",9,"5/jour
-Combat en vol maîtrisé",10,"Le personnage peut Combattre en vol sans malus
-Plénitude",10,"+1 PC         b 
+Serian : +10 KNO + Aura du Mal : Le personnage degage une aura de justice
+Diplomatie (lvl 1,2,3,4,5)
+LVL 1 : Detection : Le personnage peut detecter ses ennemis dans un rayon de 1km
+LVL 1 : Chatiment 1/jour
+LVL 2 : Chatiment 2/jour
+LVL 2 : Ailes de Serian : Le personnage peut voler
+LVL 3 : Chatiment 3/jour
+LVL 3 : Combat en vol I : Le personnage peut Combattre en vol -20 a tout ses jets d'attaque
+LVL 4 : Chatiment 5/jour
+LVL 4 : Combat en vol II : Le personnage peut Combattre en vol sans malus
+LVL 5 : Chatiment infini
+LVL 5 : Plenitude",10,"+1 PC
+
+Chatiment : 2PA, 0PS, aucun jet de FM possible. Les degats infliges a la cible par une faction ennemis sont doubles.

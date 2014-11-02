@@ -1,15 +1,14 @@
 Cyborg
 Centurial
-[Half-Blood]
-p = new Passive("Traits Cyborg",0,"(+4 VIT, -1KNO) par niveau");a.add(p);
-			p = new Passive("Classes incompatibles:",0,"Teckin, Arcbound, Veldaken");a.add(p);
-			p = new Passive("Régénération",1,"1PV/PS par 10 minutes");a.add(p);
-			p = new Passive("Compétence supplémentaire",1,"Resistance à l'Alcool (1,3,6,9)");a.add(p);
-			p = new Passive("Resistance aux maladies et au poisons",2,"+10 jet de vit");a.add(p);
-			p = new Passive("Régénération",4,"2PV/PS par 10 minutes");a.add(p);
-			p = new Passive("Resistance aux maladies et au poisons",5,"Guérison automatique");a.add(p);
-			p = new Passive("Régénération",7,"5PV/PS par 10 minutes");a.add(p);
-			p = new Passive("Resistance aux maladies et au poisons",8,"Création d'antidote après assimilation");a.add(p);
-			p = new Passive("Régénération",10,"10PV/PS par 10 minutes");a.add(p);
-			p = new Passive("Amélioration du Génome",10,"+1PC");a.add(p);
-			
+[Enhanced]
+Traits Cyborg : (+4 VIT, -1KNO)/lvl
+Resistance a l'Alcool (1,2,3,4,5)
+Classes incompatibles: Teckin, Arcbound, Etats incompatibles : Mage de sang
+lvl 1 : Regeneration 1PV/PS par 10 minutes
+lvl 1 : Resistance aux maladies et au poisons (+20 VIG)
+lvl 2 : Regeneration 2PV/PS par 10 minutes
+lvl 2 : Resistance aux maladies et au poisons : Guerison automatique
+lvl 3 : Regeneration 5PV/PS par 10 minutes
+lvl 4 : Resistance aux maladies et au poisons : Creation d'antidote apres assimilation
+lvl 5 : Regeneration 10PV/PS par 10 minutes
+lvl 5 : Amelioration du Genome : +1PC

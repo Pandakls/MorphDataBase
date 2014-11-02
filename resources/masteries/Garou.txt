@@ -1,18 +1,19 @@
 Garou
 Omber Tertuo
-[Enhanced][Half-Blood]
-p = new Passive("Les caractéristiques garou, s'ajoutent à la race 'garou'",1,"+10 FOR, +5 DEX, -15 SGF");a.add(p);
-			p = new Passive("Compétence supplémentaire",1,"Pistage (1,4,7,10)");a.add(p);
-			p = new Passive("Soif de sang",1,"La présence de sang rend le loup garou incontrôlable");a.add(p);
-			p = new Passive("Transformation",1,"A la pleine lune, le Garou se tranforme de gré ou de force");a.add(p);
-			p = new Passive("Faiblesse Argent",1,"Dégats doublés");a.add(p);
-			p = new Passive("Transformation",2,"le Garou peut se tranforme de son plein gré 1/3jours");a.add(p);
-			p = new Passive("Detection",3,"le Garou sent la présence des être vivants (taille>tp) à moins de 15m (avec un minimum d'attention)");a.add(p);
-			p = new Passive("Transformation",5,"le Garou peut se tranforme de son plein gré 1/jour");a.add(p);
-			p = new Passive("Detection",6,"le Garou sent la présence des être vivants (taille>tp) à moins de 50m (avec un minimum d'attention)");a.add(p);
-			p = new Passive("Transformation",8,"le Garou peut se tranforme de son plein gré 2/jour");a.add(p);
-			p = new Passive("Detection",9,"le Garou sent la présence des être vivants (taille>tp) à moins de 100m (avec un minimum d'attention)");a.add(p);
-			p = new Passive("Detection",9,"le Garou détecte automatiquement tout danger à moins de 10m peu importe son état");a.add(p);
-			p = new Passive("Transformation",10,"le Garou peut se tranforme de son plein gré autant qu'il le désir et ne devient plus fou en présence de sang");a.add(p);
-			p = new Passive("Forme Alpha",10,"+1PC");a.add(p);
-			
+[Garou]
+Les caracteristiques garou sont valables dans toutes les formes.
+Cf regles, le personnage possede deux perso de meme lvl.
+Traits Garou : +5 FOR, +5 DEX, +10 VIT, -20 SGF
+Pistage (lvl 1,4,7,10)
+lvl 1 : Soif de sang : La presence de sang rend le loup garou incontrolable : SGF - 50.
+lvl 1 : Transformation I : A la pleine lune (ou autre evenement a definir), le Garou se tranforme de gre ou de force
+lvl 1 : Faiblesse a l'Argent : Degats doubles
+lvl 1 : Detection I : le Garou sent la presence des etre vivants (taille>tp) a moins de 15m (avec un minimum d'attention)
+lvl 2 : Transformation II : le Garou peut se tranforme de son plein gre 1/3jours
+lvl 2 : Detection II :le Garou sent la presence des etre vivants (taille>tp) a moins de 50m (avec un minimum d'attention)
+lvl 3 : Transformation III : le Garou peut se tranforme de son plein gre 1/jour
+lvl 3 : Detection III :le Garou sent la presence des etre vivants (taille>tp) a moins de 100m (avec un minimum d'attention)
+lvl 4 : Transformation IV : le Garou peut se tranforme de son plein gre 2/jour
+lvl 4 : Detection IV :le Garou detecte automatiquement tout danger a moins de 10m peu importe son etat");a.add(p);
+lvl 5 : Transformation V : le Garou peut se tranforme de son plein gre autant qu'il le souhaite.
+lvl 5 : Forme Alpha +1AP

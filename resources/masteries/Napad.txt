@@ -1,11 +1,7 @@
 Napad
 Superbia
-Traits Napad",1,"-5 FOR, -5 DEX, +10 KNO
-Compétence supplémentaire",1,"Premier Secours (1,4,9,14,19)
-Méditation",1,"Regargne 1 PS/heure (1PS/12 minutes)
-Nouveau Domaine",3,"Domaine obligatoire au niveau 3: Guérison ou Auramancie
-Méditation",6,"Regargne 5 PS/heure (1PS/12 minutes)
-Nouveau Domaine",8,"Domaine obligatoire au niveau 8: Temps ou Elementaire Choix
-Méditation Lourde",12,"Regargne 10 PS/heure (1PS/6 minutes)
-Méditation du maître",18,"Regargne 20 PS/heure (1PS/3 minutes)
-			
+[Polyvalent]
+Traits Napad -5 FOR, -5 DEX, +10 KNO
+Premier Secours (LVL : 1,4,9,14,19)
+Nouveau Domaine obligatoire : Guerison, Auramancie ou Temps
+Don possible : Meditation (req: SAV > 20 (+10/stack)) regagne SAV/10 mana par heure.

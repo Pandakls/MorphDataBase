@@ -1,16 +1,17 @@
-Vampyre
+Vampyr
 Omber Tertuo
 [Enhanced]
-p = new Passive("Traits Vampyr",1,"+5 KNO, +5 SPI, -5VIT");a.add(p);
-			p = new Passive("Faiblesse Argent, Lumière, Religieux",1,"Dégats doublés");a.add(p);
-			p = new Passive("Besoin de sang",1,"Tout les 3 jours, le vampyr doit gouter à du sang frais. Sinon -10 a tout les jets par jours manquant");a.add(p);
-			p = new Passive("Morsure du vampyr",1,"(lutte) 2d6 dégats (100% lifelink) apaise le besoin de sang.");a.add(p);
-			p = new Passive("Lifelink",1,"+5% des dégats infligés regagnés en vita");a.add(p);
-			p = new Passive("Transformation",2,"Chauve-souris 1/3jours");a.add(p);
-			p = new Passive("Lifelink",4,"+5% des dégats infligés regagnés en vita");a.add(p);
-			p = new Passive("Transformation",5,"Chauve-souris 1/jours");a.add(p);
-			p = new Passive("Lifelink",7,"+5% des dégats infligés regagnés en vita");a.add(p);
-			p = new Passive("Transformation",8,"Chauve-souris 2/jours");a.add(p);
-			p = new Passive("Lifelink",10,"+10% des dégats infligés regagnés en vita");a.add(p);
-			p = new Passive("Transformation",10,"Chauve-souris libre");a.add(p);
-			
+Traits Vampyr +5 KNO, +5 SPI, -5VIT. Faiblesse Argent, Lumiere, Religieux x2. 
+Besoin de Sang : Tout les 2 jours, le vampyr doit gouter a du sang frais. Sinon -10 a toute les Carac par jours manquant.
+Lvl 1 : Morsure du vampyr (req:lutte reussie) 3PA, 1d6 (degats dizaine de vitalite) 100% lifelink (non modifiable) apaise le besoin de sang.
+Lvl 1 : Lifelink +5%
+Lvl 1 : Transformation en Chauve-souris 1/3jours
+Lvl 2 : Lifelink +5%
+Lvl 2 : Transformation en Chauve-souris 1/2jours
+Lvl 3 : Lifelink +5%
+Lvl 3 : Transformation en Chauve-souris 1/jours
+Lvl 4 : Lifelink +5%
+Lvl 4 : Transformation en Chauve-souris 2/jours
+Lvl 5 : Lifelink +10%
+Lvl 5 : Transformation en Chauve-souris libre
+Lvl 5 : Maitre vampyr +1AP

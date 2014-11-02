@@ -1,10 +1,7 @@
 Teckin
 Centurial
-p = new Passive("Traits Teckin",1,"+10 SPI, +10 FOR, +10 SGF, -10 VIT, -10 DEX, -10 KNO");a.add(p);
-			p = new Passive("Compétence supplémentaire",1,"Estimation (1,4,9,14 et 19)");a.add(p);
-			p = new Passive("Bouclier Psychique",1,"Le teckin peut préparer un bouclier encaissant les dégats: 1PV/PS");a.add(p);
-			p = new Passive("Nouveau Domaine",3,"Domaine obligatoire au niveau 3: Telekinesie ou Elementaire choix");a.add(p);
-			p = new Passive("Bouclier Psychique",6,"Le teckin peut préparer un bouclier encaissant les dégats: 2PV/PS");a.add(p);
-			p = new Passive("Bouclier Psychique",11,"Le teckin peut préparer un bouclier encaissant les dégats: 3PV/PS");a.add(p);
-			p = new Passive("Bouclier Psychique",16,"Le teckin peut préparer un bouclier encaissant les dégats: 5PV/PS");a.add(p);
-			
+[Polyvalent]
+Traits Teckin +6 SPI, +6 FOR, +6 SGF, -10 DEX, -10 KNO
+Estimation (LVL : 1,4,9,14 et 19)
+Nouveau domaine obligatoire : Telekinesie ou Elementaire choix
+don possible : Bouclier Psychique (req:ESP > 20, SAV >20 (+10/stack)) Le teckin peut preparer un plastron le protegeant a la hauteur de 1PV/PS coute 1PA.	

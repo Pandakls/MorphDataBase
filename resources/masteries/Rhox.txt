@@ -1,11 +1,11 @@
 Rhox
 Superbia
-Traits Rhox",1,"+5 FOR, +5 VIT, -10 DEX
-Embrochement",1,"Le Rhox est considéré armé avec sa corne: peut s'utiliser en lutte contrairement aux autres armes. dgts: For/10d8
-Compétence supplémentaire",1,"Lutte (1, 5, 10, 15 et 20)
-Stabilité",2,"Le Rhox Aquièrt stabilité en tant que don supplémentaire
-Riposte mineure",3,"Une fois en dehors de son tour :le Rhox à le droit a une attaque d'opportunité (-20) lorsqu'il se fait toucher.
-Riposte ",7,"Une fois en dehors de son tour :le Rhox à le droit a une attaque d'opportunité (-10) lorsqu'il se fait toucher.
-Riposte importante",11,"Une fois en dehors de son tour :le Rhox à le droit a une attaque d'opportunité lorsqu'il se fait toucher.
-Riposte lourde",15,"deux fois en dehors de son tour :le Rhox à le droit a une attaque d'opportunité lorsqu'il se fait toucher.
-Riposte du Maître",19,"Le Rhox à le droit a une attaque d'opportunité lorsqu'il se fait toucher.
+[Optimus]
+Traits Rhox +5 FOR, +5 VIT, -10 DEX
+Embrochement : Le Rhox est considere arme avec sa corne: peut s'utiliser en lutte contrairement aux autres armes. dgts: 1d6 (Moyen 3PA non modifiables par des dons)
+Lutte (LVL : 1,4,9,14 et 19)
+don possible : Riposte mineur (req: Stabilite, DEX > 20) 1fois/tour : droit a une attaque d'opportunite (-20) sur esquive totale.
+don possible : Riposte (req: Riposte mineur, DEX > 30) 1fois/tour droit a une attaque d'opportunite (-20) sur esquive partielle et (-10) sur esquive totale
+don possible : Riposte importante (req:Riposte, DEX > 40) 1fois/tour droit a une attaque d'opportunite (-20) lorsqu'il se fait toucher, (-10) sur esquive partielle, (-0) sur esquive totale.
+don possible : Riposte lourde (req:Riposte importante, DEX > 50) 2fois/tour droit a une attaque d'opportunite (-10) lorsqu'il se fait toucher et (-0) sur esuive partielle ou totale.
+don possible : Riposte de maitre (req:Riposte lourde, DEX > 60) 2fois/tour droit a une attaque d'opportunite lorsqu'il se fait toucher. Et a droit a une attaque d'opportunite pour chaque esquive reussie. 

@@ -1,11 +1,7 @@
 Draconem
 Superbia
-Traits Draconiques",1,"-5 SPI, +5 VIT
-Compétence supplémentaire",1,"Résistance aux températures (1,4,9,14 et 19)
-Armure Naturelle",2,"5 de résistance à tout les dégats non perforants
-Armure Naturelle",5,"10 de résistance à tout les dégats non perforants
-Armure Naturelle",8,"20 de résistance à tout les dégats non perforants
-Armure Naturelle",11,"40 de résistance à tout les dégats non perforants
-Armure Naturelle",14,"70 de résistance à tout les dégats non perforants
-Armure Naturelle",17,"100 de résistance à tout les dégats non perforants
-Armure Naturelle",20,"150 de résistance à tout les dégats non perforants
+[Brute]
+Traits Draconiques -5 SPI, +5 VIT
+Resistance aux temperatures (lvl : 1,4,9,14 et 19)
+don supplementaires possibles :
+Armure Naturelle : 10 de resistance a tout les degats non perforants (req:VIT > 20 (+10/Stack)) (ex : 51 VIT <> 102 pv <> 40 de reduction de dommages)

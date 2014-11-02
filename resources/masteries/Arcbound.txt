@@ -1,6 +1,6 @@
 Arcbound
 Centurial
-Polyvalent
+[Polyvalent]
 Traits Arcbound +2 points de Carac.
 Domaine obligatoire : Foudre
 LVL 5 : Demembrement leger:Possibilite de se remettre une jambe/un bras perdu

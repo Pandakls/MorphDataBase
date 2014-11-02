@@ -1,13 +1,11 @@
 Bukalemon
 Superbia
 [Enhanced]
-p = new Passive("Polyvalence",0,"+3 points de carac par niveau.");a.add(p);
-			p = new Passive("Polymorphisme",1,"Changement de couleur");a.add(p);
-			p = new Passive("Compétence supplémentaire",1,"Déguisement (1,3,5,7,9)");a.add(p);
-			p = new Passive("Polymorphisme",3,"Changement de forme léger (poils, cheveux, écailles, plumes, textures, ..)");a.add(p);
-			p = new Passive("Polymorphisme",5,"Changement de forme modéré (doigts, nez, visage, oreilles, ..)");a.add(p);
-			p = new Passive("Polymorphisme",7,"Changement de forme moyen (Bras, jambe, membres supplémentaires, ..");a.add(p);
-			p = new Passive("Polymorphisme",9,"Changement de taille (+/- 1)");a.add(p);
-			p = new Passive("Polymorphisme",10,"Métamorphose (voix, alignement, taille +/-2)");a.add(p);
-			p = new Passive("Compétence supplémentaire",10, "Renseignement, Marchandage, Diplomatie x2, bluff x2, Intimidation x3");a.add(p);
-			
+Polyvalence : +3 pts de carac/lvl
+Deguisement,Marchandage,Diplomatie, Bluff, Intimidation (LVL : 1,2,3,4,5)
+lvl 1 :Polymorphisme I : Changement de couleur
+lvl 1 :Polymorphisme I : Changement de forme leger (poils, cheveux, ecailles, plumes, textures, ..)
+lvl 2 :Polymorphisme II : Changement de forme modere (doigts, nez, visage, oreilles, ..)
+lvl 3 :Polymorphisme III : Changement de forme moyen (Bras, jambe, membres supplementaires, ..)
+lvl 4 :Polymorphisme IV : Changement de taille (+/- 1)
+lvl 5 :Polymorphisme V : Metamorphose (voix, alignement), Plenitude +1AP		

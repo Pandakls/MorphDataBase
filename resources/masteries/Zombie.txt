@@ -1,13 +1,12 @@
 Zombie
 Omber Tertuo
-[Half-Blood]
-p = new Passive("Traits Zombies",1,"+20 VIT, -5 FOR, -5 DEX, -5 KNO, -5 SPI, -5 SGF");a.add(p);
-			p = new Passive("Compétence supplémentaire",1,"Resistance à la torture (1,4,9,14 et 19)");a.add(p);
-			p = new Passive("Malus Compétences",1,"Diplomatie, Marchandage, Renseignement");a.add(p);
-			p = new Passive("Survivance",1,"Reste en vie jusque -25% de vie. Avec malus aux jets de combats: -10");a.add(p);
-			p = new Passive("Nouveau Domaine",7,"Domaine obligatoire au niveau 7: Maladie");a.add(p);
-			p = new Passive("Survivance",5,"Reste en vie jusque -50% de vie. Avec malus aux jets de combats: -15");a.add(p);
-			p = new Passive("Survivance",10,"Reste en vie jusque -75% de vie. Avec malus aux jets de combats: -20");a.add(p);
-			p = new Passive("Survivance",15,"Reste en vie jusque -100% de vie. Avec malus aux jets de combats: -25");a.add(p);
-			p = new Passive("Survivance",20,"Reste en vie jusque -200 % de vie. Avec malus aux jets de combats: -30");a.add(p);
-			
+[Half-Blood Polyvalent]
+Traits Zombies +20 VIT, -5 FOR, -5 DEX, -5 KNO, -5 SPI, -5 SGF
+Resistance a la torture (1,4,9,14 et 19)
+Malus Competences : Diplomatie, Marchandage, Renseignement
+Nouveau Domaine obligatoire : Maladie ou Necromancie
+don possible : Survivance I (req VIT > 20) Reste en vie jusque -25% de vie. Avec malus aux jets de combats: -10
+don possible : Survivance II (req VIT > 30 & Survivance I) Reste en vie jusque -50% de vie. Avec malus aux jets de combats: -15
+don possible : Survivance III (req VIT > 40 & Survivance II) Reste en vie jusque -75% de vie. Avec malus aux jets de combats: -20
+don possible : Survivance IV (req VIT > 50 & Survivance III) Reste en vie jusque -100% de vie. Avec malus aux jets de combats: -25
+don possible : Survivance V (req VIT > 60 & Survivance IV) Reste en vie jusque -200% de vie. Avec malus aux jets de combats: -30

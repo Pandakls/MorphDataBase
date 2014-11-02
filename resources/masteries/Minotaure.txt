@@ -1,6 +1,9 @@
 Minotaure
 Superbia
-p = new Passive("Trait minotaures",1,"+20 FOR, -8 DEX, -8 SGF, -8SPI, -8KNO.");a.add(p);
-			p = new Passive("Grande Taille",0,"Taille ++ au dela de 50% de constitution minotaure");a.add(p);
-			p = new Passive("Don supplémentaire",0,"Grand pas x2");a.add(p);
-			
+[Optimus]
+Trait minotaures +20 FOR, -8 DEX, -8 SGF, -8SPI, -8KNO.
+Intimidation (LVL : 1,4,9,14,19)
+Taille ++ au dela de 50% de constitution minotaure
+Don possible : Big Foot + (Gain de 2m au lieu de 1m)
+Don possible : Allonge + (Permet de taper a 3m au lieu de 1m50)
+Don possible : Arme imposante, Le minotaure peut manipuler des armes plus grandes : augmente la classe du de de 1	

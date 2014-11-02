@@ -1,4 +1,5 @@
 Orc
 Omber Tertuo
-Traits Orcs",1,"+10 FOR, -5KNO, -5 SPI
-Motivation Orc",1,"+5 FOR, +5 SGF pour chaque autre orc présent
+[Optimus]
+Traits Orcs +10 FOR, -5KNO, -5 SPI
+Motivation Orc : +5 FOR, +5 SGF pour chaque autre orc present
