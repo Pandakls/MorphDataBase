@@ -1,14 +1,16 @@
-SuggestionMentale("Suggestion mentale", "Telekinesie",1, 2, 3, "Le pj influence la décision de la cible: portée 9m, +5diplomatie,marchandage,.., comp +5, ccx2"),
-TelekinesieI("Telekinesie", "Telekinesie",1, 3, 4, "le pj peut déplacer un objet inanimé par la pensée dans un rayon de 5m. durée: SPI min, poids: (SPI-20)x5 kg "),
+d,LAS La FM du defenseur ne se fait pas uniquement par rapport a sa stats de FM mais aussi en fonction du jet de magie de l'asaillant (cf gameplay comparason de jet)
+Suggestion Mentale,1L	2A	3S	influence la decision de la cible: portee 9m, +10 diplomatie,marchandage,.., comp +5, ccx2"),
+Telekinesie I,1L	3A	4S	deplace un objet inanime par la pensee dans un rayon de 5m. duree: SPI min, poids: SPI/2 kg
 
-controlmentalm("Control mental", "Telekinesie",2, 3, 6, "le pj peut forcer quelqu'un à faire une action simple pendant moins de 6 secondes (ouvrir une porte, se déplacer à un endroit,..), comp:la cible ne s'en souvient pas, cc:aucune résistance possible"),
-TelekinesieII("Telekinesie", "Telekinesie",2, 3, 5, "le pj peut effectuer une gifle telekinésique, portée: 18m, dgt: 1d8, comp 1d8, ccx3"),
+control Mental I,2L	3A	6S	force quelqu'un a faire une action simple pendant moins de 6 secondes, comp:la cible ne s'en souvient pas, cc:aucune resistance possible
+Telekinesie II,2L	3A	4S	deplace un objet inanime par la pensee dans un rayon de 10m. duree: SPI min, poids: SPI kg
+Gifle Mentale,2L	3A	5S	portee: 18m, dgt: 1d8, comp 1d8, ccx3
 
-controlmentalM("Control mental", "Telekinesie",3, 4, 12, "le pj peut forcer quelqu'un à faire une action complexe pendant une minute max"),
-TelekinesieIII("Telekinesie", "Telekinesie",3, 3, 8, "le pj peut déplacer des choses vivantes et animées dans un rayon de 15m. durée: SPI, poids: (SPI-10)x5 kg"),
+control Mental II,3L	4A	12S	force quelqu'un a faire une action complexe pendant une minute max, comp:la cible ne s'en souvient pas, cc:aucune resistance possible
+Telekinesie III,3L	3A	8S	deplace des choses vivantes et animees dans un rayon de 15m. duree: SPI min, poids: SPIx2 kg
 
-controlmentalf("Control mental", "Telekinesie",4, 20, 15, "le pj peut controler plusieurs personnes en meme temps, elles obéissent parfaitement tant que leur force mentale est plus faible (1jet/10min)"),
-TelekinesieIV("Telekinesie", "Telekinesie",4, 3, 12, "le pj peut déplacer plusieurs objets en meme temps dans un rayon de 30m"),
+control Mental III,4L	5XA	15XS	controle X personnes en meme temps, elles obeissent parfaitement tant que leur force mentale est plus faible (1jet/10min)
+Telekinesie IV,4L	3A	12S	deplace plusieurs objets en meme temps dans un rayon de 30m. duree: SPI min, poids total: SPIx3 kg
 
-controlmentalA("Control mental", "Telekinesie",5, 6, 9, "Torture mentale, inflige de dégats lourds et peut rendre fou.portée: 9m, 2d10, comp: folie, cc x4"),
-TelekinesieV("Telekinesie", "Telekinesie",5, 3, 16, "Le pj peut déplacer des objets dans un rayon de 100m, durée SPI, poids: SPIx5"),
+torture mentale IV,5L	6A	12S	Inflige de lourds degats et peut rendre fou.portee: 9m, 2d10, comp: folie, cc x4
+Telekinesie V,5L	3A	16S	deplace des objets dans un rayon de 100m, duree SPI, poids: SPIx5

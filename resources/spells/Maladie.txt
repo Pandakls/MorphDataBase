@@ -17,5 +17,5 @@ Poison lourd,4L 	4A	8S	portee contact, la cible subit 2d6 pdt 2tours, comp +1rou
 
 Passif Resistance,5L	0A	0S	Le PJ est immunise aux maladies et au poison
 Passif Venom,5L 	0A	0S	Les personnages perdent de la vie au lieu d'en gagner s'ils tentent de drainer de la vie.
-Aura de mort,5L 	10A	20S	Le PJ s'entour d'une aura virale (3m, 1 round/lvl), y subissent par demi round respectivement : (0.5r:rhum)(1r: poison leger)(1.5r:2xrhume)(2r:poison)(2.5r:Nausee)(3r:plague)(3+.5r:Nausee)(4+rpoison lourd)
+Aura de mort,5L 	10A	20S	Le PJ cree d'une aura virale (3m, 1 round/lvl), les effets augmentent avec le temps (0.5r:rhum)(1r: poison leger)(1.5r:2xrhume)(2r:poison)(2.5r:Nausee)(3+rpoison Lourd)
 Poison mortel,5L	5A	12S	Portee contact, 2d10 pendant 2rounds, comp +1 round, ccx2

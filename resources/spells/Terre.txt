@@ -7,7 +7,7 @@ Boule de feu,2L 	3A	3S	Projectile de Feu. portee:15m, dgt:1d6, comp:1d12, cc:x2
 Armure de Feu,2L  	5A	5S	Des particules elementaires blessent les ennemis a proximite. duree: jusqu'a la fin de la journee, portee:soi, dgt:(SPI-20)/2, comp:1d12, cc:sans
 
 Passif Feu III,3L	0A	0S	L'elementaliste peut fixer son element en dehors de son corps
-StoneFist("Démolission", "ElementaireTerre",3, 4, 9, "L'ennemi ciblé se prend un gros punch: portée:30m, dgt:1d8, comp:SPI/3, cc:x4"),
+Demolission,3L		4A	9S	L'ennemi cible se prend un gros punch: portee:30m, dgt:1d8, comp:SPI/3, cc:x4
 Armes Sifflantes,3L	5A	10S	Enchante une arme jusqu'a la fin de la journee portee:cac. Bonus de l'arme: SPI/5 dgts. 
 
 Passif Feu IV,4L	0A	0S	L'elementaliste peut controler une simili-vie de son element

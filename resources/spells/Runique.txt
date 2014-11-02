@@ -1,13 +1,18 @@
-RunepreludeI("Regles d'enchantement", "Runes",1, 0, 0, "Le pj peut sceller une aura magie dans un objet inanimé. La magie à besoin d'un conteneur où rester. Voici les différentes catégorie de runes:"),
-RunepreludeII("Regles d'enchantement", "Runes",1, 600, 5, "(10 min) rune superficielle, réceptacle adéquat: tout, coût des composantes materielles: 50PO"),
-RunepreludeIII("Regles d'enchantement", "Runes",1, 1800, 10, "(30 min) rune mineur, réceptacle minimum: bois modelé, coût des composantes materielles: 100PO"),
-RunepreludeIV("Regles d'enchantement", "Runes",1, 7200, 20, "(2h) rune conséquente, réceptacle minimum: métal modelé, coût des composantes materielles: 250PO"),
-RunepreludeV("Regles d'enchantement", "Runes",1, 18000, 40, "(5h) rune majeur, réceptacle minimum: pierre précieuse, coût des composantes materielles: 500PO"),
-RunepreludeVI("Regles d'enchantement", "Runes",1, 43200, 80, "(12h) rune de maître, réceptacle minimum: pierre précieuse de tres bonne qualité, coût des composantes materielles: 1000PO"),
-RunepreludeVII("Regles d'enchantement", "Runes",1, 0, 0, "le résultat du dé donne: SEC:destruction de l'objet et des composantes, EC: perte des composantes materielles, E:Perte de 2X% des composantes (X étant le jet de dé), R:réussite partielle de l'enchantement (effet aléatoire), RC: réussite totale de l'enchantement, SRC:Méga bonus on weapon"),
+d,LAS Le pj peut sceller une aura magie dans un objet inanime. La magie a besoin d'un conteneur ou rester. Voici les differentes categorie de runes: (une rune reussie vaut le double des composant)
+d,LAS le resultat du sort donne: SEC:perte totale, EC: perte des composants, E:Perte de X% des composants (X = jet de de), R:reussite partielle, RC: reussite totale , SRC:Mega buff
 
-RuneI("Runes", "Runes",1, 0, 0, "Au niveau 1 les runes disponibles sont: Bonus tir(+1,+5,+10,+15,+20), Bonue mélée(+1,+5,+10,+15,+20), Bonus Cast(+1,+5,+10,+15,+20)"),
-RuneII("Runes", "Runes",2, 0, 0, "Au niveau 2 les runes disponibles sont: Bonus reflexes(+1,+5,+10,+15,+20), Bonue force mentale(+1,+5,+10,+15,+20), Bonus Compétence(+1,+5,+10,+15,+20)"),
-RuneIII("Runes", "Runes",3, 0, 0, "Au niveau 3 les runes disponibles sont: Bonus cc(+0,+1,+2,+3,+5), Bonue soin(+1,+2,+4,+7,+10), Bonus Dégats élémentaires(+1,+1d6,+1d10,+2d6,+2d10)"),
-RuneIV("Runes", "Runes",4, 0, 0, "Au niveau 4 les runes disponibles sont: Don supplémentaire (+0,+0,+1,+1,+1), détaillé dans la table des dons"),
-RuneV("Runes", "Runes",5, 0, 0, "Au niveau 5 les runes disponibles sont: Domaine supplémentaire (+0,+0,+0,+0,+1), Bonus PC (+0,+0,+0,+0,+1)"),
+Creation de rune I,1L  	10mnA	5S	rune superficielle, receptacle adequat: tout, cout des composantes materielles: 50PO
+Creation de rune II,1L	30mnA	10S	rune mineur, receptacle minimum: bois modele, cout des composantes materielles: 100PO
+Creation de rune III,1L	2hA	20PS	rune consequente, receptacle minimum: metal modele, cout des composantes materielles: 250PO
+Creation de rune IV,1L 	5hA	40PS	rune majeur, receptacle minimum: pierre precieuse, metal draconique ,demoniaque ou planaire cout des composantes materielles: 500PO
+Creation de rune V,1L  	12hA	80PS	rune de maitre, receptacle minimum: pierre precieuse de tres bonne qualite, cout des composantes materielles: 1000PO
+
+Rune I,1LAS	Bonus tir(+1,+5,+10,+15,+20), Bonue melee(+1,+5,+10,+15,+20), Bonus Cast(+1,+5,+10,+15,+20)
+Rune II,2LAS	Bonus reflexes(+1,+5,+10,+15,+20), Bonue force mentale(+1,+5,+10,+15,+20), Bonus Competence(+5,+10,+15,+20,+40)
+Rune III,3LAS	Bonus cc(+0,+1,+2,+3,+5), Bonus soin(+1,+2,+4,+7,+10), Bonus Degats elementaires(+1,+1d6,+1d10,+2d6,+2d10)
+Rune IV,4LAS	Don supplementaire (+0,+0,+1,+1,+2), Bonus Carac (+0,+1,+2,+5,+10)
+Rune V,5LAS	Domaine supplementaire (+0,+0,+0,+0,+1), Bonus PC (+0,+0,+0,+0,+1)
+
+d,LAS ex: Forgeur runique lvl3, Possede une Epee en metal draconique. Il paye 500PO et sur une reussite normale l'enchante + 1D12 foudre (>1d10 mais <2d6)
+NB,LAS le SEC augmente de (LVL enchantement x LVL rune) que possede l'objet. Ex: Epee +1d6 feu, +6 melee (SEC + 6 + 3) donc SEC sur 90>99 // Epee +1PA (SEC +25) donc SEC sur 74>99
+NB2,LAS Le bonus d'un objet ne peut pas depasser l'effet d'une rune de maitre. (Donc pas plus de 1PA, 20 Melee, etc...) Sauf certaines armes legendaires

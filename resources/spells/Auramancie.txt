@@ -1,23 +1,23 @@
 Annulation,1L		3A	5S	Le pj detruit une malediction au hasard qui l'affecte"),
-Plastron,1L		3A	15PS	Le pj cree un bouclier psychique autour de ses allies (Bouclier = SPI)
-Precision,1L		3A	15PS	Le pj cree une aura qui augmente la melee des allies proches (Bonus = SPI/2-10)
-Oeil De Lynx,1L		3A	15PS	Le pj cree une aura qui augmente le tir des allies proches (Bonus = SPI/2-10)
-Neurone,1L		3A	15PS	Le pj cree une aura qui augmente le Cast des allies proches (Bonus = SPI/2-10)
+Plastron,1L		3A	15S	Le pj cree un bouclier psychique autour de ses allies (Bouclier = SPI)
+Precision,1L		3A	15S	Le pj cree une aura qui augmente la melee des allies proches (Bonus = SPI/2-10)
+Oeil De Lynx,1L		3A	15S	Le pj cree une aura qui augmente le tir des allies proches (Bonus = SPI/2-10)
+Neurone,1L		3A	15S	Le pj cree une aura qui augmente le Cast des allies proches (Bonus = SPI/2-10)
 
-Talent,2L		2A	10PS	Le pj cree une aura qui augmente les Competences des allies proches (Bonus = SPI/2-10)
-Reflexes,2L		4A	15PS	Le pj cree une aura qui augmente le Reflexe des allies proches (Bonus = SPI/2-10)
-Force Mentale,2L	4A	15PS	Le pj cree une aura qui augmente la Force Mentale des allies proches (Bonus = SPI/2-10)
+Talent,2L		2A	10S	Le pj cree une aura qui augmente les Competences des allies proches (Bonus = SPI/2-10)
+Reflexes,2L		4A	15S	Le pj cree une aura qui augmente le Reflexe des allies proches (Bonus = SPI/2-10)
+Force Mentale,2L	4A	15S	Le pj cree une aura qui augmente la Force Mentale des allies proches (Bonus = SPI/2-10)
 
-Charge Legere,3L	2A	5PS	Le pj cree une aura qui allege la charge des allies proches Classe de charge (Bonus = -SPI kg)
-Grand Pas,3L		2A	20PS	Le pj cree une aura qui augmente le deplacement des allies proches de 1m/SPI/10
-Puissance Magique,3L	5A	30PS	Le pj cree une aura qui donne des degats magiques supplementaires Bonus=SPI/5
-Puissance Physique,3L	5A	30PS	Le pj cree une aura qui donne des degats de melee supplementaires Bonus=SPI/5
-Champ de rojectile,3L	5A	30PS	Le pj cree une aura qui donne des degats de tir supplementaires Bonus=SPI/5
+Charge Legere,3L	2A	5S	Le pj cree une aura qui allege la charge des allies proches Classe de charge (Bonus = -SPI kg)
+Grand Pas,3L		2A	20S	Le pj cree une aura qui augmente le deplacement des allies proches de 1m/SPI/10
+Puissance Magique,3L	5A	30S	Le pj cree une aura qui donne des degats magiques supplementaires Bonus=SPI/5
+Puissance Physique,3L	5A	30S	Le pj cree une aura qui donne des degats de melee supplementaires Bonus=SPI/5
+Champ de rojectile,3L	5A	30S	Le pj cree une aura qui donne des degats de tir supplementaires Bonus=SPI/5
 
-Deplacement Eclair,4L	2A	25PS	Le pj cree une aura qui donne le don deplacement eclair aux allies proches (Si il le possedait deja, ils en ont 2 par round)
-Blindage,4L		4A	25PS	Le pj cree une aura qui donne de l'armure des allies proches (Bonus = SPI) (apres reduction par l'armure)
-Barriere,4L		4A	25PS	Le pj cree une aura qui donne de la defense Magique des allies proches (Bonus = SPI) (apres reduction par l'armure)
+Deplacement Eclair,4L	2A	25S	Le pj cree une aura qui donne le don deplacement eclair aux allies proches (Si il le possedait deja, ils en ont 2 par round)
+Blindage,4L		4A	25S	Le pj cree une aura qui donne de l'armure des allies proches (Bonus = SPI) (apres reduction par l'armure)
+Barriere,4L		4A	25S	Le pj cree une aura qui donne de la defense Magique des allies proches (Bonus = SPI) (apres reduction par l'armure)
 
-Plenitude,5L		7A	35PS	Le pj cree une aura qui augmente les PC des allies proches de 1
-Shadow Move,5L  	2A	20PS	Le pj cree une aura qui donne le don deplacement assassin aux allies proches
-Vitalite,5L		5A	35PS	Le pj cree une aura qui Augmente les pv max des allies proches (Bonus = SPI/2)
+Plenitude,5L		7A	35S	Le pj cree une aura qui augmente les PC des allies proches de 1
+Shadow Move,5L  	2A	20S	Le pj cree une aura qui donne le don deplacement assassin aux allies proches
+Vitalite,5L		5A	35S	Le pj cree une aura qui Augmente les pv max des allies proches (Bonus = SPI/2)

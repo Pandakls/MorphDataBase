@@ -1,13 +1,17 @@
-ReanimationI("Reanimation", "Necromancie",1, 5, 8, "Le pj réanime un cadavre qui répond aux ordre simples (déplacement, combat) . Portée 3m, ec:le cadavre revient en tant qu'ennemi du joueur, e: rien, r: tout est ok, comp: regain d'1/4 des SP, cc:regain de 1/2 des sp en plus"),
-ReanimationII("Reanimation", "Necromancie",2, 5, 12, "Le pj réanime un cadavre qui récupère presque ses capacités de combat (-10 jets de combats). Portée 3m, ec:le cadavre revient en tant qu'ennemi du joueur, e: rien, r: tout est ok, comp: regain d'1/4 des SP, cc:regain de 1/2 des sp en plus"),
-ReanimationIII("Reanimation", "Necromancie",3, 5, 16, "Le pj réanime un cadavre qui répond aux ordre complexes. Portée 3m, ec:le cadavre revient en tant qu'ennemi du joueur, e: rien, r: tout est ok, comp: regain d'1/4 des SP, cc:regain de 1/2 des sp en plus"),
-ReanimationIV("Reanimation", "Necromancie",4, 5, 24, "Le pj réanime un cadavre qui récupère ses sorts. Portée 3m, ec:le cadavre revient en tant qu'ennemi du joueur, e: rien, r: tout est ok, comp: regain d'1/4 des SP, cc:regain de 1/2 des sp en plus"),
-ReanimationV("Reanimation", "Necromancie",5, 5, 28, "Le pj réanime un cadavre identique au personnage avant sa mort. Portée 3m, ec:le cadavre revient en tant qu'ennemi du joueur, e: rien, r: tout est ok, comp: regain d'1/4 des SP, cc:regain de 1/2 des sp en plus"),
+desc,LASLes reanimations se font en placant une pierre en Onyx (~50PO) dans la bouche du cadavre.
+desc,LASUn ec entraine la resurection du corps possede par un esprit demoniaque (puissant) qui veut tuer tout ce qui bouge.
+desc,LASL'entite ressucitee possede 1/2 de ses PV et PS et tout sur complementaire. Un cc active la ressurection du niveau suivant. (pas d'effet au lvl 5)
 
-MagiedusangI("Magie du sang", "Necromancie",1, 0, 0, "Le pj peut décider a tout moment de passer 'mage du sang' jusqu'a la fin de la journée. Il peut alors lancer des sorts avec ses PV et débloque la magie du sang de plus haut niveau."),
-MagiedusangIbis("Magie du sang", "Necromancie",1, 0, 0, "En état Mage du sang, le pj change sa constitution, il manipule a volonté le flux sanguin de son corps: il ne peux plus recevoir de soins mais ne saigne plus et est immunisé a toute forme d'hémorragie ou de poison"),
-MagiedusangII("Magie du sang", "Necromancie",2, 3, 5, "Vol de vie, 100% de lien de vie: portée 1m, 1d6, comp 1d6, ccx2"),
-MagiedusangIII("Magie du sang", "Necromancie",3, 0, 0, "Coagulation, le mage de sang peut controler a volonté le sang hors de son corps."),
-MagiedusangIIIbis("Magie du sang", "Necromancie",3, 4, 7, "Blood kick, portée:6m 1d10, 1d6, ccx4."),
-MagiedusangIV("Magie du sang", "Necromancie",4, 2, 5, "Transfert de vie, le mage du sang soigne les alliés proches (3m) et s'inflige des blessures: soin/dégat: 1d6, regagne 1/4 des pv perdus, cc: Regagne tt les pv perdus."),
-MagiedusangV("Magie du sang", "Necromancie",5, 0, 0, "Transformation, le mage du sang peut changer son corps en sang. Lui offrant: -3PC, immunité aux attaques physiques, forme non définie."),
+Reanimation I,1L	5A	8S	Le pj reanime un cadavre qui repond aux ordre simples (deplacement, combat sans sorts) avec -2AP.
+Reanimation II,2L	5A	12S	Le pj reanime un cadavre qui recupere ses dons et reponds toujours aux ordre simples avec -1AP.
+Reanimation III,3L	5A	16S	Le pj reanime un cadavre qui repond aux ordre complexes et recupere ses competences.
+Reanimation IV,4L	5A	24S	Le pj reanime un cadavre qui recupere ses sorts.
+Reanimation V,5L	5A	28S	Le pj reanime un cadavre identique au personnage avant sa mort (memoire, alignement,...)
+
+Magie du sang I,1L	0A	0S	Le pj peut decider a tout moment de passer 'mage du sang' jusqu'a la fin de la journee. Il peut alors lancer des sorts avec ses PV et debloque les sorts associes
+Magie du sang I,1L	0A	0S	Le Mage du sang manipule a volonte le flux sanguin de son corps: il ne peux plus recevoir de soins mais ne saigne plus et est immunise a toute forme d'hemorragie ou de poison
+Magie du sang II,2L	3A	7S	Vol de vie, 100% de lien de vie: portee 2m, 1d6, comp 1d6, ccx2
+Magie du sang III,3L	0A	0S	Coagulation, le mage de sang peut controler a volonte le sang hors de son corps.
+Magie du sang III,3L	4A	7S	Blood kick, portee:6m 1d10,comp 1d10, ccx4.
+Magie du sang IV,4L	2A	5S	Transfert de vie, le mage du sang soigne les allies proches (3m) et s'inflige des blessures: soin/degat: 1d6, comp: regagne 1/4 des pv perdus, cc: Regagne tout les pv perdus
+Magie du sang V,5L	0A	0S	Transformation, le mage du sang peut changer son corps en sang. Lui offrant: -3PA, immunite aux attaques physiques, forme non definie.

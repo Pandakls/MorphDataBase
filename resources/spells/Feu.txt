@@ -11,9 +11,9 @@ SmallMeteor,3L		4A	9S	Projectile de zone: portee:30m, dgt:1d8, comp:brulure 1d6,
 Armes Sifflantes,3L	5A	10S	Enchante une arme jusqu'a la fin de la journee portee:cac. Bonus de l'arme: SPI/5 dgts. 
 
 Passif Feu IV,4L	0A	0S	L'elementaliste peut controler une simili-vie de son element
-Fire Spirit,4L		10A	15S	Invocation d'un pseudo elemental de Feu qui ne peut que se deplacer et combattre: Vie=SPI,SP=15,ref=0,MR=0,5PC, competences = Boule de Feu et Kick de Feu(pas de cout)"),
+Fire Spirit,4L		10A	15S	Invocation d'un pseudo elemental de Feu qui ne peut que se deplacer et combattre: Vie=SPI,SP=15,ref=0,MR=0,5PC, competences = Boule de Feu et Kick de Feu(pas de cout)
 Cone de Feu,4L		3A	5S	Cone de Feu (5mx3m): portee:5m, dgt:1d10/dist, comp:1d12, cc:x2
 
 Passif Feu V,5L		0A	0S	L'elementaliste peut faire ce qu'il veut de son element dans la limite du raisonnable
 Tempete de Feu,5L	10A	20S	Tempete sur un rayon de 100m, portee:0m, dgt:1d4, comp:1d12, cc:sans, duree = lvl
-Fire Elemental,5L	15A	30S	Invocation d'un elemental de Feu qui obeit a son invocateur: Vie=SPI,SP=30,ref=33,MR=33,7PC , competences = Boule de Feu, Kick de Feu(pas de cout), Cone de Feu et Armure de Feu(pas de cout)");	
+Fire Elemental,5L	15A	30S	Invocation d'un elemental de Feu: Vie=SPI,SP=30,ref=33,MR=33,7PC , competences = Boule de Feu, Kick de Feu(pas de cout), Cone de Feu et Armure de Feu(pas de cout)	

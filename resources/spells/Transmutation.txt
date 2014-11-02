@@ -1,20 +1,15 @@
-Compagnon("Compagnon", "Transmutation",1, 500, 30, "Le pj Rend permanente une invocation ou un objet animé (il ne peux en contrôler qu'une)" ),
-Animationtp("Animation", "Transmutation",1, 5, 10, "Le pj anime un objet inanimé de taille TP jusqu'à la fin de la journée.Elle ne peux que se déplacer ou combattre <Carac: 10pv/10REF/0FM/5pc/CAC: 3pc, 40melee, 5dmg/TIR:3pc,30,5dgt,15m>" ),
-Invocationtp("Invocation", "Transmutation",1, 5, 10, "Le pj invoque une créature de taille TP jusqu'à la fin de la journée." ),
-MetamorphoseA("Agrandissement", "Transmutation",1, 3, 5, "Le pj peut augmenter d'un la taille d'une cible et de tout ses équipements (SPImin)(vitax2)" ),
+Compagnon,1L		500A	30S	Le pj Rend permanente une invocation ou un objet anime (il ne peux en controler qu'un)
+Animation I,1L		5A	5S	Le pj anime un objet inanime de taille TP jusqu'a la fin de la journee. <Carac: SPI/4 +10 5PA, attaque en melee:1D4>
+Agrandissement,1L	3A	5S	Le pj peut augmenter d'un la taille d'une cible et de tout ses equipements (SPImin)(vitax2)
 
-Animationp("Animation", "Transmutation",2, 5, 20, "Le pj anime un objet inanimé de taille P jusqu'à la fin de la journée.Elle ne peux que se déplacer ou combattre <Carac: 30pv/20REF/0FM/5pc/CAC: 3pc, 40melee, 10dmg/TIR:3pc,30,10dgt,15m>" ),
-Invocationp("Invocation", "Transmutation",2, 5, 20, "Le pj invoque une créature de taille P jusqu'à la fin de la journée." ),
-MetamorphoseR("Rétrécissement", "Transmutation",2, 3, 5, "Le pj peut diminuer d'un la taille d'une cible et de tout ses équipements (SPImin)(vita/2)" ),
+Animation II,2L		5A	10S	Le pj anime un objet inanime de taille P jusqu'a la fin de la journee. <Carac: SPI/3 +10 6PA, attaque en melee:1D6>
+Retrecissement,2L	3A	5S	Le pj peut diminuer d'un la taille d'une cible et de tout ses equipements (SPImin)(vita/2)
 
-AnimationM("Animation", "Transmutation",3, 5, 30, "Le pj anime un objet inanimé de taille M jusqu'à la fin de la journée.Elle ne peux que se déplacer ou combattre <Carac: 60pv/30REF/0FM/5pc/CAC: 3pc, 40melee, 20dmg/TIR:3pc,30,20dgt,15m>" ),
-InvocationM("Invocation", "Transmutation",3, 5, 30, "Le pj invoque une créature de taille M jusqu'à la fin de la journée." ),
-MetamorphoseB("Métamorphose", "Transmutation",3, 3, 5, "Le pj peut greffer des branchies, des palmes, des ailes,... sur une cible consentante(SPI min)" ),
+Animation III,3L	5A	20S	Le pj anime un objet inanime de taille M jusqu'a la fin de la journee. <Carac: SPI/2 +10 7PA, attaque en melee:1D8>
+Metamorphose I,3L	2A	4S	Le pj peut greffer des branchies, des palmes, des ailes,... sur une cible consentante(SPI min)
 
-AnimationG("Animation", "Transmutation",4, 5, 40, "Le pj anime un objet inanimé de taille G jusqu'à la fin de la journée.Elle ne peux que se déplacer ou combattre <Carac: 120pv/40REF/0FM/5pc/CAC: 3pc, 40melee, 40dmg/TIR:3pc,30,40dgt,15m>" ),
-InvocationG("Invocation", "Transmutation",4, 5, 40, "Le pj invoque une créature de taille G jusqu'à la fin de la journée." ),
-MetamorphoseG("Carapace", "Transmutation",4, 3, 5, "Le pj Augmente l'armure naturelle de la cible avec des écailles/peau de pierre (Armure +SPI, SPI min)" ),
+Animation IV,4L		5A	30S	Le pj anime un objet inanime de taille G jusqu'a la fin de la journee. <Carac: SPI/2 +20 8PA, attaque en melee:1D10>
+Transmutation,4L	4A	6S	Le pj Augmente l'armure naturelle de la cible avec des ecailles/peau de pierre (Armure +SPI, SPI min)
 
-AnimationTG("Animation", "Transmutation",5, 5, 80, "Le pj anime un objet inanimé de taille G jusqu'à la fin de la journée.Elle ne peux que se déplacer ou combattre <Carac: 240pv/50REF/0FM/5pc/CAC: 3pc, 40melee, 80dmg/TIR:3pc,30,80dgt,15m>" ),
-InvocationTG("Invocation", "Transmutation",5, 5, 80, "Le pj invoque une créature de taille G jusqu'à la fin de la journée." ),
-MetamorphoseC("Métamorphose avancée", "Transmutation",5, 0, 0, "Le pj peut lancer agrandissement et rétrécissement avec une différence de 2 tailles, faire des changements temporaires lourds sur l'apparence des gens peu importe leur consententment." ),
+Animation V,5L		5A	40S	Le pj anime un objet inanime de taille TG jusqu'a la fin de la journee. <Carac: SPI/2 +30 9PA, attaque en melee:2D6>
+Metamorphose II,5L	0A	0S	Agrandissement et retrecissement deviennent 2 fois plus puissants (x4 et /4) et toutes les modification peuvent etre lance sur tout le monde

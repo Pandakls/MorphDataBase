@@ -11,9 +11,9 @@ LinkinSpark,3L		4A	9S	Link 5: les 4 entites les plus proches de la cibles subiss
 Armes Sifflantes,3L	5A	10S	Enchante une arme jusqu'a la fin de la journee portee:cac. Bonus de l'arme: SPI/5 dgts. 
 
 Passif Foudre IV,4L	0A	0S	L'elementaliste peut controler une simili-vie de son element
-Thunder Spirit,4L	10A	15S	Invocation d'un pseudo elemental de Foudre qui ne peut que se deplacer et combattre: Vie=SPI,SP=15,ref=0,MR=0,5PC, competences = Boule de Foudre et Kick de Foudre(pas de cout)"),
+Thunder Spirit,4L	10A	15S	Invocation d'unelemental de Foudre qui ne peut que se deplacer et combattre: Vie=SPI,SP=15,ref=0,MR=0,5PC, competences = Boule de Foudre et Kick de Foudre(pas de cout)
 Cone de Foudre,4L	3A	5S	Cone de Foudre (5mx3m): portee:5m, dgt:1d10/dist, comp:1d12, cc:x2
 
 Passif Foudre V,5L	0A	0S	L'elementaliste peut faire ce qu'il veut de son element dans la limite du raisonnable
 Tempete de Foudre,5L	10A	20S	Tempete sur un rayon de 100m, portee:0m, dgt:1d4, comp:1d12, cc:sans, duree = lvl
-Thunder Elemental,5L	15A	30S	Invocation d'un elemental de Foudre qui obeit a son invocateur: Vie=SPI,SP=30,ref=33,MR=33,7PC , competences = Boule de Foudre, Kick de Foudre(pas de cout), Cone de Foudre et Armure de Foudre(pas de cout)");	
+Thunder Elemental,5L	15A	30S	Invocation d'un elemental de Foudre: Vie=SPI,SP=30,ref=33,MR=33,7PC , competences = eclaire, Kick de Foudre(pas de cout), Cone de Foudre et Armure de Foudre(pas de cout)

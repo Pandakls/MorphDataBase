@@ -1,14 +1,14 @@
-Ralentissement("Ralentissement", "Temps",1, 1, 1, "Le pj ralenti une cible. Portée 3m, -1PC et -5 jets de combat, comp: -1PC et -5 jets de combat, cc x4"),
-Prescience("Préscience", "Temps",1, 2, 2, "Le pj distord le temps pour s'accelérer au prochain tour. Portée contact, +2PC, comp: +2PC, cc x3"),
+Ralentissement,1L	1A	1S	Le pj ralenti une cible. Portee 3m, -1PC et -5 jets de combat, comp: -1PC et -5 jets de combat, cc x4
+Prescience,1L		2A	2S	Le pj distord le temps pour s'accelerer au prochain tour. Portee contact, +2PC, comp: +2PC, cc x3
 
-Acceleration("Accélération", "Temps",2, 1, 1, "Le pj accélère une cible. Portée 3m, +2PC, comp: +2PC, cc x2"),
-Prevision("Prévision", "Temps",2, 1, 1, "Le pj voit dans le futur proche, il lance deux dés pour son prochain jet et en choisit un, comp: le jet suivant pareil, cc:les deux jets d'après aussi"),
+Acceleration,2L		1A	1S	accelere une cible. Portee 6m, +2PC, comp: +2PC, cc x2
+Prevision,2L		1A	1S	Le pj voit dans le futur proche, il lance deux des pour son prochain jet et en choisit un, comp: le jet suivant pareil, cc:les 3 suivant aussi
 
-InsensibiliteTemp("Insensibilité", "Temps",3, 3, 5, "Le pj n'est plus affecté par le ralentissement du temps. Portée contact, durée:1d4 round, comp:1d4round, cc x2"),
-Brumetemp("Brume temporelle", "Temps",3, 4, 5, "Le Pj ralenti (-2PC) tout le monde dans un rayon de 15m. Portée contact, durée:1d4 round, comp:1d4round, cc x2"),
+Insensibilite,3L	3A	3S	Le pj n'est plus affecte par les effets negatifs du temps. Portee contact, duree:1d4 round, comp:1d4round, cc x2
+Brume Temporelle,3L	4A	5S	ralenti (-4PC) tout le monde dans un rayon de 15m. Portee contact, duree:1d4 round, comp:1d4round, cc x2
 
-Flashback("Flashback", "Temps",4, 4, 0, "Le Pj remonte le temps avec tout ses souvenirs(cout en PS: X). Portée contact, durée:(1d12)X x (SPI-20)min max, comp: (1d6+3)X x (SPI-20)min max, cc: 6X x(SPI-20)x  min"),
-doubletemp("Double temporel", "Temps",4, 0, 0, "Le Pj créé une boucle temporelle d'un round sur une cible à XPC cout:X/2PC, XPS. Portée 3m, la cible joue un nouveau tour, comp: la moitié des PS dépensés regagnés, cc: le clone gagne 4PC"),
+Flashback,4L		4A	XS	Le Pj remonte le temps avec tout ses souvenirs. Portee contact, duree:(2d6)X.(SPI-20) min max, regain de la moitie des sp, regain total
+Double temporel,4L	XA	2XPS	boucle temporelle sur une cible de 2XPA ou moins. Portee 3m, la cible joue un nouveau tour, comp: 1/2 PS depenses regagnes, cc: la cible gagne XPC
 
-Boucletemp("Boucle temporelle", "Temps",5, 180, 0, "Le Pj créé une boucle temporelle pour lui et Y personnes consententes, X est le cout en PS: Portée contact, retour dans le passé de 1d12 x X/Y x(SPI-20)/10 heures, comp: 1d6+3 x X/Y x(SPI-20)/10, cc: regain de la moitié des PS dépensés"),
-Arretdutemp("Arret du temps", "Temps",5, 5, 20, "Le Pj arrete le temps(-12pc). Portée contact, durée:1d8 round, comp:1d8 round, cc x2"),
+Boucle temporelle,5L	180A	XS	cible Y personnes consentantes: Portee contact, retour dans le passe de 2d6.X/Y.(SPI-20)/10 heures, comp: 1/2 PS depenses regagnes, cc: regain total
+Arret du temps,5L	5A	20S	Le Pj arrete le temps(-12pc). Portee contact, duree:1d8 round, comp:1d8 round, cc : regain de tout les PS depenses

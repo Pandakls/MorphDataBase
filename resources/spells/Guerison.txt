@@ -11,4 +11,4 @@ Soin de Groupe,4L	3A	4S	Le pj soigne toutes les personnes presentes dans une zon
 Rappel,4L		10A	15S	Le pj redonne vie a une cible dont le corps est entier, portee:contact Retour a la vie avec 1pv, comp: soin SPI/5, cc x3
 
 Reconstitution,5L	5A	10S	Le pj soigne une cible au maximum de sa vie. Portee 3m
-Rappel Majeur,5L	10A	15S	Le pj redonne vie a une cible dont le corps est partiel (cout supplementaire: 10 PS par membre, 15PS tete, 20PS buste manquant), portee:contact Retour a la vie avec 1pv, comp: soin SPI/5, cc x3
+Rappel Majeur,5L	10A	15S	Le pj redonne vie a une cible dont le corps est partiel (cout supp: 10PS/membre, 15PS/tete, 20PS/buste), portee:contact Retour a la vie avec 1pv, comp: soin SPI/5, cc x3
