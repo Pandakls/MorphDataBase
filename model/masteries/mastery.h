@@ -12,7 +12,6 @@ class Mastery
 enum Faction {Aquena, Superbia, OmberTertuo, Centurial, Wild, Renegade};
 
 public:
-
     static std::string toString(Faction f){
         switch (f){
         case Aquena :
@@ -44,14 +43,20 @@ public:
     }
 
     Mastery(std::string n, Faction f, std::string d);
+    Mastery(std::string n, Faction f, std::string d, int l);
     static std::string allMasteries();
     static Mastery loadMastery(std::string fileName);
+    static Mastery randomMastery(bool noEnhanced=false);
     std::string toString();
-
+    std::string toStringShort();
+    inline void setLvl(int l){level = l;}
+    inline std::string getName(){return name;}
+    inline std::string getDesc(){return description;}
 protected:
     std::string name;
     Faction faction;
     std::string description;
+    int level;
     std::vector<MasteryBonus> bonus;
 };
 

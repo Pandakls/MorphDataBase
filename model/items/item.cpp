@@ -50,12 +50,13 @@ Item Item::randomItem(){
 
 Item Item::randomItemAtPrice(int price){
     Item item = randomItem();
+    if(price < 3){return Item("Rien", price, ", Pas de bol !");}
     float ratioPrice = (float)item.getPrice()/(float)price;
     int count = 0;
     while (ratioPrice < 0.8 || ratioPrice> 1.2){
         count ++;
         if (count > 200){
-            return Item("Gold", price, "");
+            return Item("Tresor", price, " Un paquet de thune!");
         }
         item = randomItem();
         ratioPrice = (float)item.getPrice()/(float)price;
@@ -221,6 +222,7 @@ std::string Item::basics(){
         {
             std::string fileName = (std::string)(ent->d_name);
             if (fileName != "." && fileName != ".."){
+                res += fileName + "\n";
                 fileName = "../resources/items/" + fileName;
                 //Add it to res
                 res += loadItemsFromFile(fileName) + "\n";
@@ -233,7 +235,7 @@ std::string Item::basics(){
 
 std::string Item::loadItemsFromFile(std::string fileName){
     std::ifstream file(fileName.c_str());
-    std::string d = fileName + "\n";
+    std::string d = "";
 
     if (!file){
         std::cout << "Impossible d'ouvrir le fichier :" << fileName << std::endl;

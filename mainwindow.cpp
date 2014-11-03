@@ -48,6 +48,8 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->actionTaille_c, SIGNAL(triggered()), this, SLOT(slotCityGenc()));
     //Noms
     connect(ui->actionNoun_Gen, SIGNAL(triggered()), this, SLOT(slotNounGen()));
+    //Character
+    connect(ui->actionPNJ_gen, SIGNAL(triggered()), this, SLOT(slotCharGen()));
 
 
     //BASE DE DONNEE
@@ -82,21 +84,27 @@ void MainWindow::slotDiceGen(){
 }
 
 void MainWindow::slotItemGen(){
-    std::string res = "Random item :\n\n";
+    std::string res = "Random items :\n\n";
+    int a = 1;
     res+= "Start Adventure\n";
     for (int i = 1; i< 21; i++){
-        if(i == 20){i*=2;}
-        res+= "DD" + iTos(i) + " : " + Item::randomItemAtPrice(10 * (i-1)).toString();
+        res+= "DD" + iTos(i);
+        if(i == 20){a=2;}
+        res+= " : " + Item::randomItemAtPrice(a*10 * (i-1)).toString();
     }
+    a=1;
     res+= "\n\nMid Adventure\n";
     for (int i = 1; i< 21; i++){
-        if(i == 20){i*=2;}
-        res+= "DD" + iTos(i) + " : " + Item::randomItemAtPrice(5 * (i-1)*(i-1)).toString();
+        res+= "DD" + iTos(i);
+        if(i == 20){a=2;}
+        res+= " : " + Item::randomItemAtPrice(a*5 * (i-1)*(i-1)).toString();
     }
+    a=1;
     res+= "\n\nEnd Adventure\n";
     for (int i = 1; i< 21; i++){
-        if(i == 20){i*=2;}
-        res+= "DD" + iTos(i) + " : " + Item::randomItemAtPrice(10 * (i-1)*i).toString();
+        res+= "DD" + iTos(i);
+        if(i == 20){a=2;}
+        res+= " : " + Item::randomItemAtPrice(a*10 * (i-1)*i).toString();
     }
     ui->label->setText(QString(res.c_str()));
 }
@@ -123,11 +131,26 @@ void MainWindow::slotCityGen(int nbMin, int nbMax){
 
 void MainWindow::slotNounGen(){
     std::string res = "";
-    for (int i=0;i<50;i++){
+    for (int i=0;i<20;i++){
         res += randomName() + "\n";
+        res += "\t\t\t\t"+ randomName() +"\n";
+        res += "\t\t\t\t\t\t\t\t" + randomName() +"\n";
+
     }
     ui->label->setText(QString(res.c_str()));
 }
+
+void MainWindow::slotCharGen(){
+    std::string res = "";
+    for (int i=0; i<5; i++){
+        Character c = Character::randomCharacter(random(1,20));
+        res += c.toString();
+        res += "\n\n\n\n";
+    }
+    ui->label->setText(QString(res.c_str()));
+}
+
+
 
 void MainWindow::slotMasteries(){
     std::string res = Mastery::allMasteries();

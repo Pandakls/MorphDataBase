@@ -24,15 +24,15 @@ degats 1d6  2 round,	9k	0.03p
 degats 1d8  2 round,	17k	0.015p
 degats 1d10 2 round,	24k	0.01p
 degats 2d6  2 round,	38k	0.005p
-paralysie Vig-30 2d4r,	50k	0.04p
-paralysie vig-50 2d4r,	100k	0.03p
-paralysie vig-70 2d4r,	200k	0.01p
-sommeil Vig-30 2d4r,	50k	0.04p
-sommeil vig-50 2d4r,	100k	0.03p
-sommeil vig-70 2d4r,	200k	0.01p
-confusion Vig-30 2d4r,	50k	0.02p
-confusion vig-50 2d4r,	100k	0.015p
-confusion vig-70 2d4r,	200k	0.005p
+paralysie Vig-10 2d4r,	50k	0.04p
+paralysie vig-30 2d4r,	100k	0.03p
+paralysie vig-50 2d4r,	200k	0.01p
+sommeil Vig-10 2d4r,	50k	0.04p
+sommeil vig-30 2d4r,	100k	0.03p
+sommeil vig-50 2d4r,	200k	0.01p
+confusion Vig-10 2d4r,	50k	0.02p
+confusion vig-30 2d4r,	100k	0.015p
+confusion vig-50 2d4r,	200k	0.005p
 faiblesse physique -5,	25k	0.01p
 faiblesse magique -5,	25k	0.01p
 malus tir     -10,		25k	0.004p

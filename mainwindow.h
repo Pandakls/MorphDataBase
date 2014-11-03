@@ -35,6 +35,7 @@ public slots:
     inline void slotCityGentg(){slotCityGen(26,50);}
     inline void slotCityGenc(){slotCityGen(51,100);}
     void slotNounGen();
+    void slotCharGen();
 
     //DataBase
     void slotMasteries();

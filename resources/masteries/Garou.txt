@@ -1,6 +1,6 @@
 Garou
 Omber Tertuo
-[Garou]
+[Enhanced]
 Les caracteristiques garou sont valables dans toutes les formes.
 Cf regles, le personnage possede deux perso de meme lvl.
 Traits Garou : +5 FOR, +5 DEX, +10 VIT, -20 SGF

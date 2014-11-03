@@ -131,7 +131,8 @@ inline std::string randomVoy(){
 //Random name
 inline std::string randomName(){
     std::string name = "";
-    int nounSize= dice(4);
+    int nounSize= dice(3);
+    if (nounSize ==1){nounSize = dice(3)+1;}
     bool wasVoy = (dice(2)==1)? true : false;
 
     for(int i=0; i<nounSize;i++){
